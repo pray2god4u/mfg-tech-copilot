@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="제조현장 기술지원 Copilot — AI Hub 기술문서 153건 검색·추천·비교">
+  <title>시연 질문 | 제조 Copilot</title>
+  <link rel="stylesheet" href="static/copilot.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 이동</a>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark">MFG</span><span>제조 Copilot</span><span>기술문서 인텔리전스</span></a>
+    <nav class="header-actions" aria-label="주요 메뉴">
+      <span class="public-badge"><span class="dot"></span>공개 조회</span>
+      <a href="search.html">기술문서 검색</a>
+      <a href="datasets.html">데이터셋 목록</a>
+      <a href="demo.html">시연 질문</a>
+    </nav>
+  </header>
+  <main id="main">
+    
+<section class="heading-band">
+  <div>
+    <p class="eyebrow">DEMO SCENARIOS</p>
+    <h1>시연 질문</h1>
+    <p class="subtitle">도입 검토 시연용 질문 — 복사해 검색·추천·비교 화면에서 바로 실행합니다</p>
+  </div>
+</section>
+
+<div class="demo-card">
+  <h3>1. 데이터 후보 추천</h3>
+  <p class="purpose">요구사항 문장으로 후보 데이터셋을 추천받고, 원문 확인 후 채택·제외를 판단합니다.</p>
+  <pre id="q1">OHT 화재 조기 예측 사업의 데이터 후보를 추천해줘</pre>
+  <div class="record-action"><button class="link copy" data-target="q1">질문 복사</button><a href="search.html">검색 화면 →</a></div>
+  <p class="demo-note">포인트: 추천 점수만 받아들이지 말고 설명서 원문으로 AI 임무·적용 대상을 확인</p>
+</div>
+
+<div class="demo-card">
+  <h3>2. 센서·데이터 구성 확인</h3>
+  <p class="purpose">대상 설비의 센서 구성과 라벨 체계를 문서에서 확인합니다.</p>
+  <pre id="q2">이송장치 데이터의 센서 구성 알려줘</pre>
+  <div class="record-action"><button class="link copy" data-target="q2">질문 복사</button><a href="search.html">검색 화면 →</a></div>
+</div>
+
+<div class="demo-card">
+  <h3>3. 두 데이터셋 비교</h3>
+  <p class="purpose">이송장치와 배터리 열폭주 데이터를 나란히 비교해 사업 적합성을 판단합니다.</p>
+  <pre id="q3">71802와 71918 비교해줘</pre>
+  <div class="record-action"><button class="link copy" data-target="q3">질문 복사</button><a href="/api/compare?a=71802&b=71918">비교 API 결과 보기 →</a></div>
+</div>
+
+<div class="demo-card">
+  <h3>4. 라벨링 기준 원문 확인</h3>
+  <p class="purpose">데이터 구축 시 라벨링·검수 기준을 원문 그대로 수집합니다.</p>
+  <pre id="q4">라벨링 기준 검수 절차 알려줘</pre>
+  <div class="record-action"><button class="link copy" data-target="q4">질문 복사</button><a href="search.html">검색 화면 →</a></div>
+</div>
+
+<div class="demo-card">
+  <h3>5. 문서 불일치 확인</h3>
+  <p class="purpose">설명서와 가이드의 표기 차이를 찾아 확인 필요 사항을 정리합니다.</p>
+  <pre id="q5">71802 설명서와 가이드에서 라벨 명칭이 서로 다른 부분 찾아줘</pre>
+  <div class="record-action"><button class="link copy" data-target="q5">질문 복사</button><a href="https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71802">설명서 열람 →</a></div>
+</div>
+
+<div class="demo-card">
+  <h3>6. 도입 검토 브리핑</h3>
+  <p class="purpose">의사결정자용 도입 검토 브리핑 초안을 문서 근거와 함께 작성합니다.</p>
+  <pre id="q6">OHT 화재 예측 AI 도입 검토 브리핑 초안을 문서 근거와 함께 만들어줘</pre>
+  <div class="record-action"><button class="link copy" data-target="q6">질문 복사</button><a href="search.html">검색 화면 →</a></div>
+</div>
+
+<aside class="source-band">
+  <strong>시연 유의사항</strong>
+  <p>본 사이트는 기술문서 검색·추천·비교 기능의 시연 환경입니다. 실시간 설비 예측이나 검증된 현장 성능으로 표현하지 않습니다. 추천 결과는 키워드 기반이며 원문 확인 절차를 함께 시연하세요.</p>
+</aside>
+
+  </main>
+  <footer>
+    <span>DOUZONE · MFG TECH COPILOT</span>
+    <span>데이터 출처: AI 허브(aihub.or.kr) 데이터셋 설명서·활용가이드 — 원본 재배포 금지, 출처 표기</span>
+  </footer>
+  
+<script>
+document.querySelectorAll("button.copy").forEach((btn) => {
+  btn.addEventListener("click", async () => {
+    const text = document.getElementById(btn.dataset.target).textContent.trim();
+    try {
+      await navigator.clipboard.writeText(text);
+      btn.textContent = "복사됨";
+    } catch {
+      btn.textContent = "복사 실패 — 직접 선택해 주세요";
+    }
+    setTimeout(() => { btn.textContent = "질문 복사"; }, 1600);
+  });
+});
+</script>
+
+</body>
+</html>
