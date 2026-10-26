@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% block title %}기술문서 검색 | 제조 Copilot{% endblock %}
+{% block content %}
+<section class="heading-band">
+  <div>
+    <p class="eyebrow">DOCUMENT SEARCH</p>
+    <h1>기술문서 검색</h1>
+    <p class="subtitle">문서 단위 결과와 섹션 단위 원문 스니펫을 함께 제공합니다</p>
+  </div>
+</section>
+
+<section class="search-band" aria-label="검색 조건">
+  <form id="searchForm">
+    <div class="search-row">
+      <label class="search-input" for="q">
+        <svg class="lucide" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input id="q" type="search" maxlength="120" autocomplete="off" placeholder="기술문서 내용 검색" value="{{ q }}">
+      </label>
+      <button type="submit" class="primary">검색</button>
+    </div>
+    <div class="filter-row">
+      <label>문서 유형
+        <select id="dtype">
+          <option value="">전체 유형</option>
+          <option value="설명서">데이터 설명서</option>
+          <option value="가이드">구축·활용 가이드</option>
+        </select>
+      </label>
+      <label>데이터셋 번호
+        <select id="sn"><option value="">전체</option></select>
+      </label>
+      <button id="reset" class="text-button" type="button">초기화</button>
+    </div>
+  </form>
+</section>
+
+<section class="result-band" aria-labelledby="resultTitle">
+  <div class="result-heading">
+    <h2 id="resultTitle">검색 결과 <span id="resultCount">—</span></h2>
+    <div class="result-actions">
+      <nav class="category-tabs" id="tabs" aria-label="결과 범위">
+        <button type="button" data-tab="docs" aria-pressed="true">문서 <span id="docsCount">—</span></button>
+        <button type="button" data-tab="sections" aria-pressed="false">섹션 <span id="sectionsCount">—</span></button>
+      </nav>
+    </div>
+  </div>
+  <div id="loading" class="loading" role="status" hidden>검색 중입니다.</div>
+  <div id="error" class="error" role="alert" hidden><p id="errorText"></p></div>
+  <p id="empty" class="empty" hidden>일치하는 결과가 없습니다. 다른 검색어를 시도해 주세요.</p>
+  <div id="results" class="room-results" aria-live="polite"></div>
+</section>
+
+<aside class="source-band">
+  <strong>검색 범위</strong>
+  <p>AI Hub 기술문서 153건(설명서 71 · 가이드 82)의 제목·본문을 대상으로 하며, 2글자 검색어는 LIKE 스캔으로 처리합니다. 결과의 원문 확인은 문서 열람 화면에서 가능합니다.</p>
+</aside>
+{% endblock %}
+{% block scripts %}
+<script>
+const $ = (id) => document.getElementById(id);
+let datasets = [];
+let activeTab = "docs";
+let lastDocs = [], lastSections = [];
+
+async function loadDatasets() {
+  const r = await fetch("/api/datasets");
+  const j = await r.json();
+  datasets = j.datasets || [];
+  const sel = $("sn");
+  for (const d of datasets) {
+    const o = document.createElement("option");
+    o.value = d.sn; o.textContent = d.sn + " " + d.ds_name.slice(0, 22);
+    sel.appendChild(o);
+  }
+}
+
+function esc(s) {
+  return (s ?? "").replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
+function docCard(r) {
+  const badge = r.dtype === "설명서" ? '<span class="badge manual">설명서</span>' : '<span class="badge guide">가이드</span>';
+  return `<article class="room-result">
+    <div><div class="record-institution">${esc(r.sn)} · ${badge}</div>
+      <p class="record-source">${esc(r.ds_name)}</p></div>
+    <div><a class="record-title" href="/document/${encodeURIComponent(r.id)}">${esc(r.title)}</a>
+      <p class="record-snippet">${esc(r.snip)}</p></div>
+    <div><p class="record-facts">섹션 <strong>${r.nsec}</strong>개</p>
+      <div class="record-action"><a href="/document/${encodeURIComponent(r.id)}">문서 열람 →</a></div></div>
+  </article>`;
+}
+
+function sectionCard(r) {
+  const badge = r.dtype === "설명서" ? '<span class="badge manual">설명서</span>' : '<span class="badge guide">가이드</span>';
+  return `<article class="room-result">
+    <div><div class="record-institution">${esc(r.sn)} · ${badge}</div>
+      <p class="record-source">${esc(r.ds_name)}</p></div>
+    <div><a class="record-title" href="/document/${encodeURIComponent(r.doc_id)}">${esc(r.label)}</a>
+      <p class="record-snippet">${esc(r.snip)}</p></div>
+    <div><p class="record-facts">${esc(r.title.split(" - ")[0] ?? "")}</p>
+      <div class="record-action"><a href="/document/${encodeURIComponent(r.doc_id)}">문서 열람 →</a></div></div>
+  </article>`;
+}
+
+function render() {
+  const list = activeTab === "docs" ? lastDocs : lastSections;
+  $("results").innerHTML = list.map(activeTab === "docs" ? docCard : sectionCard).join("");
+}
+
+async function runSearch() {
+  const q = $("q").value.trim();
+  const dtype = $("dtype").value;
+  const sn = $("sn").value;
+  if (!q) { $("empty").hidden = false; $("empty").textContent = "검색어를 입력해 주세요."; return; }
+  $("loading").hidden = false; $("error").hidden = true; $("empty").hidden = true;
+  $("results").innerHTML = "";
+  const p = new URLSearchParams({ q, dtype, sn, limit: 20 });
+  try {
+    const [d, s] = await Promise.all([
+      fetch("/api/search?" + p).then((r) => r.json()),
+      fetch("/api/sections?" + p).then((r) => r.json()),
+    ]);
+    lastDocs = d.results || []; lastSections = s.results || [];
+    $("docsCount").textContent = lastDocs.length;
+    $("sectionsCount").textContent = lastSections.length;
+    $("resultCount").textContent = (lastDocs.length + lastSections.length) + "건";
+    if (!lastDocs.length && !lastSections.length) { $("empty").hidden = false; }
+    render();
+  } catch (e) {
+    $("errorText").textContent = "검색 중 오류가 발생했습니다: " + e.message;
+    $("error").hidden = false;
+  } finally {
+    $("loading").hidden = true;
+  }
+}
+
+$("searchForm").addEventListener("submit", (e) => { e.preventDefault(); runSearch(); });
+$("reset").addEventListener("click", () => { $("q").value = ""; $("dtype").value = ""; $("sn").value = ""; });
+for (const b of $("tabs").querySelectorAll("button")) {
+  b.addEventListener("click", () => {
+    activeTab = b.dataset.tab;
+    for (const x of $("tabs").querySelectorAll("button")) x.setAttribute("aria-pressed", String(x === b));
+    render();
+  });
+}
+loadDatasets();
+{% if q %}$("q").value = {{ q|tojson }}; runSearch();{% endif %}
+</script>
+{% endblock %}

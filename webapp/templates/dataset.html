@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}{{ name or sn }} | 제조 Copilot{% endblock %}
+{% block content %}
+<section class="heading-band">
+  <div>
+    <p class="eyebrow">DATASET {{ sn }}</p>
+    <h1>{{ name or sn }}</h1>
+    <p class="subtitle">AI Hub 데이터셋 {{ sn }} — 기술문서 구성과 섹션 라벨</p>
+  </div>
+  <div class="catalog-summary">
+    <strong>{{ docs|length }}</strong>
+    <span>문서</span>
+    <small>섹션 {{ total_sec }}개 · {{ total_bytes|sizefmt }}</small>
+  </div>
+</section>
+
+<div class="table-wrap">
+  <table>
+    <thead><tr><th class="col-name">문서</th><th>유형</th><th>섹션</th><th>크기</th><th>열람</th></tr></thead>
+    <tbody>
+      {% for d in docs %}
+      <tr>
+        <td class="col-name"><a class="institution-name" href="/document/{{ d.id }}">{{ d.title }}</a>
+          <span class="subline">{{ d.source_file or d.id }}</span></td>
+        <td>{% if d.dtype == "설명서" %}<span class="badge manual">설명서</span>{% else %}<span class="badge guide">가이드</span>{% endif %}</td>
+        <td class="nps-value">{{ d.nsec }}</td>
+        <td>{{ d.nbytes|sizefmt }}</td>
+        <td><a href="/document/{{ d.id }}">열람 →</a></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<section class="result-band">
+  <div class="result-heading"><h2>주요 섹션 라벨 <span>{{ labels|length }}개</span></h2></div>
+  <div class="record-tags">
+    {% for l in labels %}<span>{{ l }}</span>{% endfor %}
+  </div>
+</section>
+
+<aside class="source-band">
+  <strong>출처</strong>
+  <p>AI 허브(aihub.or.kr) — {{ name or sn }} 데이터셋 설명서·활용가이드. 원본 재배포 금지, 출처 표기.</p>
+</aside>
+{% endblock %}

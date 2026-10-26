@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}오류 | 제조 Copilot{% endblock %}
+{% block content %}
+<section class="heading-band">
+  <div>
+    <p class="eyebrow">ERROR {{ code }}</p>
+    <h1>페이지를 표시할 수 없습니다</h1>
+    <p class="subtitle">{{ msg }}</p>
+  </div>
+</section>
+<div class="error"><p>요청한 문서·데이터셋이 코퍼스에 없거나 주소가 잘못됐습니다. <a href="/">홈으로 이동</a></p></div>
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}데이터셋 목록 | 제조 Copilot{% endblock %}
+{% block content %}
+<section class="heading-band">
+  <div>
+    <p class="eyebrow">DATASET CATALOG</p>
+    <h1>데이터셋 목록</h1>
+    <p class="subtitle">AI Hub 기술문서 {{ count }}종 — 문서 수·섹션 수·구성 확인</p>
+  </div>
+  <div class="catalog-summary">
+    <strong>{{ count }}</strong>
+    <span>데이터셋</span>
+    <small>sn 내림차순</small>
+  </div>
+</section>
+
+<section class="search-band" aria-label="목록 검색">
+  <form id="filterForm">
+    <div class="search-row">
+      <label class="search-input" for="kw">
+        <svg class="lucide" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input id="kw" type="search" maxlength="80" autocomplete="off" placeholder="데이터셋명 필터">
+      </label>
+    </div>
+  </form>
+</section>
+
+<div class="table-wrap">
+  <table id="tbl">
+    <thead><tr>
+      <th class="col-name">데이터셋명</th><th>sn</th><th>설명서</th><th>가이드</th><th>섹션</th><th>문서</th>
+    </tr></thead>
+    <tbody>
+      {% for d in datasets %}
+      <tr data-name="{{ d.ds_name|lower }}">
+        <td class="col-name"><a class="institution-name" href="/dataset/{{ d.sn }}">{{ d.ds_name }}</a></td>
+        <td class="nps-value">{{ d.sn }}</td>
+        <td>{{ d.manuals }}</td>
+        <td>{{ d.guides }}</td>
+        <td class="nps-value">{{ d.sections }}</td>
+        <td class="subline">{{ d.doc_ids }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<aside class="source-band">
+  <strong>표기 기준</strong>
+  <p>문서 수·섹션 수는 검색 코퍼스(설명서·가이드) 규모이며 데이터 샘플 건수가 아닙니다. 각 데이터셋의 원문은 상세 화면에서 열람할 수 있습니다.</p>
+</aside>
+{% endblock %}
+{% block scripts %}
+<script>
+const kw = document.getElementById("kw");
+kw.addEventListener("input", () => {
+  const v = kw.value.trim().toLowerCase();
+  for (const tr of document.querySelectorAll("#tbl tbody tr")) {
+    tr.hidden = v !== "" && !tr.dataset.name.includes(v) && !tr.textContent.toLowerCase().includes(v);
+  }
+});
+</script>
+{% endblock %}

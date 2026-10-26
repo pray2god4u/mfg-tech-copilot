@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}{{ doc.title }} | 제조 Copilot{% endblock %}
+{% block content %}
+<section class="heading-band">
+  <div>
+    <p class="eyebrow">DOCUMENT {{ doc.id }}</p>
+    <h1>{{ doc.title }}</h1>
+    <p class="subtitle">{{ doc.ds_name }} · 섹션 {{ doc.section_count }}개</p>
+  </div>
+  <div class="catalog-summary">
+    {% if doc.dtype == "설명서" %}<span class="badge manual">설명서</span>{% else %}<span class="badge guide">가이드</span>{% endif %}
+    <small><a href="/dataset/{{ doc.sn }}">데이터셋 {{ doc.sn }} →</a></small>
+  </div>
+</section>
+
+<dl class="doc-meta">
+  <dt>문서 ID</dt><dd>{{ doc.id }}</dd>
+  <dt>데이터셋</dt><dd>{{ doc.ds_name }} (sn {{ doc.sn }})</dd>
+  <dt>유형</dt><dd>{{ doc.dtype }}</dd>
+  <dt>원본 파일</dt><dd>{{ doc.source_file or "—" }}</dd>
+</dl>
+
+<section class="result-band">
+  <div class="result-heading"><h2>섹션 목록 <span>{{ doc.section_count }}개</span></h2></div>
+  <div id="sections">
+    {% for s in doc.sections %}
+    <div class="section-item">
+      <h3>{{ s.sec_idx }}. {{ s.label }}</h3>
+      <p class="tx clamp">{{ s.tx }}</p>
+      <div class="record-action"><button class="link" type="button" data-idx="{{ loop.index0 }}">전문 펼치기</button></div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<aside class="source-band">
+  <strong>출처</strong>
+  <p>AI 허브(aihub.or.kr) — {{ doc.ds_name }} {{ doc.dtype }}. 본 화면은 기술문서 발췌·요약 제공이며 원본 재배포는 금지됩니다.</p>
+</aside>
+{% endblock %}
+{% block scripts %}
+<script>
+document.getElementById("sections").addEventListener("click", async (e) => {
+  const btn = e.target.closest("button[data-idx]");
+  if (!btn) return;
+  const item = btn.closest(".section-item");
+  const tx = item.querySelector(".tx");
+  if (tx.classList.contains("clamp")) {
+    tx.classList.remove("clamp");
+    btn.textContent = "접기";
+  } else {
+    tx.classList.add("clamp");
+    btn.textContent = "전문 펼치기";
+  }
+});
+</script>
+{% endblock %}
