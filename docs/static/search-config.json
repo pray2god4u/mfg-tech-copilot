@@ -1,4 +1,9 @@
 {
   "api_base": "",
-  "deployment_pending": true
+  "deployment_pending": false,
+  "browser_search": true,
+  "index_path": "static/browser-index-public-v1/",
+  "model": "Xenova/multilingual-e5-small",
+  "model_dtype": "q8",
+  "query_sent_to_search_server": false
 }

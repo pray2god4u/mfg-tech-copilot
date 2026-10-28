@@ -56,9 +56,15 @@ def build(api_base=''):
             target.write_text(rewrite(page,'../'),encoding='utf-8')
     for source in (BASE/'webapp'/'static').rglob('*'):
         if source.is_file():
-            target=out/'static'/source.relative_to(BASE/'webapp'/'static');target.parent.mkdir(parents=True,exist_ok=True)
+            relative=source.relative_to(BASE/'webapp'/'static')
+            if relative.parts[0]=='browser-index':continue # local full-text experimental assets MUST NOT be published
+            target=out/'static'/relative;target.parent.mkdir(parents=True,exist_ok=True)
             shutil.copy2(source,target)
-    config={'api_base':api_base.rstrip('/'),'deployment_pending':not bool(api_base)}
+    if api_base:raise ValueError('This public build uses free browser search, not a paid search backend')
+    config={'api_base':'','deployment_pending':False,'browser_search':True,'index_path':'static/browser-index-public-v1/','model':'Xenova/multilingual-e5-small','model_dtype':'q8','query_sent_to_search_server':False}
+    assert not (out/'static/browser-index').exists(), 'Private raw browser index present in public output'
+    public_chunks=json.loads((out/'static/browser-index-public-v1/chunks.json').read_text())
+    assert all(len(c['t'])<=200 for c in public_chunks)
     (out/'static'/'search-config.json').write_text(json.dumps(config,ensure_ascii=False,indent=2))
     (out/'.nojekyll').write_text('')
     assert len(list((out/'document').glob('*.html')))==len(docs)

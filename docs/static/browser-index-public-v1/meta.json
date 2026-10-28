@@ -1,0 +1,42 @@
+{
+  "model": "intfloat/multilingual-e5-small",
+  "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+  "dim": 384,
+  "count": 6542,
+  "dtype": "float32",
+  "byte_order": "little",
+  "vectors_sha256": "759d87c3f13eab47ff22ecee21fbfca8fd8cd5e7e145ec28b7492d668ef0e1cf",
+  "query_prefix": "query: ",
+  "passage_prefix": "passage: ",
+  "pooling": "mean_attention_mask",
+  "built_at": "2026-10-28T16:31:22+0900",
+  "text_chars": 3869379,
+  "license": "Apache-2.0 (model intfloat/multilingual-e5-small)",
+  "schema": 1,
+  "browser_model": "Xenova/multilingual-e5-small",
+  "browser_model_revision": "761b726dd34fb83930e26aab4e9ac3899aa1fa78",
+  "browser_dtype": "q8",
+  "max_length": 512,
+  "excerpt_limit": 200,
+  "lexical_algorithm": "expanded_token_count_log_coverage_v1",
+  "public_text_policy": "chunk_first_200_chars_only; unordered lexical postings, no full raw text",
+  "source": "AI 허브(aihub.or.kr)",
+  "assets": {
+    "vectors.bin": {
+      "bytes": 10048512,
+      "sha256": "759d87c3f13eab47ff22ecee21fbfca8fd8cd5e7e145ec28b7492d668ef0e1cf"
+    },
+    "docs.json": {
+      "bytes": 31274,
+      "sha256": "41320cc54ba5d57b6559652828a761cc9dacf332c8d1d4e8495e1e22eaabce46"
+    },
+    "chunks.json": {
+      "bytes": 2686041,
+      "sha256": "9722e6b8f6c0364f21fa24dacacaa169fadd149a7792749fbde99f52b0651034"
+    },
+    "lexical.json": {
+      "bytes": 4115270,
+      "sha256": "89a28f04fe4a5df1d71cc3ce8c65c1033f08026ca0592f2855a2299f9ece8636"
+    }
+  }
+}
