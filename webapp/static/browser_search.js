@@ -90,6 +90,10 @@ async function semanticRank(query,filter,job){
     return ranked.sort((a,b)=>b.score-a.score||a.i-b.i).slice(0,10);
   });state.inference=run;return run;
 }
+function cleanSnippet(text){
+  // Remove known presentation tags only; keep literal values and render with textContent.
+  return String(text).replace(/<\/?(?:table|thead|tbody|tfoot|tr|td|th|span|div|p|br|h[1-6]|ul|ol|li|b|strong|em|i|a|img|sup|sub)\b[^>]*>/gi,' ').replace(/<\/?(?:table|tr|td|th|span|div|p|br)\b[^>]*$/gi,'').replace(/&nbsp;/gi,' ').replace(/\s+/g,' ').trim();
+}
 function evidence(d,chunk){const url=new URL('document/'+encodeURIComponent(d.id)+(location.pathname.endsWith('.html')?'.html':''),site);if(chunk!==undefined)url.hash='chunk-'+chunk;return url.href;}
 function render(rows,mode,query,warning=''){
   $('results').replaceChildren();$('warnings').textContent=warning;
@@ -102,7 +106,7 @@ function render(rows,mode,query,warning=''){
     const card=node('article',undefined,'room-result');card.dataset.docId=d.id;
     const meta=node('div');meta.append(node('p',d.dtype,'record-institution'),node('p',d.ds_name||d.title,'record-source'));
     const body=node('div'),a=node('a',c?.l||d.title,'record-title');a.href=evidence(d,c?.i);
-    body.append(a,node('p',c?.t||d.title,'record-snippet'),node('p','출처: '+(d.ds_name||d.title)+' · AI 허브(aihub.or.kr)','record-source'));
+    body.append(a,node('p',cleanSnippet(c?.t||d.title),'record-snippet'),node('p','출처: '+(d.ds_name||d.title)+' · AI 허브(aihub.or.kr)','record-source'));
     const action=node('div',undefined,'record-action');const proof=node('a','사이트 내 근거 발췌 →');proof.href=evidence(d,c?.i);action.append(proof);
     if(/^\d+$/.test(String(d.sn))){const original=node('a','AI Hub 메타데이터 ↗');original.href='https://aihub.or.kr/aihubdata/data/view.do?dataSetSn='+encodeURIComponent(d.sn);original.rel='noopener noreferrer';original.target='_blank';action.append(original);}
     card.append(meta,body,action);$('results').append(card);
