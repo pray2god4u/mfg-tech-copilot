@@ -5,7 +5,7 @@
   <div>
     <p class="eyebrow">DEMO SCENARIOS</p>
     <h1>시연 질문</h1>
-    <p class="subtitle">도입 검토 시연용 질문 — 복사해 검색·추천·비교 화면에서 바로 실행합니다</p>
+    <p class="subtitle">도입 검토용 질문 — 관련 문서 근거를 검색하고 적용 가능성을 별도 검토합니다</p>
   </div>
 </section>
 
@@ -28,7 +28,7 @@
   <h3>3. 두 데이터셋 비교</h3>
   <p class="purpose">이송장치와 배터리 열폭주 데이터를 나란히 비교해 사업 적합성을 판단합니다.</p>
   <pre id="q3">71802와 71918 비교해줘</pre>
-  <div class="record-action"><button class="link copy" data-target="q3">질문 복사</button><a href="/api/compare?a=71802&b=71918">비교 API 결과 보기 →</a></div>
+  <div class="record-action"><button class="link copy" data-target="q3">질문 복사</button><a href="/search?q=배터리%20이송장치">관련 문서 근거 검색 →</a></div>
 </div>
 
 <div class="demo-card">
@@ -54,7 +54,7 @@
 
 <aside class="source-band">
   <strong>시연 유의사항</strong>
-  <p>본 사이트는 기술문서 검색·추천·비교 기능의 시연 환경입니다. 실시간 설비 예측이나 검증된 현장 성능으로 표현하지 않습니다. 추천 결과는 키워드 기반이며 원문 확인 절차를 함께 시연하세요.</p>
+  <p>본 사이트는 기술문서 근거 검색 환경이며 질문에 대한 생성형 답변·자동 비교·현장 진단은 제공하지 않습니다. 별도 API 연결 시 하이브리드·벡터·어휘 검색이 실행됩니다. 배포 대기 중에는 메타데이터 카탈로그만 조회할 수 있습니다. 문서 사실을 확인한 뒤 사업 적합성에 관한 추론은 별도로 검토하세요.</p>
 </aside>
 {% endblock %}
 {% block scripts %}

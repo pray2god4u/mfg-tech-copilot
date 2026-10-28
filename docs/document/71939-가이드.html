@@ -1,0 +1,599 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="제조현장 기술지원 Copilot — AI Hub 기술문서 153건 검색·추천·비교">
+  <title>활용 가이드라인 - 용접 로봇 행동 생성 데이터 — RAG 근거 발췌 | 제조 Copilot</title>
+  <link rel="stylesheet" href="../static/copilot.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 이동</a>
+  <header class="topbar">
+    <a class="brand" href="../index.html"><span class="brand-mark">MFG</span><span>제조 Copilot</span><span>기술문서 인텔리전스</span></a>
+    <nav class="header-actions" aria-label="주요 메뉴">
+      <span class="public-badge"><span class="dot"></span>공개 조회</span>
+      <a href="../search.html">기술문서 검색</a>
+      <a href="../datasets.html">데이터셋 목록</a>
+      <a href="../demo.html">시연 질문</a>
+    </nav>
+  </header>
+  <main id="main">
+    
+<section class="heading-band"><div><p class="eyebrow">PUBLIC RAG EVIDENCE · 71939-가이드</p><h1>활용 가이드라인 - 용접 로봇 행동 생성 데이터</h1><p class="subtitle">용접 로봇 행동 생성 데이터 · 가이드 · 섹션 61개 · 청크 70개</p></div></section>
+<aside class="source-band"><strong>문서 사실 · 제한된 근거 발췌</strong><p>전체 원본이 아닌 섹션명과 청크별 최대 200자 발췌입니다. 검색 화면은 검색 서버가 반환한 관련 스니펫을 표시합니다. 발췌만으로 설비 상태·화재 위험을 진단하지 않습니다. 근거 사실과 적용에 관한 추론을 구분하세요. AI Hub 이용약관을 따르며 원본 재배포를 허용하지 않습니다.</p><p><a href="../dataset/71939.html">데이터셋 구성 →</a> · <a href="https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71939" target="_blank" rel="noopener noreferrer">AI Hub 원본 메타데이터 (보조 출처) ↗</a></p></aside>
+<section class="search-band"><label for="evidenceFilter">이 페이지의 섹션명·발췌 찾기</label><input id="evidenceFilter" type="search" class="evidence-filter" placeholder="라벨 또는 발췌 내 단어"><p class="demo-note">현재 페이지 내 텍스트 필터입니다. 의미·벡터 검색이 아닙니다.</p></section>
+<section class="result-band"><h2>섹션 구성과 청크 근거</h2>
+<article class="evidence-section" id="section-0"><h3><a href="#section-0">**활용 가이드라인 &lt; 용접 로봇 행동 생성 데이터 &gt;** · 섹션 0</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-1"><h3><a href="#section-1">**작성 담당기관** · 섹션 1</a></h3><p class="record-snippet">**사업 총괄**
+
+흥일기업(주)
+
+**데이터 구축**
+
+흥일기업(주)
+
+**데이터 검수**
+
+흥일기업(주)
+
+**AI모델 개발**
+
+국립한밭대학교 산학협력단
+
+**데이터 활용**
+
+국립한밭대학교 산학협력단
+
+**문서 버전**
+
+ver 1.0 (&#39;26. 02. 28)</p>
+<div class="evidence-chunk" id="chunk-3303"><p><a href="#chunk-3303">청크 3303</a> · **작성 담당기관** <small>문자 위치 0–149</small></p><blockquote>**사업 총괄**
+
+흥일기업(주)
+
+**데이터 구축**
+
+흥일기업(주)
+
+**데이터 검수**
+
+흥일기업(주)
+
+**AI모델 개발**
+
+국립한밭대학교 산학협력단
+
+**데이터 활용**
+
+국립한밭대학교 산학협력단
+
+**문서 버전**
+
+ver 1.0 (&#39;26. 02. 28)</blockquote></div></article><article class="evidence-section" id="section-2"><h3><a href="#section-2">**문서 변경 이력** · 섹션 2</a></h3><p class="record-snippet">| **버전 (개정이력)** | **변경일자 (개정일자)** | **변경내용 (개정내용)** | **작성자** | **검토자** | **승인자** |
+
+| V.1.0 | 2026.02.28 | 최초작성 | 정성제 | 김종백 | 김종백 |</p>
+<div class="evidence-chunk" id="chunk-3304"><p><a href="#chunk-3304">청크 3304</a> · **문서 변경 이력** <small>문자 위치 0–132</small></p><blockquote>| **버전 (개정이력)** | **변경일자 (개정일자)** | **변경내용 (개정내용)** | **작성자** | **검토자** | **승인자** |
+
+| V.1.0 | 2026.02.28 | 최초작성 | 정성제 | 김종백 | 김종백 |</blockquote></div></article><article class="evidence-section" id="section-3"><h3><a href="#section-3">**목 차** · 섹션 3</a></h3><p class="record-snippet">- 데이터 개요 및 활용 요약 1
+- 제1장 데이터 개요 9
+  - 1. 데이터 설명서 9
+  - 2. 메타데이터 구조표 9
+  - 3. 데이터 통계 10
+  - 4. 데이터 포맷 13
+  - 5. 데이터 구축 절차 15
+  - 6. 데이터 저장 구조 및 파일 명명 규칙 26
+- 제2장 데이터 구축 및 활용 28
+  - 1. 데이터 구축 28
+  - 2. </p>
+<div class="evidence-chunk" id="chunk-3305"><p><a href="#chunk-3305">청크 3305</a> · **목 차** <small>문자 위치 0–294</small></p><blockquote>- 데이터 개요 및 활용 요약 1
+- 제1장 데이터 개요 9
+  - 1. 데이터 설명서 9
+  - 2. 메타데이터 구조표 9
+  - 3. 데이터 통계 10
+  - 4. 데이터 포맷 13
+  - 5. 데이터 구축 절차 15
+  - 6. 데이터 저장 구조 및 파일 명명 규칙 26
+- 제2장 데이터 구축 및 활용 28
+  - 1. 데이터 구축 28
+  - 2. </blockquote></div></article><article class="evidence-section" id="section-4"><h3><a href="#section-4">**1. 공통항목** · 섹션 4</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-5"><h3><a href="#section-5">**메타테이블 정보 (다중기입가능)** · 섹션 5</a></h3><p class="record-snippet">**데이터명 (국문)**
+
+용접로봇 행동 생성 데이터
+
+**데이터명 (영문)**
+
+Welding Robot Motion Planning Dataset
+
+**데이터 구분**
+
+- [ ] LLM
+- [x] LMM
+- [ ] 합성 데이터
+- [ ] 추론 데이터
+
+**데이터 분야** 1)
+
+- [ ] 영상이미지
+- [ ] 헬스케어
+- [ ] 교통물류
+- [ ] 재</p>
+<div class="evidence-chunk" id="chunk-3306"><p><a href="#chunk-3306">청크 3306</a> · **메타테이블 정보 (다중기입가능)** <small>문자 위치 0–880</small></p><blockquote>**데이터명 (국문)**
+
+용접로봇 행동 생성 데이터
+
+**데이터명 (영문)**
+
+Welding Robot Motion Planning Dataset
+
+**데이터 구분**
+
+- [ ] LLM
+- [x] LMM
+- [ ] 합성 데이터
+- [ ] 추론 데이터
+
+**데이터 분야** 1)
+
+- [ ] 영상이미지
+- [ ] 헬스케어
+- [ ] 교통물류
+- [ ] 재</blockquote></div><div class="evidence-chunk" id="chunk-3307"><p><a href="#chunk-3307">청크 3307</a> · **메타테이블 정보 (다중기입가능)** <small>문자 위치 720–986</small></p><blockquote>제조
+- [x] 로보틱스
+- [ ] 문화
+- [ ] 관광
+- [ ] 음성
+- [ ] 자연어
+- [ ] 헬스케어 의료
+- [ ] 헬스케어 건강서비스
+- [ ] 기타
+
+**각주**
+
+1) 영상이미지, 헬스케어, 교통물류, 재난안전환경, 문화관광, 로보틱스, 제조, 지식재산, 법률, 금융
+
+2) 컴퓨터비전, 컴퓨터그래픽스, 농업, 축산업, 수산업, 자율주행, 교</blockquote></div></article><article class="evidence-section" id="section-6"><h3><a href="#section-6">**2. 메타데이터** · 섹션 6</a></h3><p class="record-snippet">| **항목** | **값** |
+
+| **데이터 형식** | 이미지 데이터 : png / PCD 데이터 : pcd |
+| **데이터 출처** | 자체수집 |
+| **라벨링 유형** | 2D 이미지 데이터 : Point, Polyline / 3D PCD 데이터 : 3D Segmentation |
+| **라벨링 형식** | 2D 이미지 라벨링 : json /</p>
+<div class="evidence-chunk" id="chunk-3308"><p><a href="#chunk-3308">청크 3308</a> · **2. 메타데이터** <small>문자 위치 0–545</small></p><blockquote>| **항목** | **값** |
+
+| **데이터 형식** | 이미지 데이터 : png / PCD 데이터 : pcd |
+| **데이터 출처** | 자체수집 |
+| **라벨링 유형** | 2D 이미지 데이터 : Point, Polyline / 3D PCD 데이터 : 3D Segmentation |
+| **라벨링 형식** | 2D 이미지 라벨링 : json /</blockquote></div></article><article class="evidence-section" id="section-7"><h3><a href="#section-7">**3. 세부데이터** · 섹션 7</a></h3><p class="record-snippet">**데이터 설명 및 어노테이션 포맷 설명**
+
+(아래 제1장의 데이터 설명서 및 어노테이션 포맷 참조)</p>
+<div class="evidence-chunk" id="chunk-3309"><p><a href="#chunk-3309">청크 3309</a> · **3. 세부데이터** <small>문자 위치 0–57</small></p><blockquote>**데이터 설명 및 어노테이션 포맷 설명**
+
+(아래 제1장의 데이터 설명서 및 어노테이션 포맷 참조)</blockquote></div></article><article class="evidence-section" id="section-8"><h3><a href="#section-8">**4. 데이터 통계** · 섹션 8</a></h3><p class="record-snippet">**데이터 구축 규모 및 데이터 분포**
+
+- 클래스별 데이터 구축 수량
+- 용접 작업 유형 별 데이터 분포
+- 모재 형상 조합 데이터 분포
+
+(아래 제1장의 데이터 통계 참조)</p>
+<div class="evidence-chunk" id="chunk-3310"><p><a href="#chunk-3310">청크 3310</a> · **4. 데이터 통계** <small>문자 위치 0–99</small></p><blockquote>**데이터 구축 규모 및 데이터 분포**
+
+- 클래스별 데이터 구축 수량
+- 용접 작업 유형 별 데이터 분포
+- 모재 형상 조합 데이터 분포
+
+(아래 제1장의 데이터 통계 참조)</blockquote></div></article><article class="evidence-section" id="section-9"><h3><a href="#section-9">**5. 활용 AI모델 설명** · 섹션 9</a></h3><p class="record-snippet">**활용 AI모델**
+
+- 임무 정의
+  - 2D Object Detection : RGB 이미지에서 용접 작업 부위를 자동으로 감지하고 분류하는 작업으로, 본 과제에서는 가용접(tack welding) 지점과 본용접(main welding) 라인을 구분하여 검출
+  - 3D Segmentation : 3D 포인트 클라우드 데이터를 분석하여 용접이 수행되어</p>
+<div class="evidence-chunk" id="chunk-3311"><p><a href="#chunk-3311">청크 3311</a> · **5. 활용 AI모델 설명** <small>문자 위치 0–1128</small></p><blockquote>**활용 AI모델**
+
+- 임무 정의
+  - 2D Object Detection : RGB 이미지에서 용접 작업 부위를 자동으로 감지하고 분류하는 작업으로, 본 과제에서는 가용접(tack welding) 지점과 본용접(main welding) 라인을 구분하여 검출
+  - 3D Segmentation : 3D 포인트 클라우드 데이터를 분석하여 용접이 수행되어</blockquote></div><div class="evidence-chunk" id="chunk-3312"><p><a href="#chunk-3312">청크 3312</a> · **5. 활용 AI모델 설명** <small>문자 위치 968–2048</small></p><blockquote>로 실시간 검출이 가능
+    - R-ELAN 구조와 FlashAttention을 활용하여 대규모 모델의 최적화 문제를 극복하고 메모리 효율성을 개선함으로써, 크기가 작고 불규칙한 가용접 영역을 정밀하게 탐지하는 데 유리함
+
+![이미지: YOLOv12 모델]
+
+  - PointNeXt
+    - PointNet++의 잠재력을 체계적으로 재검토하여 개선된 학</blockquote></div><div class="evidence-chunk" id="chunk-3313"><p><a href="#chunk-3313">청크 3313</a> · **5. 활용 AI모델 설명** <small>문자 위치 1888–2522</small></p><blockquote>txt
+      - val – 이미지, labels.txt
+      - test - 이미지, labels.txt
+
+![이미지: 2D object Detection 학습데이터 생성 예시]
+
+  - **3D Segmentation (PointNeXt)**
+    - 학습 데이터 전처리
+      - CSV 형식으로 제공된 3차원 포인트 클라우드 데이터를 N</blockquote></div></article><article class="evidence-section" id="section-10"><h3><a href="#section-10">**6. 구축 업체정보** · 섹션 10</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-11"><h3><a href="#section-11">**▶ 주관기관** · 섹션 11</a></h3><p class="record-snippet">| **기관명** | **담당자명** | **전화번호 (유선번호)** 1) | **이메일** 1) | **담당업무** |
+
+| 흥일기업 ㈜ | 김종백 | 02-6283-0156 | [jbkim@hungil.co.kr](mailto:jbkim@hungil.co.kr) | 데이터 수집, 정제, 가공, 사업관리 |</p>
+<div class="evidence-chunk" id="chunk-3314"><p><a href="#chunk-3314">청크 3314</a> · **▶ 주관기관** <small>문자 위치 0–173</small></p><blockquote>| **기관명** | **담당자명** | **전화번호 (유선번호)** 1) | **이메일** 1) | **담당업무** |
+
+| 흥일기업 ㈜ | 김종백 | 02-6283-0156 | [jbkim@hungil.co.kr](mailto:jbkim@hungil.co.kr) | 데이터 수집, 정제, 가공, 사업관리 |</blockquote></div></article><article class="evidence-section" id="section-12"><h3><a href="#section-12">**▶ 참여기관** 2) · 섹션 12</a></h3><p class="record-snippet">| **기관명** | **담당업무** |
+
+| 국립한밭대학교 산학협력단 | AI 모델 유효성 검증 |</p>
+<div class="evidence-chunk" id="chunk-3315"><p><a href="#chunk-3315">청크 3315</a> · **▶ 참여기관** 2) <small>문자 위치 0–56</small></p><blockquote>| **기관명** | **담당업무** |
+
+| 국립한밭대학교 산학협력단 | AI 모델 유효성 검증 |</blockquote></div></article><article class="evidence-section" id="section-13"><h3><a href="#section-13">**문의처** 3) · 섹션 13</a></h3><p class="record-snippet">| **구분** | **책임자/담당자** | **전화번호 (유선번호)** 1) | **이메일** 1) |
+
+| 데이터문의처 | 김종백 | 02-6283-0156 | [jbkim@hungil.co.kr](mailto:jbkim@hungil.co.kr) |
+| AI모델 관련 문의처 | 최동걸 | 042-821-1213 |   |
+| 저작도구 관련 문의처 | 김</p>
+<div class="evidence-chunk" id="chunk-3316"><p><a href="#chunk-3316">청크 3316</a> · **문의처** 3) <small>문자 위치 0–368</small></p><blockquote>| **구분** | **책임자/담당자** | **전화번호 (유선번호)** 1) | **이메일** 1) |
+
+| 데이터문의처 | 김종백 | 02-6283-0156 | [jbkim@hungil.co.kr](mailto:jbkim@hungil.co.kr) |
+| AI모델 관련 문의처 | 최동걸 | 042-821-1213 |   |
+| 저작도구 관련 문의처 | 김</blockquote></div></article><article class="evidence-section" id="section-14"><h3><a href="#section-14">**제1장 데이터 개요** · 섹션 14</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-15"><h3><a href="#section-15">**1. 데이터 설명서** · 섹션 15</a></h3><p class="record-snippet">**데이터셋명 (국문)**
+
+용접 로봇 행동 생성 데이터
+
+**데이터셋명 (영문)**
+
+Welding Robot Motion Planning Dataset
+
+**구축 목적**
+
+- 복잡하고 비정형적인 용접 작업 자동화를 위한 인공지능(Physical AI) 모델 개발을 위한 용접 로봇 행동 생성 학습용 대규모 고품질 멀티모달 데이터셋 구축
+- 용접 부위를 </p>
+<div class="evidence-chunk" id="chunk-3317"><p><a href="#chunk-3317">청크 3317</a> · **1. 데이터 설명서** <small>문자 위치 0–908</small></p><blockquote>**데이터셋명 (국문)**
+
+용접 로봇 행동 생성 데이터
+
+**데이터셋명 (영문)**
+
+Welding Robot Motion Planning Dataset
+
+**구축 목적**
+
+- 복잡하고 비정형적인 용접 작업 자동화를 위한 인공지능(Physical AI) 모델 개발을 위한 용접 로봇 행동 생성 학습용 대규모 고품질 멀티모달 데이터셋 구축
+- 용접 부위를 </blockquote></div></article><article class="evidence-section" id="section-16"><h3><a href="#section-16">**2. 메타데이터 구조표** · 섹션 16</a></h3><p class="record-snippet">| **항목** | **값** | **항목** | **값** |
+
+| 데이터 분야 | 로보틱스 | 데이터 유형 | 이미지 |
+| 데이터 형식 | png, pcd | 데이터 출처 | 직접 촬영 데이터 |
+| 라벨링 유형 | 2D : 가용접 지점(point), 본용접 구간 (Polyline) / 3D : 본용접 영역 3D Segmentation | 라벨링 형식</p>
+<div class="evidence-chunk" id="chunk-3318"><p><a href="#chunk-3318">청크 3318</a> · **2. 메타데이터 구조표** <small>문자 위치 0–367</small></p><blockquote>| **항목** | **값** | **항목** | **값** |
+
+| 데이터 분야 | 로보틱스 | 데이터 유형 | 이미지 |
+| 데이터 형식 | png, pcd | 데이터 출처 | 직접 촬영 데이터 |
+| 라벨링 유형 | 2D : 가용접 지점(point), 본용접 구간 (Polyline) / 3D : 본용접 영역 3D Segmentation | 라벨링 형식</blockquote></div></article><article class="evidence-section" id="section-17"><h3><a href="#section-17">**3. 데이터 통계** · 섹션 17</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-18"><h3><a href="#section-18">**3.1 데이터 구축 규모** · 섹션 18</a></h3><p class="record-snippet">| **학습용 데이터 구성(원천데이터 기준)** | |
+
+| **본 과제 데이터 구축 총량(100%)** | **JSON 및 CSV 데이터** |
+| 1,501set | 1,501 set |
+
+| **원시데이터** | | |
+
+| **파일포맷** | **데이터 규모** | **비고** |
+| png | 15,075 | RGB 15,075장, Depth 15</p>
+<div class="evidence-chunk" id="chunk-3319"><p><a href="#chunk-3319">청크 3319</a> · **3.1 데이터 구축 규모** <small>문자 위치 0–478</small></p><blockquote>| **학습용 데이터 구성(원천데이터 기준)** | |
+
+| **본 과제 데이터 구축 총량(100%)** | **JSON 및 CSV 데이터** |
+| 1,501set | 1,501 set |
+
+| **원시데이터** | | |
+
+| **파일포맷** | **데이터 규모** | **비고** |
+| png | 15,075 | RGB 15,075장, Depth 15</blockquote></div></article><article class="evidence-section" id="section-19"><h3><a href="#section-19">**3.2 데이터 분포** · 섹션 19</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-20"><h3><a href="#section-20">**원천데이터 대비 가공(라벨링) 데이터 분포** · 섹션 20</a></h3><p class="record-snippet">| **원천 데이터** | | | | | **가공(라벨링) 데이터** | | | | |
+
+| **대분류** | **소분류** | **포맷** | **수량** | **단위** | **대분류** | **소분류** | **포맷** | **수량** | **단위** |
+| 원천 데이터1 | Butt Joint | .png | 5436 | 건 | 원천데이터1 | Bu</p>
+<div class="evidence-chunk" id="chunk-3320"><p><a href="#chunk-3320">청크 3320</a> · **원천데이터 대비 가공(라벨링) 데이터 분포** <small>문자 위치 0–736</small></p><blockquote>| **원천 데이터** | | | | | **가공(라벨링) 데이터** | | | | |
+
+| **대분류** | **소분류** | **포맷** | **수량** | **단위** | **대분류** | **소분류** | **포맷** | **수량** | **단위** |
+| 원천 데이터1 | Butt Joint | .png | 5436 | 건 | 원천데이터1 | Bu</blockquote></div><div class="evidence-chunk" id="chunk-3321"><p><a href="#chunk-3321">청크 3321</a> · **원천데이터 대비 가공(라벨링) 데이터 분포** <small>문자 위치 576–930</small></p><blockquote>nt | .csv | 302 | 건 |
+|   | Edge Joint | .pcd | 300 | 건 |   | Edge Joint | .csv | 300 | 건 |
+|   | Lap Joint | .pcd | 286 | 건 |   | Lap Joint | .csv | 286 | 건 |
+|   | Tee Joint | .pcd | 296 | 건 |   | T</blockquote></div></article><article class="evidence-section" id="section-21"><h3><a href="#section-21">**디렉토리 구성 및 수량** · 섹션 21</a></h3><p class="record-snippet">| **데이터** | **분류 (1단계)** | **분류 (2단계)** | **라벨링 유형** | **객체수** | **포맷 (형식)** | **수량** | **파일비율** | **단위** |
+
+| 용접 로봇 행동 생성 데이터 | Butt Joint | Plate-Plate | Point, Polyline | 120 | .json | 120 | 1 : 1 </p>
+<div class="evidence-chunk" id="chunk-3322"><p><a href="#chunk-3322">청크 3322</a> · **디렉토리 구성 및 수량** <small>문자 위치 0–811</small></p><blockquote>| **데이터** | **분류 (1단계)** | **분류 (2단계)** | **라벨링 유형** | **객체수** | **포맷 (형식)** | **수량** | **파일비율** | **단위** |
+
+| 용접 로봇 행동 생성 데이터 | Butt Joint | Plate-Plate | Point, Polyline | 120 | .json | 120 | 1 : 1 </blockquote></div><div class="evidence-chunk" id="chunk-3323"><p><a href="#chunk-3323">청크 3323</a> · **디렉토리 구성 및 수량** <small>문자 위치 651–1504</small></p><blockquote>sv | 36 | 1 : 1 | 건 |
+|   |   | Round-Structural | Point, Polyline | 32 | .json | 32 | 1 : 1 | 건 |
+|   |   |   | 3D Segmentation | 32 | .csv | 32 | 1 : 1 | 건 |
+|   |   | Structural-Structural | Point,</blockquote></div><div class="evidence-chunk" id="chunk-3324"><p><a href="#chunk-3324">청크 3324</a> · **디렉토리 구성 및 수량** <small>문자 위치 1344–2196</small></p><blockquote>sv | 40 | 1 : 1 | 건 |
+|   |   | Plate-Structural | Point, Polyline | 34 | .json | 34 | 1 : 1 | 건 |
+|   |   |   | 3D Segmentation | 34 | .csv | 34 | 1 : 1 | 건 |
+|   |   | Round-Structural | Point, Poly</blockquote></div><div class="evidence-chunk" id="chunk-3325"><p><a href="#chunk-3325">청크 3325</a> · **디렉토리 구성 및 수량** <small>문자 위치 2036–2893</small></p><blockquote> | .csv | 20 | 1 : 1 | 건 |
+|   |   | Round-Round | Point, Polyline | 40 | .json | 40 | 1 : 1 | 건 |
+|   |   |   | 3D Segmentation | 40 | .csv | 40 | 1 : 1 | 건 |
+|   |   | Plate-Structural | Point, Poly</blockquote></div><div class="evidence-chunk" id="chunk-3326"><p><a href="#chunk-3326">청크 3326</a> · **디렉토리 구성 및 수량** <small>문자 위치 2733–3593</small></p><blockquote>| .csv | 140 | 1 : 1 | 건 |
+|   |   | Plate-Round | Point, Polyline | 40 | .json | 40 | 1 : 1 | 건 |
+|   |   |   | 3D Segmentation | 40 | .csv | 40 | 1 : 1 | 건 |
+|   |   | Round-Round | Point, Polyline </blockquote></div><div class="evidence-chunk" id="chunk-3327"><p><a href="#chunk-3327">청크 3327</a> · **디렉토리 구성 및 수량** <small>문자 위치 3433–4278</small></p><blockquote>1 : 1 | 건 |
+|   | Corner Joint | Plate-Plate | Point, Polyline | 140 | .json | 140 | 1 : 1 | 건 |
+|   |   |   | 3D Segmentation | 140 | .csv | 140 | 1 : 1 | 건 |
+|   |   | Plate-Round | Point, Polyline </blockquote></div><div class="evidence-chunk" id="chunk-3328"><p><a href="#chunk-3328">청크 3328</a> · **디렉토리 구성 및 수량** <small>문자 위치 4118–4319</small></p><blockquote>27 | 1 : 1 | 건 |
+|   |   | Structural-Structural | Point, Polyline | 30 | .json | 30 | 1 : 1 | 건 |
+|   |   |   | 3D Segmentation | 30 | .csv | 30 | 1 : 1 | 건 |
+| **총수량** | | | | | | 3,002 | 1 : 1 | 건 </blockquote></div></article><article class="evidence-section" id="section-22"><h3><a href="#section-22">**4. 데이터 포맷** · 섹션 22</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-23"><h3><a href="#section-23">**공정별 데이터 구성** · 섹션 23</a></h3><p class="record-snippet">| **구분** | **획득/수집 단계** | **정제 단계** | **가공 단계** |
+
+| 데이터 구분 | 원시 데이터 | 원천 데이터 | 가공 데이터 |
+| 데이터 형태 | PNG | PNG, PCD | JSON, CSV |
+| 데이터 포멧 | 원시 RGB-D 이미지 (PNG) | RGB-D 이미지 (PNG) / PCD 데이터 (PCD) | 2D 라벨</p>
+<div class="evidence-chunk" id="chunk-3329"><p><a href="#chunk-3329">청크 3329</a> · **공정별 데이터 구성** <small>문자 위치 0–233</small></p><blockquote>| **구분** | **획득/수집 단계** | **정제 단계** | **가공 단계** |
+
+| 데이터 구분 | 원시 데이터 | 원천 데이터 | 가공 데이터 |
+| 데이터 형태 | PNG | PNG, PCD | JSON, CSV |
+| 데이터 포멧 | 원시 RGB-D 이미지 (PNG) | RGB-D 이미지 (PNG) / PCD 데이터 (PCD) | 2D 라벨</blockquote></div></article><article class="evidence-section" id="section-24"><h3><a href="#section-24">**기타 데이터 구성 (※S3: 4.Other 폴더 내 데이터)** · 섹션 24</a></h3><p class="record-snippet">| **구분** | **기타 데이터(부재시 항목 삭제)** |
+
+| 데이터 구분 | 모재 3D 모델링 데이터 / 로봇 티칭 데이터 / 환경정보 데이터 |
+| 데이터 형태 | OBJ, HDF5, CSV |
+| 데이터 포맷 | OBJ (모재 3D 모델링 데이터) / HDF5 (로봇 티칭 데이터) / CSV (환경정보 데이터) |</p>
+<div class="evidence-chunk" id="chunk-3330"><p><a href="#chunk-3330">청크 3330</a> · **기타 데이터 구성 (※S3: 4.Other 폴더 내 데이터)** <small>문자 위치 0–182</small></p><blockquote>| **구분** | **기타 데이터(부재시 항목 삭제)** |
+
+| 데이터 구분 | 모재 3D 모델링 데이터 / 로봇 티칭 데이터 / 환경정보 데이터 |
+| 데이터 형태 | OBJ, HDF5, CSV |
+| 데이터 포맷 | OBJ (모재 3D 모델링 데이터) / HDF5 (로봇 티칭 데이터) / CSV (환경정보 데이터) |</blockquote></div></article><article class="evidence-section" id="section-25"><h3><a href="#section-25">**원천 데이터 : 라벨링 데이터 파일 관계** · 섹션 25</a></h3><p class="record-snippet">| **구분** | **원천 데이터 파일 : 라벨링 데이터 파일 매칭** | | | | | | | |
+
+| 데이터 파일 관계 | 1 : 1 |   | 1 : 多 |   | 多 : 1 |   | 기타 | O |
+| 기타 설명 | RGB-D 데이터 9 : 라벨링 데이터 1 / PCD 데이터 1 : 라벨링 데이터 1 | | | | | | | |</p>
+<div class="evidence-chunk" id="chunk-3331"><p><a href="#chunk-3331">청크 3331</a> · **원천 데이터 : 라벨링 데이터 파일 관계** <small>문자 위치 0–190</small></p><blockquote>| **구분** | **원천 데이터 파일 : 라벨링 데이터 파일 매칭** | | | | | | | |
+
+| 데이터 파일 관계 | 1 : 1 |   | 1 : 多 |   | 多 : 1 |   | 기타 | O |
+| 기타 설명 | RGB-D 데이터 9 : 라벨링 데이터 1 / PCD 데이터 1 : 라벨링 데이터 1 | | | | | | | |</blockquote></div></article><article class="evidence-section" id="section-26"><h3><a href="#section-26">**어노테이션 포맷** · 섹션 26</a></h3><p class="record-snippet">| **No** | | **속성명** | **타입** | **필수여부** | **속성 설명** | **예시** |
+
+| 1 | | info | object | Y | 일반 정보 |   |
+|   | 1-1 | gid | string | Y | 데이터 세트 정보 | C_PR_06_0002 |
+|   | 1-2 | project | string | Y | 프로</p>
+<div class="evidence-chunk" id="chunk-3332"><p><a href="#chunk-3332">청크 3332</a> · **어노테이션 포맷** <small>문자 위치 0–940</small></p><blockquote>| **No** | | **속성명** | **타입** | **필수여부** | **속성 설명** | **예시** |
+
+| 1 | | info | object | Y | 일반 정보 |   |
+|   | 1-1 | gid | string | Y | 데이터 세트 정보 | C_PR_06_0002 |
+|   | 1-2 | project | string | Y | 프로</blockquote></div><div class="evidence-chunk" id="chunk-3333"><p><a href="#chunk-3333">청크 3333</a> · **어노테이션 포맷** <small>문자 위치 780–1688</small></p><blockquote>Y | RGB 이미지 파일명 | C_PR_06_0002_B_Color.png |
+|   | 3-4 | rgb_width | number | Y | RGB 이미지 넓이 | 1920 |
+|   | 3-5 | rgb_height | number | Y | RGB 이미지 높이 | 1080 |
+| 4 | | depth_images | array | Y | Depth</blockquote></div><div class="evidence-chunk" id="chunk-3334"><p><a href="#chunk-3334">청크 3334</a> · **어노테이션 포맷** <small>문자 위치 1528–2359</small></p><blockquote>3D 가공 데이터 파일명 | C_PR_06_0002.csv |
+| 6 | | collection_environment | object | Y | 수집환경 정보 |   |
+|   | 6-1 | datetime | string | Y | 데이터 수집일 | 2025-10-29 16:23 |
+|   | 6-2 | illumination | number | Y | </blockquote></div><div class="evidence-chunk" id="chunk-3335"><p><a href="#chunk-3335">청크 3335</a> · **어노테이션 포맷** <small>문자 위치 2199–2506</small></p><blockquote> | 7-3 | id | number | Y | 어노테이션 ID | 1 |
+|   | 7-4 | type | string | Y | 어노테이션 방식 | polyline |
+|   | 7-4-1 | label | string | Y | 어노테이션 라벨 정보 | full_welding |
+|   | 7-4-2 | points | number | Y | 어노테이</blockquote></div></article><article class="evidence-section" id="section-27"><h3><a href="#section-27">**5. 데이터 구축 절차** · 섹션 27</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-28"><h3><a href="#section-28">**5.1 데이터 구축 절차** · 섹션 28</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-29"><h3><a href="#section-29">**데이터 구축 절차** · 섹션 29</a></h3><p class="record-snippet">![이미지: 데이터 구축 절차도]
+
+- 복잡하고 비정형적인 용접 작업 자동화를 위한 로봇 행동 생성 학습용 대규모 고품질 멀티모달 데이터셋 구축
+- 실제 용접 작업환경에서 촬영 및 티칭 과정을 통해 데이터를 수집하고, 수집된 데이터를 기반으로 2D Object Detection을 위한 이미지 라벨링과 3D Segmentation을 위한 PCD 라벨링 진행</p>
+<div class="evidence-chunk" id="chunk-3336"><p><a href="#chunk-3336">청크 3336</a> · **데이터 구축 절차** <small>문자 위치 0–199</small></p><blockquote>![이미지: 데이터 구축 절차도]
+
+- 복잡하고 비정형적인 용접 작업 자동화를 위한 로봇 행동 생성 학습용 대규모 고품질 멀티모달 데이터셋 구축
+- 실제 용접 작업환경에서 촬영 및 티칭 과정을 통해 데이터를 수집하고, 수집된 데이터를 기반으로 2D Object Detection을 위한 이미지 라벨링과 3D Segmentation을 위한 PCD 라벨링 진행</blockquote></div></article><article class="evidence-section" id="section-30"><h3><a href="#section-30">**공정별 데이터 구축 절차** · 섹션 30</a></h3><p class="record-snippet">**□ 수집 데이터 구축 절차**
+
+![이미지: 수집 데이터 구축 절차도]
+
+**□ 데이터 분류**
+
+- (대분류_용접 작업 다양성) : 5가지 용접 작업 유형(weld joint types)으로 분류
+
+| **항목** | **작업 구분** | | |
+
+| 용접작업 유형 | Butt joint | Edge joint | Lap joint |
+|   | ![</p>
+<div class="evidence-chunk" id="chunk-3337"><p><a href="#chunk-3337">청크 3337</a> · **공정별 데이터 구축 절차** <small>문자 위치 0–1159</small></p><blockquote>**□ 수집 데이터 구축 절차**
+
+![이미지: 수집 데이터 구축 절차도]
+
+**□ 데이터 분류**
+
+- (대분류_용접 작업 다양성) : 5가지 용접 작업 유형(weld joint types)으로 분류
+
+| **항목** | **작업 구분** | | |
+
+| 용접작업 유형 | Butt joint | Edge joint | Lap joint |
+|   | ![</blockquote></div><div class="evidence-chunk" id="chunk-3338"><p><a href="#chunk-3338">청크 3338</a> · **공정별 데이터 구축 절차** <small>문자 위치 999–1843</small></p><blockquote> Plate-Structural] | ![이미지: Round-Structural] | ![이미지: Structural-Structural] |
+
+- (소분류1_모재 형상 두께) : 용접 대상 모재의 두께 분류
+
+| **구분** | **세부 항목** | **상세** | **설명** |
+
+| 모재 두께 | 박판 | 3mm | 자동차 차체, 가전제품 등 정밀한 </blockquote></div><div class="evidence-chunk" id="chunk-3339"><p><a href="#chunk-3339">청크 3339</a> · **공정별 데이터 구축 절차** <small>문자 위치 1683–2677</small></p><blockquote>, Lap : 용접 후 가장 긴 변의 길이 기준 700mm 이상 / Corner, Tee : 용접 후 바닥 면적 100,000mm 이상 또는 높이 300mm 이상 / Round 모재의 직경 250mm 이상 |
+
+**□ 획득/수집 작업**
+
+| **구분** | **획득/수집방법** |
+
+| 직접 촬영 계획 | ㅁ 수집 목표 : 13,500장&lt;br&gt;ㅁ 수집 장</blockquote></div><div class="evidence-chunk" id="chunk-3340"><p><a href="#chunk-3340">청크 3340</a> · **공정별 데이터 구축 절차** <small>문자 위치 2517–3437</small></p><blockquote>배포하고, 수집 항목 및 형식에 대한 사전 작업자 교육 실시&lt;br&gt;ㅁ 촬영 방법&lt;br&gt;- 제작된 용접모재를 턴테이블에 고정하여 회전하며, 25°, 45°, 수직 방향으로 총 9개의 위치에서 RGB-D 데이터 취득&lt;br&gt;- 촬영 방향: Top-Down, Front, Back, Left, Right, Front-Left, Front-Right, Back-Lef</blockquote></div><div class="evidence-chunk" id="chunk-3341"><p><a href="#chunk-3341">청크 3341</a> · **공정별 데이터 구축 절차** <small>문자 위치 3277–4221</small></p><blockquote>(RGB : 1920*1080, Depth : 640*576 )&lt;br&gt;⦁ 파일명 규칙, 촬영각도·위치 확인&lt;br&gt;⦁ 이미지 손상·누락·중복 여부 확인 |
+| PCD 생성 | ⦁ 정합 가능한 Depth만 선별 후 포인트 클라우드 생성&lt;br&gt;⦁ Open3D, 캘리브레이션 매트릭스 활용 |
+| 정제 기준 적용 | ⦁ 흐림, 초점 불량, 조명 이상, 반사 등 기준</blockquote></div><div class="evidence-chunk" id="chunk-3342"><p><a href="#chunk-3342">청크 3342</a> · **공정별 데이터 구축 절차** <small>문자 위치 4061–4860</small></p><blockquote>, 용접 작업을 수행해야하는 본용접 구간을 Polyline으로 어노테이션
+- · 2D 세그멘테이션이 완료된 후 데이터 오류 여부가 검증된 데이터를 대상으로 카메라 정보, 3D Segmentation 파일 정보, 카테고리 등의 속성정보를 라벨링 파일과 병합하여 제공, 최종 데이터 구성
+
+**본용접 구간 3D Segmentation (CSV)**
+
+- · De</blockquote></div><div class="evidence-chunk" id="chunk-3343"><p><a href="#chunk-3343">청크 3343</a> · **공정별 데이터 구축 절차** <small>문자 위치 4700–5401</small></p><blockquote>   | 3D | pcd | PCD의 정합이 틀어지지 않았는지 검토 / 라벨링 대상 PCD 모재의 RGB 이미지를 확인하여 용접 경로 확인 / 정합된 PCD 데이터에서 모재와 체커보드를 제외한 영역과, 용접 경로 세그멘테이션에 방해가 되는 노이즈 포인트를 제거 |   |   |   |
+| 2 | 데이터 라벨링 | 원천 데이터 | 2D | png | 가용접 </blockquote></div><div class="evidence-chunk" id="chunk-3344"><p><a href="#chunk-3344">청크 3344</a> · **공정별 데이터 구축 절차** <small>문자 위치 5241–6058</small></p><blockquote>용접 라인을 따라 세그멘테이션 작업 / 용접 라인 중심선에서 좌우 10mm를 벗어나지 않도록 PCD 선택 / 용접라인이 끊기지 않도록 세그멘테이션 깊이 범위 설정 / 용접선, 모재, 그 외 영역을 순서대로 선택하여 인덱스 번호 부여 | 라벨링 데이터 | csv | 가공(라벨링) 팀 |
+| 4 | 1차 검사 | 라벨링 데이터 | 2D / 3D | xml / </blockquote></div></article><article class="evidence-section" id="section-31"><h3><a href="#section-31">**5.2 데이터 구축 기준** · 섹션 31</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-32"><h3><a href="#section-32">**획득/수집 기준** · 섹션 32</a></h3><p class="record-snippet">**□ 데이터 획득/수집 기준**
+
+| **구분** | **획득/수집 기준** | **비고** |
+
+| 해상도 | RGB 1920x1080, Depth 640x576 해상도를 기준으로 수집함 |   |
+| 카메라 배치 | 모재가 화면프레임의 60~70%를 차지하도록 거리를 조절하여 수집 | ![이미지: 카메라 배치 예시] |
+| 모재 배치 | 모재 형상 및</p>
+<div class="evidence-chunk" id="chunk-3345"><p><a href="#chunk-3345">청크 3345</a> · **획득/수집 기준** <small>문자 위치 0–493</small></p><blockquote>**□ 데이터 획득/수집 기준**
+
+| **구분** | **획득/수집 기준** | **비고** |
+
+| 해상도 | RGB 1920x1080, Depth 640x576 해상도를 기준으로 수집함 |   |
+| 카메라 배치 | 모재가 화면프레임의 60~70%를 차지하도록 거리를 조절하여 수집 | ![이미지: 카메라 배치 예시] |
+| 모재 배치 | 모재 형상 및</blockquote></div></article><article class="evidence-section" id="section-33"><h3><a href="#section-33">**정제 기준** · 섹션 33</a></h3><p class="record-snippet">| **구분** | **정제 기준** | **비고** |
+
+| 이미지 누락 확인 | RGB 및 Depth 이미지 중 1장이라도 누락된 경우 해당 모재 이미지 모두 폐기 | ![이미지: 이미지 누락 예시] |
+| 중복데이터 확인 | 카메라 센서 오류데이터가 포함된 경우 해당 모재 이미지 모두 폐기 | ![이미지: 중복데이터 예시] |
+| 파일명 변경 | 문제</p>
+<div class="evidence-chunk" id="chunk-3346"><p><a href="#chunk-3346">청크 3346</a> · **정제 기준** <small>문자 위치 0–606</small></p><blockquote>| **구분** | **정제 기준** | **비고** |
+
+| 이미지 누락 확인 | RGB 및 Depth 이미지 중 1장이라도 누락된 경우 해당 모재 이미지 모두 폐기 | ![이미지: 이미지 누락 예시] |
+| 중복데이터 확인 | 카메라 센서 오류데이터가 포함된 경우 해당 모재 이미지 모두 폐기 | ![이미지: 중복데이터 예시] |
+| 파일명 변경 | 문제</blockquote></div></article><article class="evidence-section" id="section-34"><h3><a href="#section-34">**가공(라벨링) 기준** · 섹션 34</a></h3><p class="record-snippet">| **구분** | **가공 기준** | **비고** |
+
+| 용접구간 2D 라벨링 데이터 (Point) | 이미지상 가용접된 부위 중심에 정확히 point 지정 / 점 좌표는 2D pixel(x, y) 좌표로 기록 / 1개 부위당 1개의 포인트 지정 가능 / 주석 포맷은 JSON으로 저장 |   |
+| 용접구간 2D 라벨링 데이터 (Polyline) | </p>
+<div class="evidence-chunk" id="chunk-3347"><p><a href="#chunk-3347">청크 3347</a> · **가공(라벨링) 기준** <small>문자 위치 0–539</small></p><blockquote>| **구분** | **가공 기준** | **비고** |
+
+| 용접구간 2D 라벨링 데이터 (Point) | 이미지상 가용접된 부위 중심에 정확히 point 지정 / 점 좌표는 2D pixel(x, y) 좌표로 기록 / 1개 부위당 1개의 포인트 지정 가능 / 주석 포맷은 JSON으로 저장 |   |
+| 용접구간 2D 라벨링 데이터 (Polyline) | </blockquote></div></article><article class="evidence-section" id="section-35"><h3><a href="#section-35">**가공(라벨링) 예시** · 섹션 35</a></h3><p class="record-snippet">**□ 용접구간 2D 라벨링 데이터**
+
+![이미지: 용접구간 2D 라벨링 예시 1]
+
+![이미지: 용접구간 2D 라벨링 예시 2]
+
+**□ 본용접 구간 3D Segmentation**
+
+![이미지: 본용접 3D Segmentation 예시 1]
+
+![이미지: 본용접 3D Segmentation 예시 2]</p>
+<div class="evidence-chunk" id="chunk-3348"><p><a href="#chunk-3348">청크 3348</a> · **가공(라벨링) 예시** <small>문자 위치 0–171</small></p><blockquote>**□ 용접구간 2D 라벨링 데이터**
+
+![이미지: 용접구간 2D 라벨링 예시 1]
+
+![이미지: 용접구간 2D 라벨링 예시 2]
+
+**□ 본용접 구간 3D Segmentation**
+
+![이미지: 본용접 3D Segmentation 예시 1]
+
+![이미지: 본용접 3D Segmentation 예시 2]</blockquote></div></article><article class="evidence-section" id="section-36"><h3><a href="#section-36">**6. 데이터 저장 구조 및 파일 명명 규칙** · 섹션 36</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-37"><h3><a href="#section-37">**디렉토리 구조** · 섹션 37</a></h3><p class="record-snippet">| **경로 구분 정보** | | **구분자 정보** |
+
+| 1차 경로 | 원천데이터 | 원천 및 라벨링 데이터, Other 데이터 |
+|   | 라벨링데이터 |   |
+|   | Other 데이터 |   |
+| 2차 경로 | Butt | 용접 작업 유형 구분 / Butt joint, Edge joint, Lap joint, Tee joint, Corne</p>
+<div class="evidence-chunk" id="chunk-3349"><p><a href="#chunk-3349">청크 3349</a> · **디렉토리 구조** <small>문자 위치 0–860</small></p><blockquote>| **경로 구분 정보** | | **구분자 정보** |
+
+| 1차 경로 | 원천데이터 | 원천 및 라벨링 데이터, Other 데이터 |
+|   | 라벨링데이터 |   |
+|   | Other 데이터 |   |
+| 2차 경로 | Butt | 용접 작업 유형 구분 / Butt joint, Edge joint, Lap joint, Tee joint, Corne</blockquote></div></article><article class="evidence-section" id="section-38"><h3><a href="#section-38">**파일 명명 규칙** · 섹션 38</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-39"><h3><a href="#section-39">**원천 데이터** · 섹션 39</a></h3><p class="record-snippet">| **예시** | **세부 구성 설명** |
+
+| E_PP_03_0005_S1_Depth.png | 용접 작업 유형_모재 형상 조합 유형_모재두께 구분_일련번호_이미지 구도_이미지 종류.png |
+| E_PP_03_0005.pcd | 용접 작업 유형_모재 형상 조합 유형_모재두께 구분_일련번호.pcd |</p>
+<div class="evidence-chunk" id="chunk-3350"><p><a href="#chunk-3350">청크 3350</a> · **원천 데이터** <small>문자 위치 0–171</small></p><blockquote>| **예시** | **세부 구성 설명** |
+
+| E_PP_03_0005_S1_Depth.png | 용접 작업 유형_모재 형상 조합 유형_모재두께 구분_일련번호_이미지 구도_이미지 종류.png |
+| E_PP_03_0005.pcd | 용접 작업 유형_모재 형상 조합 유형_모재두께 구분_일련번호.pcd |</blockquote></div></article><article class="evidence-section" id="section-40"><h3><a href="#section-40">**라벨링 데이터** · 섹션 40</a></h3><p class="record-snippet">| **예시** | **세부 구성 설명** |
+
+| E_PP_03_0005.json | 용접 작업 유형_모재 형상 조합 유형_모재두께 구분_일련번호.json |
+| E_PP_03_0005.csv | 용접 작업 유형_모재 형상 조합 유형_모재두께 구분_일련번호.csv |</p>
+<div class="evidence-chunk" id="chunk-3351"><p><a href="#chunk-3351">청크 3351</a> · **라벨링 데이터** <small>문자 위치 0–150</small></p><blockquote>| **예시** | **세부 구성 설명** |
+
+| E_PP_03_0005.json | 용접 작업 유형_모재 형상 조합 유형_모재두께 구분_일련번호.json |
+| E_PP_03_0005.csv | 용접 작업 유형_모재 형상 조합 유형_모재두께 구분_일련번호.csv |</blockquote></div></article><article class="evidence-section" id="section-41"><h3><a href="#section-41">**Other 데이터** · 섹션 41</a></h3><p class="record-snippet">| **예시** | **세부 구성 설명** |
+
+| E_PP_03_0005.obj | 용접 작업 유형_모재 형상 조합 유형_모재두께 구분_일련번호.obj |
+| E_PP_03_0005.csv | 용접 작업 유형_모재 형상 조합 유형_모재두께 구분_일련번호.csv |
+| E_PP_03_0005.HDF5 | 용접 작업 유형_모재 형상 조합 유형_모재두께 구분_</p>
+<div class="evidence-chunk" id="chunk-3352"><p><a href="#chunk-3352">청크 3352</a> · **Other 데이터** <small>문자 위치 0–211</small></p><blockquote>| **예시** | **세부 구성 설명** |
+
+| E_PP_03_0005.obj | 용접 작업 유형_모재 형상 조합 유형_모재두께 구분_일련번호.obj |
+| E_PP_03_0005.csv | 용접 작업 유형_모재 형상 조합 유형_모재두께 구분_일련번호.csv |
+| E_PP_03_0005.HDF5 | 용접 작업 유형_모재 형상 조합 유형_모재두께 구분_</blockquote></div></article><article class="evidence-section" id="section-42"><h3><a href="#section-42">**제2장 데이터 구축 및 활용** · 섹션 42</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-43"><h3><a href="#section-43">**1. 데이터 구축** · 섹션 43</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-44"><h3><a href="#section-44">**1.1 데이터 구축공정 및 결과** · 섹션 44</a></h3><p class="record-snippet">| **구축공정** | **세부 프로세스** | **내용** | **결과** |
+
+| 데이터 수집/획득 | 1) 데이터 수집 환경 구축 / 2) 촬영 시나리오 설계 / 3) 직접 촬영 수집 / 4) 원시데이터 검수 | 제조 시설 내 로봇 팔 협동 로봇과 RGB-D 카메라를 설치한 촬영 환경 구성 / 용접 작업 유형, 모재형상 조합, 두께 및 크기의 분포가 </p>
+<div class="evidence-chunk" id="chunk-3353"><p><a href="#chunk-3353">청크 3353</a> · **1.1 데이터 구축공정 및 결과** <small>문자 위치 0–937</small></p><blockquote>| **구축공정** | **세부 프로세스** | **내용** | **결과** |
+
+| 데이터 수집/획득 | 1) 데이터 수집 환경 구축 / 2) 촬영 시나리오 설계 / 3) 직접 촬영 수집 / 4) 원시데이터 검수 | 제조 시설 내 로봇 팔 협동 로봇과 RGB-D 카메라를 설치한 촬영 환경 구성 / 용접 작업 유형, 모재형상 조합, 두께 및 크기의 분포가 </blockquote></div><div class="evidence-chunk" id="chunk-3354"><p><a href="#chunk-3354">청크 3354</a> · **1.1 데이터 구축공정 및 결과** <small>문자 위치 777–1284</small></p><blockquote> 어노테이션 / 2D 라벨링 (RGB 이미지 라벨링) 데이터를 xml로 추출 후 메타데이터와 병합하여 json 생성 | 2D 라벨링 정보와 메타 정보가 포함된 라벨링 데이터 1,501건, 3D 세그멘테이션 라벨링 데이터 1,501건 구축 / 검수 시 오류 수정으로 데이터 모두 활용 |
+| AI 모델 학습 | 1) 알고리즘 개발 / 2) 학습 모델을 활용하여</blockquote></div></article><article class="evidence-section" id="section-45"><h3><a href="#section-45">**1.2 데이터 구축 유의사항** · 섹션 45</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-46"><h3><a href="#section-46">**원시데이터 수집, 가공데이터 적법성 관련 권리** · 섹션 46</a></h3><p class="record-snippet">**데이터 저작권 등 법·제도 준수**
+
+- · 직접 촬영 방식으로 데이터를 수집하여 고사용자가 상업적, 비상업적 목적으로 자유롭게 사용할 수 있으며, 별도의 추가 조치 필요하지 않음
+
+**개인정보 보호 관련 조치내역**
+
+- · 수집되는 원천 데이터 내 개인정보 미포함 및 크라우드 워커 미채용으로 추가 조치하지 않음</p>
+<div class="evidence-chunk" id="chunk-3355"><p><a href="#chunk-3355">청크 3355</a> · **원시데이터 수집, 가공데이터 적법성 관련 권리** <small>문자 위치 0–178</small></p><blockquote>**데이터 저작권 등 법·제도 준수**
+
+- · 직접 촬영 방식으로 데이터를 수집하여 고사용자가 상업적, 비상업적 목적으로 자유롭게 사용할 수 있으며, 별도의 추가 조치 필요하지 않음
+
+**개인정보 보호 관련 조치내역**
+
+- · 수집되는 원천 데이터 내 개인정보 미포함 및 크라우드 워커 미채용으로 추가 조치하지 않음</blockquote></div></article><article class="evidence-section" id="section-47"><h3><a href="#section-47">**2. 학습모델** · 섹션 47</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-48"><h3><a href="#section-48">**2.1 학습모델 및 알고리즘** · 섹션 48</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-49"><h3><a href="#section-49">**임무 정의** · 섹션 49</a></h3><p class="record-snippet">- (2D Object Detection) 2D Object Detection은 RGB 이미지에서 용접 작업 부위를 자동으로 감지하고 분류하는 작업으로, 본 과제에서는 가용접(tack welding) 지점과 본용접(main welding) 라인을 구분하여 검출하는 것이 주요 목표
+- (3D Segmentation) Depth 이미지로부터 생성된 3D 포인트</p>
+<div class="evidence-chunk" id="chunk-3356"><p><a href="#chunk-3356">청크 3356</a> · **임무 정의** <small>문자 위치 0–245</small></p><blockquote>- (2D Object Detection) 2D Object Detection은 RGB 이미지에서 용접 작업 부위를 자동으로 감지하고 분류하는 작업으로, 본 과제에서는 가용접(tack welding) 지점과 본용접(main welding) 라인을 구분하여 검출하는 것이 주요 목표
+- (3D Segmentation) Depth 이미지로부터 생성된 3D 포인트</blockquote></div></article><article class="evidence-section" id="section-50"><h3><a href="#section-50">**임무 선정 사유** · 섹션 50</a></h3><p class="record-snippet">- (2D Object Detection) 로봇 용접 자동화 시스템에서 가용접 검출은 본용접 수행 전 모재의 임시 고정 위치를 파악하는 핵심 공정이다. 가용접은 크기가 작고(3~10mm) 불규칙하며, 모재 형상에 따라 개수와 위치가 가변적이므로, 2D 이미지 기반의 정밀한 객체 검출 기술 적용이 필수적이다.
+- 고품질의 가용접 데이터 구축 및 확보 여부를 </p>
+<div class="evidence-chunk" id="chunk-3357"><p><a href="#chunk-3357">청크 3357</a> · **임무 선정 사유** <small>문자 위치 0–790</small></p><blockquote>- (2D Object Detection) 로봇 용접 자동화 시스템에서 가용접 검출은 본용접 수행 전 모재의 임시 고정 위치를 파악하는 핵심 공정이다. 가용접은 크기가 작고(3~10mm) 불규칙하며, 모재 형상에 따라 개수와 위치가 가변적이므로, 2D 이미지 기반의 정밀한 객체 검출 기술 적용이 필수적이다.
+- 고품질의 가용접 데이터 구축 및 확보 여부를 </blockquote></div></article><article class="evidence-section" id="section-51"><h3><a href="#section-51">**학습 모델 개발 환경** · 섹션 51</a></h3><p class="record-snippet">- 학습 환경: Linux, Python, Pytorch, GPU
+- 모델리소스 및 자원 활용: 고성능 GPU 서버를 사용하여 모델 학습을 진행
+- 모델 개발: 1-Cycle 자가 점검 계획에 맞춰 모델 개발
+- 성능 지표 결과를 통해 가장 성능이 우수한 모델로 최종 선정</p>
+<div class="evidence-chunk" id="chunk-3358"><p><a href="#chunk-3358">청크 3358</a> · **학습 모델 개발 환경** <small>문자 위치 0–152</small></p><blockquote>- 학습 환경: Linux, Python, Pytorch, GPU
+- 모델리소스 및 자원 활용: 고성능 GPU 서버를 사용하여 모델 학습을 진행
+- 모델 개발: 1-Cycle 자가 점검 계획에 맞춰 모델 개발
+- 성능 지표 결과를 통해 가장 성능이 우수한 모델로 최종 선정</blockquote></div></article><article class="evidence-section" id="section-52"><h3><a href="#section-52">**최종 선정 모델** · 섹션 52</a></h3><p class="record-snippet">**□ 2D Object Detection (YOLOv12)**
+
+- &#39;YOLOv12&#39;는 실시간 객체 탐지 분야에서 오랫동안 지배적이었던 CNN 기반 아키텍처의 한계를 극복하고, 어텐션 메커니즘(Attention Mechanism)을 중심으로 설계된 혁신적인 모델
+- 기존 YOLO 시리즈가 주로 CNN 기반 개선에 집중해왔던 것과 달리, YOLOv12는 어</p>
+<div class="evidence-chunk" id="chunk-3359"><p><a href="#chunk-3359">청크 3359</a> · **최종 선정 모델** <small>문자 위치 0–654</small></p><blockquote>**□ 2D Object Detection (YOLOv12)**
+
+- &#39;YOLOv12&#39;는 실시간 객체 탐지 분야에서 오랫동안 지배적이었던 CNN 기반 아키텍처의 한계를 극복하고, 어텐션 메커니즘(Attention Mechanism)을 중심으로 설계된 혁신적인 모델
+- 기존 YOLO 시리즈가 주로 CNN 기반 개선에 집중해왔던 것과 달리, YOLOv12는 어</blockquote></div></article><article class="evidence-section" id="section-53"><h3><a href="#section-53">**학습 데이터 생성** · 섹션 53</a></h3><p class="record-snippet">**□ 2D Object Detection (YOLOv12)**
+
+- 학습 데이터 메타데이터 전처리
+  - XML 형식의 라벨 파일을 YOLO Pose 포맷 TXT 파일로 변환 전처리(각 줄은 class_id cx cy w h x1 y1 v1 x2 y2 v2 ... 형식으로 구성되며, class_id는 클래스 인덱스, cx·cy는 바운딩 박스 중심 좌표, </p>
+<div class="evidence-chunk" id="chunk-3360"><p><a href="#chunk-3360">청크 3360</a> · **학습 데이터 생성** <small>문자 위치 0–1014</small></p><blockquote>**□ 2D Object Detection (YOLOv12)**
+
+- 학습 데이터 메타데이터 전처리
+  - XML 형식의 라벨 파일을 YOLO Pose 포맷 TXT 파일로 변환 전처리(각 줄은 class_id cx cy w h x1 y1 v1 x2 y2 v2 ... 형식으로 구성되며, class_id는 클래스 인덱스, cx·cy는 바운딩 박스 중심 좌표, </blockquote></div></article><article class="evidence-section" id="section-54"><h3><a href="#section-54">**학습 알고리즘** · 섹션 54</a></h3><p class="record-snippet">**□ 2D Object Detection (YOLOv12)**
+
+- Attention 메커니즘을 중심으로 설계되어 CNN의 빠른 속도를 유지하면서도 강력한 특징 추출 능력을 제공하며, Area Attention(A2) 모듈을 통해 연산 복잡도 문제를 효과적으로 해결
+- 기존 YOLO 시리즈 대비 우수한 검출 성능을 보이며(YOLOv11 대비 1.2% mA</p>
+<div class="evidence-chunk" id="chunk-3361"><p><a href="#chunk-3361">청크 3361</a> · **학습 알고리즘** <small>문자 위치 0–838</small></p><blockquote>**□ 2D Object Detection (YOLOv12)**
+
+- Attention 메커니즘을 중심으로 설계되어 CNN의 빠른 속도를 유지하면서도 강력한 특징 추출 능력을 제공하며, Area Attention(A2) 모듈을 통해 연산 복잡도 문제를 효과적으로 해결
+- 기존 YOLO 시리즈 대비 우수한 검출 성능을 보이며(YOLOv11 대비 1.2% mA</blockquote></div></article><article class="evidence-section" id="section-55"><h3><a href="#section-55">**2.2 모델 학습 준비 및 유효성 검증 결과** · 섹션 55</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-56"><h3><a href="#section-56">**모델 학습 준비** · 섹션 56</a></h3><p class="record-snippet">**□ 2D Object Detection (YOLOv12)**
+
+| **구분** | **내용** |
+
+| 모델 개발 환경 | - 도커를 구동하기 위한 서버의 환경을 확인&lt;br&gt;• CPU 사양: AMD EPYC 9354 32-Core Processor&lt;br&gt;• GPU 사용: NVIDIA RTX A6000 * 2&lt;br&gt;• RAM 사양: 503G G&lt;br&gt;• </p>
+<div class="evidence-chunk" id="chunk-3362"><p><a href="#chunk-3362">청크 3362</a> · **모델 학습 준비** <small>문자 위치 0–1172</small></p><blockquote>**□ 2D Object Detection (YOLOv12)**
+
+| **구분** | **내용** |
+
+| 모델 개발 환경 | - 도커를 구동하기 위한 서버의 환경을 확인&lt;br&gt;• CPU 사양: AMD EPYC 9354 32-Core Processor&lt;br&gt;• GPU 사용: NVIDIA RTX A6000 * 2&lt;br&gt;• RAM 사양: 503G G&lt;br&gt;• </blockquote></div><div class="evidence-chunk" id="chunk-3363"><p><a href="#chunk-3363">청크 3363</a> · **모델 학습 준비** <small>문자 위치 1012–2071</small></p><blockquote>ng.yaml --project tack_welding_100 —cache False`&lt;br&gt;• 본용접: `python train.py --device 1 --data nia_full_welding.yaml --project full_welding_100 --cache False` |
+| 모델 검증 실행 | - 검증 명령어 : `python eval.py </blockquote></div><div class="evidence-chunk" id="chunk-3364"><p><a href="#chunk-3364">청크 3364</a> · **모델 학습 준비** <small>문자 위치 1911–2922</small></p><blockquote>NVIDIA RTX A6000 * 2&lt;br&gt;• RAM 사양: 503G G&lt;br&gt;• HDD 용량: 879GB&lt;br&gt;• OS 버전: 20.04&lt;br&gt;• 사용 프레임워크 버전 정보&lt;br&gt;· Python &gt;= 3.11.9&lt;br&gt;· PyTorch &gt;= 1.12.0&lt;br&gt;· CUDA=12.1 |
+| 도커 이미지 사용 방법 | - 도커 환경 및 실행 명령&lt;br&gt;• RO</blockquote></div><div class="evidence-chunk" id="chunk-3365"><p><a href="#chunk-3365">청크 3365</a> · **모델 학습 준비** <small>문자 위치 2762–3220</small></p><blockquote>ngseg/main.py --cfg cfgs/niaweldingseg/pointnext-s.yaml mode=train batch_size=8 epochs=300`&lt;br&gt;※ PointNeXt/cfgs/{CUSTOM_CONFIG_FILE}/default.yaml 내 데이터 경로 수정 |
+| 모델 검증 실행 | - 검증 명령어 : `python eval.py </blockquote></div></article><article class="evidence-section" id="section-57"><h3><a href="#section-57">**모델 유효성 검증 결과** · 섹션 57</a></h3><p class="record-snippet">| **구분** | **내용** |
+
+| AP | - Average Precision(AP) Score&lt;br&gt;• Average Precision(AP)는 객체 탐지 모델의 정확도를 측정하는 표준 지표로, 정밀도(Precision)와 재현율(Recall)의 관계를 통합적으로 평가&lt;br&gt;• IoU(Intersection over Union) 임계값 0.5:0.</p>
+<div class="evidence-chunk" id="chunk-3366"><p><a href="#chunk-3366">청크 3366</a> · **모델 유효성 검증 결과** <small>문자 위치 0–995</small></p><blockquote>| **구분** | **내용** |
+
+| AP | - Average Precision(AP) Score&lt;br&gt;• Average Precision(AP)는 객체 탐지 모델의 정확도를 측정하는 표준 지표로, 정밀도(Precision)와 재현율(Recall)의 관계를 통합적으로 평가&lt;br&gt;• IoU(Intersection over Union) 임계값 0.5:0.</blockquote></div><div class="evidence-chunk" id="chunk-3367"><p><a href="#chunk-3367">청크 3367</a> · **모델 유효성 검증 결과** <small>문자 위치 835–1657</small></p><blockquote>목표 달성&lt;br&gt;$$IoU = \frac{\|A \cap B\|}{\|A \cup B\|}$$&lt;br&gt;* A: 예측된 세그멘테이션 영역&lt;br&gt;* B: 실제 Ground Truth 영역&lt;br&gt;* ∩: 교집합 (두 영역이 겹치는 부분)&lt;br&gt;* ∪: 합집합 (두 영역이 차지하는 전체 부분) |
+| RMSE | - RMSE (Root Mean Square Erro</blockquote></div><div class="evidence-chunk" id="chunk-3368"><p><a href="#chunk-3368">청크 3368</a> · **모델 유효성 검증 결과** <small>문자 위치 1497–2094</small></p><blockquote>목표치** | **평가결과** |
+
+| 2D 객체탐지 | YOLOv12 | RGB 이미지 기준 13,509장 | RGB 이미지 기준 12,150장 | RGB 이미지 기준 1,350장 | RGB 이미지 기준 1,359장 | AP | 65 이상 | 가용접 69.7 / 본용접 68.3 |
+
+| **AI Task** | **알고리즘** | **데이터 수량 (총 구</blockquote></div></article><article class="evidence-section" id="section-58"><h3><a href="#section-58">**3. 서비스 활용** · 섹션 58</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-59"><h3><a href="#section-59">**3.1 서비스 활용 예시 및 시나리오** · 섹션 59</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-60"><h3><a href="#section-60">**응용(시범) 서비스 개발** · 섹션 60</a></h3><p class="record-snippet">- AI 기술을 활용하여 3D 포인트 클라우드로부터 용접 경로를 자동으로 인식하고, 이를 기반으로 로봇 용접 궤적을 생성하는 시스템을 개발함으로써 작업 효율성을 높이고 용접 품질을 안정화할 필요성이 대두됨
+- 향후 데이터 활용 서비스 계획을 위해 물리 시뮬레이션 엔진인 &#39;PyBullet&#39;을 활용하여 가능성을 검증함
+
+| **PyBullet 시뮬레이션 환경에</p>
+<div class="evidence-chunk" id="chunk-3369"><p><a href="#chunk-3369">청크 3369</a> · **응용(시범) 서비스 개발** <small>문자 위치 0–846</small></p><blockquote>- AI 기술을 활용하여 3D 포인트 클라우드로부터 용접 경로를 자동으로 인식하고, 이를 기반으로 로봇 용접 궤적을 생성하는 시스템을 개발함으로써 작업 효율성을 높이고 용접 품질을 안정화할 필요성이 대두됨
+- 향후 데이터 활용 서비스 계획을 위해 물리 시뮬레이션 엔진인 &#39;PyBullet&#39;을 활용하여 가능성을 검증함
+
+| **PyBullet 시뮬레이션 환경에</blockquote></div><div class="evidence-chunk" id="chunk-3370"><p><a href="#chunk-3370">청크 3370</a> · **응용(시범) 서비스 개발** <small>문자 위치 686–1634</small></p><blockquote>구학적 오차, 센서 노이즈, 작업물의 변형 등은 시뮬레이션에서 완벽하게 재현하기 어렵기 때문임. 그럼에도 불구하고, PyBullet을 활용한 시뮬레이션 검증은 실제 로봇 배포 전 알고리즘의 안정성과 안전성을 사전에 확인할 수 있는 효과적인 방법이며, 개발 비용과 시간을 크게 절감가능함
+- 3D 포인트 클라우드 기반 로봇 용접 경로 생성의 실현 가능성을 검증</blockquote></div><div class="evidence-chunk" id="chunk-3371"><p><a href="#chunk-3371">청크 3371</a> · **응용(시범) 서비스 개발** <small>문자 위치 1474–2384</small></p><blockquote> 위치를 나타내는 X, Y, Z 좌표값과 용접 토치의 방향 및 자세를 표현하는 Roll, Pitch, Yaw로 이루어져 있다. 각 웨이포인트마다 이러한 6개의 값이 기록되며, 전체 용접 작업에 소요된 시간 정보도 함께 저장되어 작업 효율성과 생산성을 평가할 수 있는 중요한 지표로 활용
+- 데이터의 구조를 살펴보면, CSV 파일의 첫 번째 행에는 각 열의 의</blockquote></div><div class="evidence-chunk" id="chunk-3372"><p><a href="#chunk-3372">청크 3372</a> · **응용(시범) 서비스 개발** <small>문자 위치 2224–2678</small></p><blockquote>생산성이 떨어지기 때문에 시뮬레이션에서 측정된 작업 시간을 통해 최적의 용접 속도를 사전에 검증할 수 있음
+- 또한 전체 소요 시간과 웨이포인트 개수를 비교하면 로봇이 얼마나 조밀하게 경로를 샘플링했는지 파악할 수 있으며, 이는 경로의 부드러움과 정밀도를 간접적으로 평가하는 척도가 됨
+- 이렇게 추출된 궤적 데이터는 실제 산업용 로봇에 적용하기 전 검증 단</blockquote></div></article>
+</section>
+
+  </main>
+  <footer>
+    <span>DOUZONE · MFG TECH COPILOT</span>
+    <span>데이터 출처: AI 허브(aihub.or.kr) 데이터셋 설명서·활용가이드 — 원본 재배포 금지, 출처 표기</span>
+  </footer>
+  <script src="../static/evidence.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="제조현장 기술지원 Copilot — AI Hub 기술문서 153건 검색·추천·비교">
+  <title>25년 활용 가이드라인 - SMT 공정 개선 멀티모달 데이터 v1.0 — RAG 근거 발췌 | 제조 Copilot</title>
+  <link rel="stylesheet" href="../static/copilot.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 이동</a>
+  <header class="topbar">
+    <a class="brand" href="../index.html"><span class="brand-mark">MFG</span><span>제조 Copilot</span><span>기술문서 인텔리전스</span></a>
+    <nav class="header-actions" aria-label="주요 메뉴">
+      <span class="public-badge"><span class="dot"></span>공개 조회</span>
+      <a href="../search.html">기술문서 검색</a>
+      <a href="../datasets.html">데이터셋 목록</a>
+      <a href="../demo.html">시연 질문</a>
+    </nav>
+  </header>
+  <main id="main">
+    
+<section class="heading-band"><div><p class="eyebrow">PUBLIC RAG EVIDENCE · 71900-가이드</p><h1>25년 활용 가이드라인 - SMT 공정 개선 멀티모달 데이터 v1.0</h1><p class="subtitle">SMT 공정 개선 멀티모달 데이터 · 가이드 · 섹션 71개 · 청크 76개</p></div></section>
+<aside class="source-band"><strong>문서 사실 · 제한된 근거 발췌</strong><p>전체 원본이 아닌 섹션명과 청크별 최대 200자 발췌입니다. 검색 화면은 검색 서버가 반환한 관련 스니펫을 표시합니다. 발췌만으로 설비 상태·화재 위험을 진단하지 않습니다. 근거 사실과 적용에 관한 추론을 구분하세요. AI Hub 이용약관을 따르며 원본 재배포를 허용하지 않습니다.</p><p><a href="../dataset/71900.html">데이터셋 구성 →</a> · <a href="https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71900" target="_blank" rel="noopener noreferrer">AI Hub 원본 메타데이터 (보조 출처) ↗</a></p></aside>
+<section class="search-band"><label for="evidenceFilter">이 페이지의 섹션명·발췌 찾기</label><input id="evidenceFilter" type="search" class="evidence-filter" placeholder="라벨 또는 발췌 내 단어"><p class="demo-note">현재 페이지 내 텍스트 필터입니다. 의미·벡터 검색이 아닙니다.</p></section>
+<section class="result-band"><h2>섹션 구성과 청크 근거</h2>
+<article class="evidence-section" id="section-0"><h3><a href="#section-0">**활용 가이드라인 &lt; 14. SMT 공정 개선 멀티모달 데이터 &gt;** · 섹션 0</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-1"><h3><a href="#section-1">**작성 담당기관** · 섹션 1</a></h3><p class="record-snippet">| **사업 총괄** | **데이터 구축** | **AI모델 개발** | **데이터 활용** |
+
+| 주식회사 스마트뱅크 | 주식회사 스마트뱅크 / 주식회사 엔텍디바이스코리아 / 주식회사 케이솔루션즈 / 퍼스널에이아이 주식회사 | 주식회사 케이솔루션즈 | 주식회사 케이솔루션즈 |
+
+| **주식회사 스마트뱅크** |
+
+| 황 정 연 |
+
+**문서 버전**
+
+</p>
+<div class="evidence-chunk" id="chunk-848"><p><a href="#chunk-848">청크 848</a> · **작성 담당기관** <small>문자 위치 0–227</small></p><blockquote>| **사업 총괄** | **데이터 구축** | **AI모델 개발** | **데이터 활용** |
+
+| 주식회사 스마트뱅크 | 주식회사 스마트뱅크 / 주식회사 엔텍디바이스코리아 / 주식회사 케이솔루션즈 / 퍼스널에이아이 주식회사 | 주식회사 케이솔루션즈 | 주식회사 케이솔루션즈 |
+
+| **주식회사 스마트뱅크** |
+
+| 황 정 연 |
+
+**문서 버전**
+
+</blockquote></div></article><article class="evidence-section" id="section-2"><h3><a href="#section-2">**문서 변경 이력** · 섹션 2</a></h3><p class="record-snippet">| **버전 (개정이력)** | **변경일자 (개정일자)** | **변경내용 (개정내용)** | **작성자** | **검토자** | **승인자** |
+
+| V.1.0 | 2026.01.16 | 최초 작성 | 황정연 | 황정연 | 전형식 |</p>
+<div class="evidence-chunk" id="chunk-849"><p><a href="#chunk-849">청크 849</a> · **문서 변경 이력** <small>문자 위치 0–133</small></p><blockquote>| **버전 (개정이력)** | **변경일자 (개정일자)** | **변경내용 (개정내용)** | **작성자** | **검토자** | **승인자** |
+
+| V.1.0 | 2026.01.16 | 최초 작성 | 황정연 | 황정연 | 전형식 |</blockquote></div></article><article class="evidence-section" id="section-3"><h3><a href="#section-3">**목차** · 섹션 3</a></h3><p class="record-snippet">데이터 개요 및 활용 요약
+
+제1장 데이터 개요
+1. 데이터 설명서
+2. 메타데이터 구조표
+3. 데이터 통계
+4. 데이터 포맷
+5. 데이터 구축 절차
+6. 데이터 저장 구조 및 파일 명명 규칙
+
+제2장 데이터 구축 및 활용
+1. 데이터 구축
+2. 학습모델
+3. 서비스 활용
+
+별첨 :
+1. 데이터 구축 현황표(데이터 구축 현황, S3 데이터 파일 현황)
+2.</p>
+<div class="evidence-chunk" id="chunk-850"><p><a href="#chunk-850">청크 850</a> · **목차** <small>문자 위치 0–215</small></p><blockquote>데이터 개요 및 활용 요약
+
+제1장 데이터 개요
+1. 데이터 설명서
+2. 메타데이터 구조표
+3. 데이터 통계
+4. 데이터 포맷
+5. 데이터 구축 절차
+6. 데이터 저장 구조 및 파일 명명 규칙
+
+제2장 데이터 구축 및 활용
+1. 데이터 구축
+2. 학습모델
+3. 서비스 활용
+
+별첨 :
+1. 데이터 구축 현황표(데이터 구축 현황, S3 데이터 파일 현황)
+2.</blockquote></div></article><article class="evidence-section" id="section-4"><h3><a href="#section-4">**데이터 개요 및 활용 요약** · 섹션 4</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-5"><h3><a href="#section-5">**1. 공통항목** · 섹션 5</a></h3><p class="record-snippet">**데이터명 (국문)**
+
+SMT 공정 개선 멀티모달 데이터
+
+**데이터명 (영문)**
+
+SMT Process Improvement Multimodal Data
+
+**데이터 구분**
+
+- [ ] LLM
+- [x] LMM
+- [ ] 합성 데이터
+- [ ] 추론 데이터
+
+**데이터 분야**
+
+- [ ] 영상이미지
+- [ ] 헬스케어
+- [ ] 교통물류
+- [ </p>
+<div class="evidence-chunk" id="chunk-851"><p><a href="#chunk-851">청크 851</a> · **1. 공통항목** <small>문자 위치 0–704</small></p><blockquote>**데이터명 (국문)**
+
+SMT 공정 개선 멀티모달 데이터
+
+**데이터명 (영문)**
+
+SMT Process Improvement Multimodal Data
+
+**데이터 구분**
+
+- [ ] LLM
+- [x] LMM
+- [ ] 합성 데이터
+- [ ] 추론 데이터
+
+**데이터 분야**
+
+- [ ] 영상이미지
+- [ ] 헬스케어
+- [ ] 교통물류
+- [ </blockquote></div></article><article class="evidence-section" id="section-6"><h3><a href="#section-6">**2. 메타데이터** · 섹션 6</a></h3><p class="record-snippet">※ 공통항목 서식에 이미지 및 표 삽입 금지
+
+**데이터 형식**
+
+jpg, csv
+
+**데이터 출처**
+
+직접 수집
+
+**라벨링 유형**
+
+바운딩박스(이미지), 분류태그(센서)
+
+**라벨링 형식**
+
+json
+
+**데이터 활용서비스**
+
+결함 인식 서비스, 공정 이상 감지 서비스
+
+**데이터 구축연도**
+
+2025년
+
+**데이터 구축량**
+
+- 원천 데이</p>
+<div class="evidence-chunk" id="chunk-852"><p><a href="#chunk-852">청크 852</a> · **2. 메타데이터** <small>문자 위치 0–246</small></p><blockquote>※ 공통항목 서식에 이미지 및 표 삽입 금지
+
+**데이터 형식**
+
+jpg, csv
+
+**데이터 출처**
+
+직접 수집
+
+**라벨링 유형**
+
+바운딩박스(이미지), 분류태그(센서)
+
+**라벨링 형식**
+
+json
+
+**데이터 활용서비스**
+
+결함 인식 서비스, 공정 이상 감지 서비스
+
+**데이터 구축연도**
+
+2025년
+
+**데이터 구축량**
+
+- 원천 데이</blockquote></div></article><article class="evidence-section" id="section-7"><h3><a href="#section-7">**3. 세부데이터** · 섹션 7</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-8"><h3><a href="#section-8">**1. 데이터 구성** · 섹션 8</a></h3><p class="record-snippet">- 원천데이터(이미지): 51,355장
+- 원천데이터(센서): 51,355건
+- 라벨링데이터: 51,355건</p>
+<div class="evidence-chunk" id="chunk-853"><p><a href="#chunk-853">청크 853</a> · **1. 데이터 구성** <small>문자 위치 0–60</small></p><blockquote>- 원천데이터(이미지): 51,355장
+- 원천데이터(센서): 51,355건
+- 라벨링데이터: 51,355건</blockquote></div></article><article class="evidence-section" id="section-9"><h3><a href="#section-9">**2. 어노테이션 포맷** · 섹션 9</a></h3><p class="record-snippet">| **구분** | **속성명** | **타입** | **필수여부** | **설명** | **범위** | **비고** |
+
+| 1 | categories | array | y | 라벨 정보 |   |   |
+| 1-1 | id | number | y | 라벨 번호 | 1~32 |   |
+| 1-2 | name | string | y | 라벨 이름 |   |</p>
+<div class="evidence-chunk" id="chunk-854"><p><a href="#chunk-854">청크 854</a> · **2. 어노테이션 포맷** <small>문자 위치 0–769</small></p><blockquote>| **구분** | **속성명** | **타입** | **필수여부** | **설명** | **범위** | **비고** |
+
+| 1 | categories | array | y | 라벨 정보 |   |   |
+| 1-1 | id | number | y | 라벨 번호 | 1~32 |   |
+| 1-2 | name | string | y | 라벨 이름 |   |</blockquote></div><div class="evidence-chunk" id="chunk-855"><p><a href="#chunk-855">청크 855</a> · **2. 어노테이션 포맷** <small>문자 위치 609–1433</small></p><blockquote>id | number | y | 어노테이션 식별자 | 1~9999 |   |
+| 3-2 | image_id | number | y | 이미지 번호 | 1~9999 |   |
+| 3-3 | category_id | number | y | 라벨 유형 (클래스 id) | 1~32 |   |
+| 3-4 | segmentation | array | n | 세그멘테이</blockquote></div><div class="evidence-chunk" id="chunk-856"><p><a href="#chunk-856">청크 856</a> · **2. 어노테이션 포맷** <small>문자 위치 1273–1758</small></p><blockquote>-2 | sensor_sequence | array | y | 센서 속성값 |   |   |
+| 4-2-1 | timestamp | string | y | 타임스탬프 | `\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$` | &#34;2025-07-04 13:00:01&#34; |
+| 4-2-2 | temperature | number | y | 온도 </blockquote></div></article><article class="evidence-section" id="section-10"><h3><a href="#section-10">**3. 데이터 포맷** · 섹션 10</a></h3><p class="record-snippet">- 원천데이터(이미지): 51,355장
+- 원천데이터(센서): 51,355건
+- 라벨링데이터: 51,355건</p>
+<div class="evidence-chunk" id="chunk-857"><p><a href="#chunk-857">청크 857</a> · **3. 데이터 포맷** <small>문자 위치 0–60</small></p><blockquote>- 원천데이터(이미지): 51,355장
+- 원천데이터(센서): 51,355건
+- 라벨링데이터: 51,355건</blockquote></div></article><article class="evidence-section" id="section-11"><h3><a href="#section-11">**4. 실제 예시** · 섹션 11</a></h3><p class="record-snippet">```json
+{
+  &#34;categories&#34;: [
+    {&#34;id&#34;: 1, &#34;name&#34;: &#34;정상_미납&#34;},
+    {&#34;id&#34;: 2, &#34;name&#34;: &#34;정상_납부족&#34;},
+    {&#34;id&#34;: 3, &#34;name&#34;: &#34;정상_납쇼트&#34;},
+    {&#34;id&#34;: 4, &#34;name&#34;: &#34;정상_납볼&#34;},
+    {&#34;id&#34;: 5, &#34;name&#34;: &#34;정상_납좌표밀림&#34;},
+    {&#34;i</p>
+<div class="evidence-chunk" id="chunk-858"><p><a href="#chunk-858">청크 858</a> · **4. 실제 예시** <small>문자 위치 0–769</small></p><blockquote>```json
+{
+  &#34;categories&#34;: [
+    {&#34;id&#34;: 1, &#34;name&#34;: &#34;정상_미납&#34;},
+    {&#34;id&#34;: 2, &#34;name&#34;: &#34;정상_납부족&#34;},
+    {&#34;id&#34;: 3, &#34;name&#34;: &#34;정상_납쇼트&#34;},
+    {&#34;id&#34;: 4, &#34;name&#34;: &#34;정상_납볼&#34;},
+    {&#34;id&#34;: 5, &#34;name&#34;: &#34;정상_납좌표밀림&#34;},
+    {&#34;i</blockquote></div><div class="evidence-chunk" id="chunk-859"><p><a href="#chunk-859">청크 859</a> · **4. 실제 예시** <small>문자 위치 609–1523</small></p><blockquote>, &#34;name&#34;: &#34;불량_납부족&#34;},
+    {&#34;id&#34;: 19, &#34;name&#34;: &#34;불량_납쇼트&#34;},
+    {&#34;id&#34;: 20, &#34;name&#34;: &#34;불량_납볼&#34;},
+    {&#34;id&#34;: 21, &#34;name&#34;: &#34;불량_납좌표밀림&#34;},
+    {&#34;id&#34;: 22, &#34;name&#34;: &#34;불량_납형성불량&#34;},
+    {&#34;id&#34;: 23, &#34;name&#34;: &#34;불량_냉납&#34;},
+    {&#34;i</blockquote></div><div class="evidence-chunk" id="chunk-860"><p><a href="#chunk-860">청크 860</a> · **4. 실제 예시** <small>문자 위치 1363–2501</small></p><blockquote>99999997,
+      &#34;bbox&#34;: [98.12, 3.75, 265.34, 110.87],
+      &#34;iscrowd&#34;: 0,
+      &#34;attributes&#34;: {&#34;occluded&#34;: false, &#34;rotation&#34;: 0.0}
+    },
+    {
+      &#34;id&#34;: 2,
+      &#34;image_id&#34;: 1,
+      &#34;category_id&#34;</blockquote></div><div class="evidence-chunk" id="chunk-861"><p><a href="#chunk-861">청크 861</a> · **4. 실제 예시** <small>문자 위치 2341–2692</small></p><blockquote>&#34;timestamp&#34;: &#34;2025-08-07 09:01:07&#34;, &#34;temperature&#34;: 23.74, &#34;humidity&#34;: 40.0, &#34;vibration&#34;: 0.3512, &#34;acceleration&#34;: 0.0232, &#34;noise&#34;: 79.42, &#34;defect_detected&#34;: 1},
+        {&#34;timestamp&#34;: &#34;2025-08-07 09:01:</blockquote></div></article><article class="evidence-section" id="section-12"><h3><a href="#section-12">**4. 데이터 통계** · 섹션 12</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-13"><h3><a href="#section-13">**데이터 구축 규모 및 분포** · 섹션 13</a></h3><p class="record-snippet">| **대분류** | **중분류** | **소분류** | **목표** | **구축 실적** | **목표 수치** |
+
+| 합계 |   |   | 50,000 | 51,355 | 102.7% |
+| 사전공정 | 정상 | 1. 미납 | 1,333 | 1,338 | 100.4% |
+| 사전공정 | 정상 | 2. 납부족 | 1,333 | 1,333 | 100.0%</p>
+<div class="evidence-chunk" id="chunk-862"><p><a href="#chunk-862">청크 862</a> · **데이터 구축 규모 및 분포** <small>문자 위치 0–743</small></p><blockquote>| **대분류** | **중분류** | **소분류** | **목표** | **구축 실적** | **목표 수치** |
+
+| 합계 |   |   | 50,000 | 51,355 | 102.7% |
+| 사전공정 | 정상 | 1. 미납 | 1,333 | 1,338 | 100.4% |
+| 사전공정 | 정상 | 2. 납부족 | 1,333 | 1,333 | 100.0%</blockquote></div><div class="evidence-chunk" id="chunk-863"><p><a href="#chunk-863">청크 863</a> · **데이터 구축 규모 및 분포** <small>문자 위치 583–1292</small></p><blockquote>2.5% |
+| 사전공정 | 불량 | 5. 납좌표 밀림 | 1,778 | 1,813 | 102.0% |
+| 사전공정 | 불량 | 6. 납형성 불량 | 1,778 | 1,853 | 104.2% |
+| 메인(납땜)공정 | 정상 | 1. 미납 | 1,320 | 1,324 | 100.3% |
+| 메인(납땜)공정 | 정상 | 2. 냉납 | 960 | 968 | 10</blockquote></div><div class="evidence-chunk" id="chunk-864"><p><a href="#chunk-864">청크 864</a> · **데이터 구축 규모 및 분포** <small>문자 위치 1132–1801</small></p><blockquote>100.8% |
+| 메인(납땜)공정 | 정상 | 10. 납볼 | 720 | 736 | 102.2% |
+| 메인(납땜)공정 | 정상 | 11. 납금감, 핀홀 | 600 | 606 | 101.0% |
+| 메인(납땜)공정 | 정상 | 12. 납고드름 | 480 | 496 | 103.3% |
+| 메인(납땜)공정 | 불량 | 1. 미납 | 1,980 | 1,997 </blockquote></div><div class="evidence-chunk" id="chunk-865"><p><a href="#chunk-865">청크 865</a> · **데이터 구축 규모 및 분포** <small>문자 위치 1641–1921</small></p><blockquote>% |
+| 메인(납땜)공정 | 불량 | 8. 뒤집힘 | 1,620 | 1,724 | 106.4% |
+| 메인(납땜)공정 | 불량 | 9. 일어섬 | 2,340 | 2,370 | 101.3% |
+| 메인(납땜)공정 | 불량 | 10. 납볼 | 1,080 | 1,122 | 103.9% |
+| 메인(납땜)공정 | 불량 | 11. 납금감, 핀홀 | 900 | 1,</blockquote></div></article><article class="evidence-section" id="section-14"><h3><a href="#section-14">**5. 활용 AI모델 설명** · 섹션 14</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-15"><h3><a href="#section-15">**임무 정의** · 섹션 15</a></h3><p class="record-snippet">SMT 공정에서 수집되는 온도, 습도, 진동, 소리 등 다양한 센서 기반 시계열 데이터와 AOI/SPI 장비로부터 획득한 고해상도 이미지 데이터를 결합하여, 불량 발생을 사전에 예측하거나 실시간으로 감지할 수 있는 지능형 AI 모델 개발</p>
+<div class="evidence-chunk" id="chunk-866"><p><a href="#chunk-866">청크 866</a> · **임무 정의** <small>문자 위치 0–132</small></p><blockquote>SMT 공정에서 수집되는 온도, 습도, 진동, 소리 등 다양한 센서 기반 시계열 데이터와 AOI/SPI 장비로부터 획득한 고해상도 이미지 데이터를 결합하여, 불량 발생을 사전에 예측하거나 실시간으로 감지할 수 있는 지능형 AI 모델 개발</blockquote></div></article><article class="evidence-section" id="section-16"><h3><a href="#section-16">**임무 선정 사유** · 섹션 16</a></h3><p class="record-snippet">SMT(Surface Mount Technology) 공정은 부품의 고속 실장과 정밀 납땜이 반복되는 복합 공정으로, 공정 조건의 미세한 변화나 설비 이상이 곧바로 제품 불량으로 이어질 가능성이 높음. 이러한 불량은 단일 제품의 품질 저하에 그치지 않고, 라인 전체의 생산성 저하, 납기 지연, 대량 리워크 및 설비 정지 등으로 이어져 막대한 손실 초래
+
+따</p>
+<div class="evidence-chunk" id="chunk-867"><p><a href="#chunk-867">청크 867</a> · **임무 선정 사유** <small>문자 위치 0–421</small></p><blockquote>SMT(Surface Mount Technology) 공정은 부품의 고속 실장과 정밀 납땜이 반복되는 복합 공정으로, 공정 조건의 미세한 변화나 설비 이상이 곧바로 제품 불량으로 이어질 가능성이 높음. 이러한 불량은 단일 제품의 품질 저하에 그치지 않고, 라인 전체의 생산성 저하, 납기 지연, 대량 리워크 및 설비 정지 등으로 이어져 막대한 손실 초래
+
+따</blockquote></div></article><article class="evidence-section" id="section-17"><h3><a href="#section-17">**학습 모델 개발 환경** · 섹션 17</a></h3><p class="record-snippet">- 학습 환경: Ubuntu, Python, Pytorch, GPU
+- 성능 지표 결과를 통해 가장 성능이 우수한 모델로 최종 선정</p>
+<div class="evidence-chunk" id="chunk-868"><p><a href="#chunk-868">청크 868</a> · **학습 모델 개발 환경** <small>문자 위치 0–73</small></p><blockquote>- 학습 환경: Ubuntu, Python, Pytorch, GPU
+- 성능 지표 결과를 통해 가장 성능이 우수한 모델로 최종 선정</blockquote></div></article><article class="evidence-section" id="section-18"><h3><a href="#section-18">**최종 선정 모델** · 섹션 18</a></h3><p class="record-snippet">| **구분** | **학습 모델** |
+
+| 공정 최적화를 위한 멀티모달 데이터 기반 SMT 공정 결함 예측 모델 | Swin Transformer, TimesNet 멀티모달 모델 |
+| 사전공정 결합 상태 검출 모델 | YOLOv11 |
+| 납땜공정 결합 상태 검출 모델 | YOLOv11 |
+
+**공정 최적화를 위한 멀티모달 데이터 기반 SMT 공정 결</p>
+<div class="evidence-chunk" id="chunk-869"><p><a href="#chunk-869">청크 869</a> · **최종 선정 모델** <small>문자 위치 0–928</small></p><blockquote>| **구분** | **학습 모델** |
+
+| 공정 최적화를 위한 멀티모달 데이터 기반 SMT 공정 결함 예측 모델 | Swin Transformer, TimesNet 멀티모달 모델 |
+| 사전공정 결합 상태 검출 모델 | YOLOv11 |
+| 납땜공정 결합 상태 검출 모델 | YOLOv11 |
+
+**공정 최적화를 위한 멀티모달 데이터 기반 SMT 공정 결</blockquote></div><div class="evidence-chunk" id="chunk-870"><p><a href="#chunk-870">청크 870</a> · **최종 선정 모델** <small>문자 위치 768–1102</small></p><blockquote>경량 고성능 객체 탐지 모델로, 실시간 탐지와 높은 정확도를 동시에 제공. 기존 YOLOv7, YOLOv8 대비 구조 최적화 및 attention 모듈 개선으로 연산 효율성과 정밀도가 모두 향상됨
+- 작은 객체 및 복잡한 배경에서도 높은 탐지 성능을 유지하여 산업용 영상 분석에 유리함
+- ONNX 및 TensorRT와의 호환성이 우수하여 시스템 통합 및 최</blockquote></div></article><article class="evidence-section" id="section-19"><h3><a href="#section-19">**AI 모델 성능** · 섹션 19</a></h3><p class="record-snippet">| **품질특성** | **TASK 명** | **모델명** | **지표** | **목표치** | **결과값** |
+
+| 유효성 | SMT 공정 불량 예측 | Swin Transformer + TimesNet 퓨전 | F1-Score | 90% 이상 | 97.63% |
+| 유효성 | 사전공정 결합 상태 검출 | YOLOv11 | mAP | 70% 이상 | </p>
+<div class="evidence-chunk" id="chunk-871"><p><a href="#chunk-871">청크 871</a> · **AI 모델 성능** <small>문자 위치 0–266</small></p><blockquote>| **품질특성** | **TASK 명** | **모델명** | **지표** | **목표치** | **결과값** |
+
+| 유효성 | SMT 공정 불량 예측 | Swin Transformer + TimesNet 퓨전 | F1-Score | 90% 이상 | 97.63% |
+| 유효성 | 사전공정 결합 상태 검출 | YOLOv11 | mAP | 70% 이상 | </blockquote></div></article><article class="evidence-section" id="section-20"><h3><a href="#section-20">**6. 구축 업체정보** · 섹션 20</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-21"><h3><a href="#section-21">**▶ 주관기관** · 섹션 21</a></h3><p class="record-snippet">**기관명**
+
+주식회사 스마트뱅크
+
+**담당자명**
+
+황 정 연
+
+**전화번호 (유선번호)** 1)
+
+050-7871-3610
+
+**이메일** 1)
+
+[hjyeon313@smartbank.ne.kr](mailto:hjyeon313@smartbank.ne.kr)
+
+**담당업무**
+
+사업총괄, 데이터 정제, 데이터 가공</p>
+<div class="evidence-chunk" id="chunk-872"><p><a href="#chunk-872">청크 872</a> · **▶ 주관기관** <small>문자 위치 0–178</small></p><blockquote>**기관명**
+
+주식회사 스마트뱅크
+
+**담당자명**
+
+황 정 연
+
+**전화번호 (유선번호)** 1)
+
+050-7871-3610
+
+**이메일** 1)
+
+[hjyeon313@smartbank.ne.kr](mailto:hjyeon313@smartbank.ne.kr)
+
+**담당업무**
+
+사업총괄, 데이터 정제, 데이터 가공</blockquote></div></article><article class="evidence-section" id="section-22"><h3><a href="#section-22">**▶ 참여기관 2)** · 섹션 22</a></h3><p class="record-snippet">| **기관명** | **담당업무** |
+
+| 주식회사 엔텍디바이스코리아 | 데이터 수집 |
+| 주식회사 케이솔루션즈 | AI모델 |
+| 퍼스널에이아이 주식회사 | 데이터 품질 |</p>
+<div class="evidence-chunk" id="chunk-873"><p><a href="#chunk-873">청크 873</a> · **▶ 참여기관 2)** <small>문자 위치 0–100</small></p><blockquote>| **기관명** | **담당업무** |
+
+| 주식회사 엔텍디바이스코리아 | 데이터 수집 |
+| 주식회사 케이솔루션즈 | AI모델 |
+| 퍼스널에이아이 주식회사 | 데이터 품질 |</blockquote></div></article><article class="evidence-section" id="section-23"><h3><a href="#section-23">**▶ 문의처 3)** · 섹션 23</a></h3><p class="record-snippet">| **구분** | **책임자** | **전화번호 (유선번호)** 1) | **이메일** 1) | **담당자** | **전화번호 (유선번호)** 1) | **이메일** 1) |
+
+| 데이터문의처 | 전형식 | 050-7871-3610 | [jhs71022@gmail.com](mailto:jhs71022@gmail.com) | 황정연 | 050-7871-36</p>
+<div class="evidence-chunk" id="chunk-874"><p><a href="#chunk-874">청크 874</a> · **▶ 문의처 3)** <small>문자 위치 0–597</small></p><blockquote>| **구분** | **책임자** | **전화번호 (유선번호)** 1) | **이메일** 1) | **담당자** | **전화번호 (유선번호)** 1) | **이메일** 1) |
+
+| 데이터문의처 | 전형식 | 050-7871-3610 | [jhs71022@gmail.com](mailto:jhs71022@gmail.com) | 황정연 | 050-7871-36</blockquote></div></article><article class="evidence-section" id="section-24"><h3><a href="#section-24">**제1장 데이터 개요** · 섹션 24</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-25"><h3><a href="#section-25">**1. 데이터 설명서** · 섹션 25</a></h3><p class="record-snippet">**데이터셋명 (국문)**
+
+SMT 공정 개선 멀티모달 데이터
+
+**데이터셋명 (영문)**
+
+SMT Process Improvement Multimodal Data
+
+**구축 목적**
+
+- SMT 공정 내 결함 인식 및 이상상황 감지 데이터 구축
+- 멀티모달 데이터 기반의 이상 예측 모델 개발
+
+**소개**
+
+SMT 공정에서 수집된 검사 이미지와 공정 환경</p>
+<div class="evidence-chunk" id="chunk-875"><p><a href="#chunk-875">청크 875</a> · **1. 데이터 설명서** <small>문자 위치 0–523</small></p><blockquote>**데이터셋명 (국문)**
+
+SMT 공정 개선 멀티모달 데이터
+
+**데이터셋명 (영문)**
+
+SMT Process Improvement Multimodal Data
+
+**구축 목적**
+
+- SMT 공정 내 결함 인식 및 이상상황 감지 데이터 구축
+- 멀티모달 데이터 기반의 이상 예측 모델 개발
+
+**소개**
+
+SMT 공정에서 수집된 검사 이미지와 공정 환경</blockquote></div></article><article class="evidence-section" id="section-26"><h3><a href="#section-26">**2. 메타데이터 구조표** · 섹션 26</a></h3><p class="record-snippet">**데이터 분야**
+
+제조
+
+**데이터 유형**
+
+이미지, 센서
+
+**데이터 형식**
+
+jpg, csv
+
+**데이터 출처**
+
+직접 수집
+
+**라벨링 유형**
+
+바운딩박스, 분류태그
+
+**라벨링 형식**
+
+json
+
+**데이터 활용 서비스**
+
+결함 인식 서비스, 공정 이상 감지 서비스
+
+**데이터 구축연도 / 데이터 구축량**
+
+2025 / 102,710</p>
+<div class="evidence-chunk" id="chunk-876"><p><a href="#chunk-876">청크 876</a> · **2. 메타데이터 구조표** <small>문자 위치 0–200</small></p><blockquote>**데이터 분야**
+
+제조
+
+**데이터 유형**
+
+이미지, 센서
+
+**데이터 형식**
+
+jpg, csv
+
+**데이터 출처**
+
+직접 수집
+
+**라벨링 유형**
+
+바운딩박스, 분류태그
+
+**라벨링 형식**
+
+json
+
+**데이터 활용 서비스**
+
+결함 인식 서비스, 공정 이상 감지 서비스
+
+**데이터 구축연도 / 데이터 구축량**
+
+2025 / 102,710</blockquote></div></article><article class="evidence-section" id="section-27"><h3><a href="#section-27">**3. 데이터 통계** · 섹션 27</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-28"><h3><a href="#section-28">**3.1 데이터 구축 규모** · 섹션 28</a></h3><p class="record-snippet">**학습용 데이터 구성(원천데이터 기준)**
+
+| **본 과제 데이터 구축 총량(100%)** | **JSON 데이터** |
+
+| 102,710 | 51,355 |
+
+**원시데이터**
+
+| **파일포맷** | **데이터 규모** | **비고** |
+
+| jpg, csv | 51,355 | - |
+
+**원천데이터**
+
+| **파일포맷** | **데이터 규모*</p>
+<div class="evidence-chunk" id="chunk-877"><p><a href="#chunk-877">청크 877</a> · **3.1 데이터 구축 규모** <small>문자 위치 0–311</small></p><blockquote>**학습용 데이터 구성(원천데이터 기준)**
+
+| **본 과제 데이터 구축 총량(100%)** | **JSON 데이터** |
+
+| 102,710 | 51,355 |
+
+**원시데이터**
+
+| **파일포맷** | **데이터 규모** | **비고** |
+
+| jpg, csv | 51,355 | - |
+
+**원천데이터**
+
+| **파일포맷** | **데이터 규모*</blockquote></div></article><article class="evidence-section" id="section-29"><h3><a href="#section-29">**3.2 데이터 분포** · 섹션 29</a></h3><p class="record-snippet">**원천데이터 대비 가공(라벨링) 데이터 분포**
+
+| **원천 대분류** | **중분류** | **소분류** | **포맷** | **수량** | **단위** | **가공 대분류** | **중분류** | **소분류** | **포맷** | **수량** | **단위** |
+
+| 사전공정 | 정상 | 미납 | jpg | 1,338 | 건 | 사전공정 | 정상 |</p>
+<div class="evidence-chunk" id="chunk-878"><p><a href="#chunk-878">청크 878</a> · **3.2 데이터 분포** <small>문자 위치 0–683</small></p><blockquote>**원천데이터 대비 가공(라벨링) 데이터 분포**
+
+| **원천 대분류** | **중분류** | **소분류** | **포맷** | **수량** | **단위** | **가공 대분류** | **중분류** | **소분류** | **포맷** | **수량** | **단위** |
+
+| 사전공정 | 정상 | 미납 | jpg | 1,338 | 건 | 사전공정 | 정상 |</blockquote></div><div class="evidence-chunk" id="chunk-879"><p><a href="#chunk-879">청크 879</a> · **3.2 데이터 분포** <small>문자 위치 523–1141</small></p><blockquote>| 건 |
+| 사전공정 | 정상 | 납형성 불량 | jpg | 1,199 | 건 | 사전공정 | 정상 | 납형성 불량 | json | 1,199 | 건 |
+| 사전공정 | 불량 | 미납 | jpg | 2,011 | 건 | 사전공정 | 불량 | 미납 | json | 2,011 | 건 |
+| 사전공정 | 불량 | 납부족 | jpg | 2,205 | 건 | 사전</blockquote></div><div class="evidence-chunk" id="chunk-880"><p><a href="#chunk-880">청크 880</a> · **3.2 데이터 분포** <small>문자 위치 987–1567</small></p><blockquote>| 사전공정 | 불량 | 납형성 불량 | jpg | 1,853 | 건 | 사전공정 | 불량 | 납형성 불량 | json | 1,853 | 건 |
+| 납땜공정 | 정상 | 미납 | jpg | 1,324 | 건 | 납땜공정 | 정상 | 미납 | json | 1,324 | 건 |
+| 납땜공정 | 정상 | 냉납 | jpg | 968 | 건 | 납땜공정 | 정상 |</blockquote></div><div class="evidence-chunk" id="chunk-881"><p><a href="#chunk-881">청크 881</a> · **3.2 데이터 분포** <small>문자 위치 1422–2009</small></p><blockquote> |
+| 납땜공정 | 정상 | 미삽 | jpg | 1,390 | 건 | 납땜공정 | 정상 | 미삽 | json | 1,390 | 건 |
+| 납땜공정 | 정상 | 역삽 | jpg | 794 | 건 | 납땜공정 | 정상 | 역삽 | json | 794 | 건 |
+| 납땜공정 | 정상 | 뒤집힘 | jpg | 1,086 | 건 | 납땜공정 | 정상 | 뒤집힘 |</blockquote></div><div class="evidence-chunk" id="chunk-882"><p><a href="#chunk-882">청크 882</a> · **3.2 데이터 분포** <small>문자 위치 1863–2443</small></p><blockquote>| 납땜공정 | 정상 | 납고드름 | jpg | 496 | 건 | 납땜공정 | 정상 | 납고드름 | json | 496 | 건 |
+| 납땜공정 | 불량 | 미납 | jpg | 1,997 | 건 | 납땜공정 | 불량 | 미납 | json | 1,997 | 건 |
+| 납땜공정 | 불량 | 냉납 | jpg | 1,488 | 건 | 납땜공정 | 불량 | 냉납 | </blockquote></div><div class="evidence-chunk" id="chunk-883"><p><a href="#chunk-883">청크 883</a> · **3.2 데이터 분포** <small>문자 위치 2298–2901</small></p><blockquote> 납땜공정 | 불량 | 미삽 | jpg | 2,114 | 건 | 납땜공정 | 불량 | 미삽 | json | 2,114 | 건 |
+| 납땜공정 | 불량 | 역삽 | jpg | 1,234 | 건 | 납땜공정 | 불량 | 역삽 | json | 1,234 | 건 |
+| 납땜공정 | 불량 | 뒤집힘 | jpg | 1,724 | 건 | 납땜공정 | 불량 | 뒤집힘 |</blockquote></div><div class="evidence-chunk" id="chunk-884"><p><a href="#chunk-884">청크 884</a> · **3.2 데이터 분포** <small>문자 위치 2751–3451</small></p><blockquote>공정 | 불량 | 납고드름 | jpg | 744 | 건 | 납땜공정 | 불량 | 납고드름 | json | 744 | 건 |
+| 합계 |   |   |   | 51,355 |   | 합계 |   |   |   | 51,355 |   |
+
+**디렉토리 구성 및 수량**
+
+| **데이터 분류(1단계)** | **분류(2단계)** | **분류(3단계)** | **</blockquote></div><div class="evidence-chunk" id="chunk-885"><p><a href="#chunk-885">청크 885</a> · **3.2 데이터 분포** <small>문자 위치 3291–4067</small></p><blockquote> 데이터 - 사전공정 | 정상 | 4. 납볼 | 바운딩박스, 분류태그 | - | json | 1,338 | 1:1 | 건 |
+| SMT 공정 개선 멀티모달 데이터 - 사전공정 | 정상 | 5. 납좌표 밀림 | 바운딩박스, 분류태그 | - | json | 1,194 | 1:1 | 건 |
+| SMT 공정 개선 멀티모달 데이터 - 사전공정 | 정상 | 6. 납형</blockquote></div><div class="evidence-chunk" id="chunk-886"><p><a href="#chunk-886">청크 886</a> · **3.2 데이터 분포** <small>문자 위치 3907–4663</small></p><blockquote> - 사전공정 | 불량 | 5. 납좌표 밀림 | 바운딩박스, 분류태그 | - | json | 1,813 | 1:1 | 건 |
+| SMT 공정 개선 멀티모달 데이터 - 사전공정 | 불량 | 6. 납형성 불량 | 바운딩박스, 분류태그 | - | json | 1,853 | 1:1 | 건 |
+| SMT 공정 개선 멀티모달 데이터 - 납땜공정 | 정상 | 1. 미납</blockquote></div><div class="evidence-chunk" id="chunk-887"><p><a href="#chunk-887">청크 887</a> · **3.2 데이터 분포** <small>문자 위치 4503–5185</small></p><blockquote>선 멀티모달 데이터 - 납땜공정 | 정상 | 6. 미삽 | 바운딩박스, 분류태그 | - | json | 1,390 | 1:1 | 건 |
+| SMT 공정 개선 멀티모달 데이터 - 납땜공정 | 정상 | 7. 역삽 | 바운딩박스, 분류태그 | - | json | 794 | 1:1 | 건 |
+| SMT 공정 개선 멀티모달 데이터 - 납땜공정 | 정상 | 8. 뒤집</blockquote></div><div class="evidence-chunk" id="chunk-888"><p><a href="#chunk-888">청크 888</a> · **3.2 데이터 분포** <small>문자 위치 5025–5699</small></p><blockquote>티모달 데이터 - 납땜공정 | 정상 | 12. 납고드름 | 바운딩박스, 분류태그 | - | json | 496 | 1:1 | 건 |
+| SMT 공정 개선 멀티모달 데이터 - 납땜공정 | 불량 | 1. 미납 | 바운딩박스, 분류태그 | - | json | 1,997 | 1:1 | 건 |
+| SMT 공정 개선 멀티모달 데이터 - 납땜공정 | 불량 | 2. 냉납</blockquote></div><div class="evidence-chunk" id="chunk-889"><p><a href="#chunk-889">청크 889</a> · **3.2 데이터 분포** <small>문자 위치 5539–6183</small></p><blockquote>멀티모달 데이터 - 납땜공정 | 불량 | 6. 미삽 | 바운딩박스, 분류태그 | - | json | 2,114 | 1:1 | 건 |
+| SMT 공정 개선 멀티모달 데이터 - 납땜공정 | 불량 | 7. 역삽 | 바운딩박스, 분류태그 | - | json | 1,234 | 1:1 | 건 |
+| SMT 공정 개선 멀티모달 데이터 - 납땜공정 | 불량 | 8. 뒤집</blockquote></div></article><article class="evidence-section" id="section-30"><h3><a href="#section-30">**4. 데이터 포맷** · 섹션 30</a></h3><p class="record-snippet">**공정별 데이터 구성**
+
+| **구분** | **획득/수집 단계** | **정제 단계** | **가공 단계** |
+
+| 데이터 구분 | 원시 데이터 | 원천 데이터 | 가공 데이터 |
+| 데이터 형태 | jpg, csv | jpg, csv | json |
+| 데이터 포멧 | 이미지 데이터(jpg) / 센서 데이터(csv) | 이미지 데이터(jpg) / </p>
+<div class="evidence-chunk" id="chunk-890"><p><a href="#chunk-890">청크 890</a> · **4. 데이터 포맷** <small>문자 위치 0–369</small></p><blockquote>**공정별 데이터 구성**
+
+| **구분** | **획득/수집 단계** | **정제 단계** | **가공 단계** |
+
+| 데이터 구분 | 원시 데이터 | 원천 데이터 | 가공 데이터 |
+| 데이터 형태 | jpg, csv | jpg, csv | json |
+| 데이터 포멧 | 이미지 데이터(jpg) / 센서 데이터(csv) | 이미지 데이터(jpg) / </blockquote></div></article><article class="evidence-section" id="section-31"><h3><a href="#section-31">**어노테이션 포맷** · 섹션 31</a></h3><p class="record-snippet">| **No** | **속성명** | **타입** | **필수여부** | **속성 설명** | **예시** |
+
+| 1 | categories | array | y | 라벨 정보 |   |
+| 1-1 | id | number | y | 라벨 번호 | 1 |
+| 1-2 | name | string | y | 라벨 이름 | 미납 |
+| 2 | images | </p>
+<div class="evidence-chunk" id="chunk-891"><p><a href="#chunk-891">청크 891</a> · **어노테이션 포맷** <small>문자 위치 0–863</small></p><blockquote>| **No** | **속성명** | **타입** | **필수여부** | **속성 설명** | **예시** |
+
+| 1 | categories | array | y | 라벨 정보 |   |
+| 1-1 | id | number | y | 라벨 번호 | 1 |
+| 1-2 | name | string | y | 라벨 이름 | 미납 |
+| 2 | images | </blockquote></div><div class="evidence-chunk" id="chunk-892"><p><a href="#chunk-892">청크 892</a> · **어노테이션 포맷** <small>문자 위치 703–1444</small></p><blockquote>딩박스 전체면적 |   |
+| 3-6 | bbox | array | y | 바운딩박스 정보 |   |
+| 3-7 | iscrowd | number | n | 다중 객체 라벨 시 사용되는 변수 |   |
+| 3-8 | attributes | object | n | 라벨 속성값 |   |
+| 3-8-1 | occluded | boolean | n | 객체 가려</blockquote></div></article><article class="evidence-section" id="section-32"><h3><a href="#section-32">**어노테이션 예시** · 섹션 32</a></h3><p class="record-snippet">위 5번 항목 &#34;실제 예시&#34; 참조 (categories/images/annotations/sensor_data 구조 동일)</p>
+<div class="evidence-chunk" id="chunk-893"><p><a href="#chunk-893">청크 893</a> · **어노테이션 예시** <small>문자 위치 0–68</small></p><blockquote>위 5번 항목 &#34;실제 예시&#34; 참조 (categories/images/annotations/sensor_data 구조 동일)</blockquote></div></article><article class="evidence-section" id="section-33"><h3><a href="#section-33">**5. 데이터 구축 절차** · 섹션 33</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-34"><h3><a href="#section-34">**5.1 데이터 구축 절차** · 섹션 34</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-35"><h3><a href="#section-35">**데이터 구축 절차** · 섹션 35</a></h3><p class="record-snippet">- 단계별 데이터 구축 프로세스에 따라 체계적으로 추진
+
+![이미지: BIN0001.BMP]</p>
+<div class="evidence-chunk" id="chunk-894"><p><a href="#chunk-894">청크 894</a> · **데이터 구축 절차** <small>문자 위치 0–51</small></p><blockquote>- 단계별 데이터 구축 프로세스에 따라 체계적으로 추진
+
+![이미지: BIN0001.BMP]</blockquote></div></article><article class="evidence-section" id="section-36"><h3><a href="#section-36">**공정별 데이터 구축 절차** · 섹션 36</a></h3><p class="record-snippet">**수집데이터 절차**
+
+![이미지: BIN0002.bmp]
+
+**정제데이터 절차**
+
+![이미지: BIN0003.bmp]
+
+**가공데이터 절차**
+
+![이미지: BIN0004.png]</p>
+<div class="evidence-chunk" id="chunk-895"><p><a href="#chunk-895">청크 895</a> · **공정별 데이터 구축 절차** <small>문자 위치 0–103</small></p><blockquote>**수집데이터 절차**
+
+![이미지: BIN0002.bmp]
+
+**정제데이터 절차**
+
+![이미지: BIN0003.bmp]
+
+**가공데이터 절차**
+
+![이미지: BIN0004.png]</blockquote></div></article><article class="evidence-section" id="section-37"><h3><a href="#section-37">**5.2 데이터 구축 기준** · 섹션 37</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-38"><h3><a href="#section-38">**획득/수집 기준** · 섹션 38</a></h3><p class="record-snippet">| **구분** | **획득/수집 기준** | **비고** |
+
+| 수집 대상 | SMT 제조 공정 중 장비에서 발생하는 주요 수집 대상으로 설정 | 정의된 36종 클래스 수집 대상 |
+| 센서 및 메타데이터 연계 수집 | 장비에서 발생하는 공정 변수를 센서 로드 데이터와 함께 수집 / 해당 변수는 향후 AI 결함 예측율 산정 시 가중치로 활용할 수 있도록</p>
+<div class="evidence-chunk" id="chunk-896"><p><a href="#chunk-896">청크 896</a> · **획득/수집 기준** <small>문자 위치 0–453</small></p><blockquote>| **구분** | **획득/수집 기준** | **비고** |
+
+| 수집 대상 | SMT 제조 공정 중 장비에서 발생하는 주요 수집 대상으로 설정 | 정의된 36종 클래스 수집 대상 |
+| 센서 및 메타데이터 연계 수집 | 장비에서 발생하는 공정 변수를 센서 로드 데이터와 함께 수집 / 해당 변수는 향후 AI 결함 예측율 산정 시 가중치로 활용할 수 있도록</blockquote></div></article><article class="evidence-section" id="section-39"><h3><a href="#section-39">**정제 기준** · 섹션 39</a></h3><p class="record-snippet">| **구분** | **정제 기준** | **비고** |
+
+| 촬영 수단 | 기준에 맞는 도구로 촬영이 되었는가? |   |
+| 객체의 크기비율 | 데이터 내 객체가 학습시 문제가 되지 않는 최소 픽셀 이상으로 촬영이 되었는가? |   |
+| 객체 대상 제한 | 데이터 내에서 촬영 대상 객체 외 다른 것들이 촬영되었는가? |   |
+| 이미지 비율 | 촬영</p>
+<div class="evidence-chunk" id="chunk-897"><p><a href="#chunk-897">청크 897</a> · **정제 기준** <small>문자 위치 0–523</small></p><blockquote>| **구분** | **정제 기준** | **비고** |
+
+| 촬영 수단 | 기준에 맞는 도구로 촬영이 되었는가? |   |
+| 객체의 크기비율 | 데이터 내 객체가 학습시 문제가 되지 않는 최소 픽셀 이상으로 촬영이 되었는가? |   |
+| 객체 대상 제한 | 데이터 내에서 촬영 대상 객체 외 다른 것들이 촬영되었는가? |   |
+| 이미지 비율 | 촬영</blockquote></div></article><article class="evidence-section" id="section-40"><h3><a href="#section-40">**가공(라벨링) 기준** · 섹션 40</a></h3><p class="record-snippet">**바운딩 박스 (Bounding Box)**
+
+| **구분** | **내용** |
+
+| 라벨링 예시 | 정상 유형과 불량 유형을 기준으로 이미지 내 객체에 바운딩 박스 표시 |
+| 특징 | 좌표 정보(X, Y, W, H) 포함 / 공정명, 정상/불량 여부 / 결함 종류 등 주석 추가 |
+| 라벨링 대상 | 클래스 36종 |
+
+![이미지: BIN0008.B</p>
+<div class="evidence-chunk" id="chunk-898"><p><a href="#chunk-898">청크 898</a> · **가공(라벨링) 기준** <small>문자 위치 0–294</small></p><blockquote>**바운딩 박스 (Bounding Box)**
+
+| **구분** | **내용** |
+
+| 라벨링 예시 | 정상 유형과 불량 유형을 기준으로 이미지 내 객체에 바운딩 박스 표시 |
+| 특징 | 좌표 정보(X, Y, W, H) 포함 / 공정명, 정상/불량 여부 / 결함 종류 등 주석 추가 |
+| 라벨링 대상 | 클래스 36종 |
+
+![이미지: BIN0008.B</blockquote></div></article><article class="evidence-section" id="section-41"><h3><a href="#section-41">**6. 데이터 저장 구조 및 파일 명명 규칙** · 섹션 41</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-42"><h3><a href="#section-42">**디렉토리 구조** · 섹션 42</a></h3><p class="record-snippet">| **경로 구분 정보** | **구분자 정보** |
+
+| 1차 경로 - 데이터 유형 구분 | 이미지 데이터 / 센서 데이터 |
+| 2차 경로 - SMT 공정 구분 | 사전공정 / 납땜공정 |
+| 3차 경로 - 결함 구분 | 정상 / 불량 |
+| 4차 경로 - 불량 유형 | 미납, 납부족, 납쇼트, 납볼, 납좌표 밀림 등 총 36종 |</p>
+<div class="evidence-chunk" id="chunk-899"><p><a href="#chunk-899">청크 899</a> · **디렉토리 구조** <small>문자 위치 0–188</small></p><blockquote>| **경로 구분 정보** | **구분자 정보** |
+
+| 1차 경로 - 데이터 유형 구분 | 이미지 데이터 / 센서 데이터 |
+| 2차 경로 - SMT 공정 구분 | 사전공정 / 납땜공정 |
+| 3차 경로 - 결함 구분 | 정상 / 불량 |
+| 4차 경로 - 불량 유형 | 미납, 납부족, 납쇼트, 납볼, 납좌표 밀림 등 총 36종 |</blockquote></div></article><article class="evidence-section" id="section-43"><h3><a href="#section-43">**파일 명명 규칙** · 섹션 43</a></h3><p class="record-snippet">**예시: `PR_NOR_NM_A_20250101-110101_00001`**
+
+**구성: 대분류_중분류_소분류_수집업체_촬영일자-시간_데이터카운터**
+
+| **항목** | **코드** | **값** |
+
+| 대분류 | PR | 사전공정 |
+| 대분류 | SD | 납땜공정 |
+| 중분류 | NOR | 정상 |
+| 중분류 | DEF | 불량 |
+| 소분류 |</p>
+<div class="evidence-chunk" id="chunk-900"><p><a href="#chunk-900">청크 900</a> · **파일 명명 규칙** <small>문자 위치 0–587</small></p><blockquote>**예시: `PR_NOR_NM_A_20250101-110101_00001`**
+
+**구성: 대분류_중분류_소분류_수집업체_촬영일자-시간_데이터카운터**
+
+| **항목** | **코드** | **값** |
+
+| 대분류 | PR | 사전공정 |
+| 대분류 | SD | 납땜공정 |
+| 중분류 | NOR | 정상 |
+| 중분류 | DEF | 불량 |
+| 소분류 |</blockquote></div></article><article class="evidence-section" id="section-44"><h3><a href="#section-44">**제2장 데이터 구축 및 활용** · 섹션 44</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-45"><h3><a href="#section-45">**1. 데이터 구축** · 섹션 45</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-46"><h3><a href="#section-46">**1.1 데이터 구축공정 및 결과** · 섹션 46</a></h3><p class="record-snippet">| **구축공정** | **세부 프로세스** | **내용** | **결과** |
+
+| 준비/계획 | 데이터 구축 설계 | SMT 공정 특성을 분석하여 AOI/SPI 검사 이미지와 공정 환경 센서 데이터를 결합한 멀티모달 데이터 구축 계획 수립 | 데이터 수집 범위 및 항목 정의 / 가이드라인 초안 작성 |
+| 획득/수집 | 데이터 수집 | 검사 장비를 활용</p>
+<div class="evidence-chunk" id="chunk-901"><p><a href="#chunk-901">청크 901</a> · **1.1 데이터 구축공정 및 결과** <small>문자 위치 0–465</small></p><blockquote>| **구축공정** | **세부 프로세스** | **내용** | **결과** |
+
+| 준비/계획 | 데이터 구축 설계 | SMT 공정 특성을 분석하여 AOI/SPI 검사 이미지와 공정 환경 센서 데이터를 결합한 멀티모달 데이터 구축 계획 수립 | 데이터 수집 범위 및 항목 정의 / 가이드라인 초안 작성 |
+| 획득/수집 | 데이터 수집 | 검사 장비를 활용</blockquote></div></article><article class="evidence-section" id="section-47"><h3><a href="#section-47">**1.2 데이터 구축 유의사항** · 섹션 47</a></h3><p class="record-snippet">| **항목** | **고려사항** |
+
+| 법·제도 준수 | 원시데이터 획득/수집 시 관련 법·제도적 규정 등을 반드시 준수하여야 함 / 개인정보 및 사생활 보호가 필요한 항목 획득 수집 시, 개인정보보호법 등에 따라 적절한 법적·기술적 절차를 거친 데이터를 활용하며, 그렇지 않은 데이터는 정제과정에서 처리될 수 있도록 한다 / 지적재산권 이슈가 있는 경</p>
+<div class="evidence-chunk" id="chunk-902"><p><a href="#chunk-902">청크 902</a> · **1.2 데이터 구축 유의사항** <small>문자 위치 0–769</small></p><blockquote>| **항목** | **고려사항** |
+
+| 법·제도 준수 | 원시데이터 획득/수집 시 관련 법·제도적 규정 등을 반드시 준수하여야 함 / 개인정보 및 사생활 보호가 필요한 항목 획득 수집 시, 개인정보보호법 등에 따라 적절한 법적·기술적 절차를 거친 데이터를 활용하며, 그렇지 않은 데이터는 정제과정에서 처리될 수 있도록 한다 / 지적재산권 이슈가 있는 경</blockquote></div></article><article class="evidence-section" id="section-48"><h3><a href="#section-48">**2. 학습모델** · 섹션 48</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-49"><h3><a href="#section-49">**2.1 학습모델 및 알고리즘** · 섹션 49</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-50"><h3><a href="#section-50">**임무 정의** · 섹션 50</a></h3><p class="record-snippet">SMT 공정에서 수집되는 온도, 습도, 진동, 소리 등 다양한 센서 기반 시계열 데이터와 AOI/SPI 장비로부터 획득한 고해상도 이미지 데이터를 결합하여, 불량 발생을 사전에 예측하거나 실시간으로 감지할 수 있는 지능형 AI 모델 개발</p>
+<div class="evidence-chunk" id="chunk-903"><p><a href="#chunk-903">청크 903</a> · **임무 정의** <small>문자 위치 0–132</small></p><blockquote>SMT 공정에서 수집되는 온도, 습도, 진동, 소리 등 다양한 센서 기반 시계열 데이터와 AOI/SPI 장비로부터 획득한 고해상도 이미지 데이터를 결합하여, 불량 발생을 사전에 예측하거나 실시간으로 감지할 수 있는 지능형 AI 모델 개발</blockquote></div></article><article class="evidence-section" id="section-51"><h3><a href="#section-51">**임무 선정 사유** · 섹션 51</a></h3><p class="record-snippet">SMT(Surface Mount Technology) 공정은 부품의 고속 실장과 정밀 납땜이 반복되는 복합 공정으로, 공정 조건의 미세한 변화나 설비 이상이 곧바로 제품 불량으로 이어질 가능성이 높음. 이러한 불량은 단일 제품의 품질 저하에 그치지 않고, 라인 전체의 생산성 저하, 납기 지연, 대량 리워크 및 설비 정지 등으로 이어져 막대한 손실 초래
+
+따</p>
+<div class="evidence-chunk" id="chunk-904"><p><a href="#chunk-904">청크 904</a> · **임무 선정 사유** <small>문자 위치 0–608</small></p><blockquote>SMT(Surface Mount Technology) 공정은 부품의 고속 실장과 정밀 납땜이 반복되는 복합 공정으로, 공정 조건의 미세한 변화나 설비 이상이 곧바로 제품 불량으로 이어질 가능성이 높음. 이러한 불량은 단일 제품의 품질 저하에 그치지 않고, 라인 전체의 생산성 저하, 납기 지연, 대량 리워크 및 설비 정지 등으로 이어져 막대한 손실 초래
+
+따</blockquote></div></article><article class="evidence-section" id="section-52"><h3><a href="#section-52">**학습 모델 개발 환경** · 섹션 52</a></h3><p class="record-snippet">**하드웨어 사양**
+
+- CPU: Intel(R) Xeon(R) Silver 4210R CPU @ 2.40GHz
+- Memory: 188GB
+- GPU: NVIDIA RTX A6000 x 2ea
+- Storage: SSD 480GB, HDD 4TB
+- OS: Ubuntu 22.04.5 LTS
+
+**알고리즘 및 학습 조건**
+
+- 개발 언어: Python </p>
+<div class="evidence-chunk" id="chunk-905"><p><a href="#chunk-905">청크 905</a> · **학습 모델 개발 환경** <small>문자 위치 0–221</small></p><blockquote>**하드웨어 사양**
+
+- CPU: Intel(R) Xeon(R) Silver 4210R CPU @ 2.40GHz
+- Memory: 188GB
+- GPU: NVIDIA RTX A6000 x 2ea
+- Storage: SSD 480GB, HDD 4TB
+- OS: Ubuntu 22.04.5 LTS
+
+**알고리즘 및 학습 조건**
+
+- 개발 언어: Python </blockquote></div></article><article class="evidence-section" id="section-53"><h3><a href="#section-53">**최종 선정 모델** · 섹션 53</a></h3><p class="record-snippet">| **구분** | **학습 모델** |
+
+| 공정 최적화를 위한 멀티모달 데이터 기반 SMT 공정 결함 예측 모델 | Swin Transformer, TimesNet 멀티모달 모델 |
+| 사전공정 결합 상태 검출 모델 | YOLOv11 |
+| 납땜공정 결합 상태 검출 모델 | YOLOv11 |</p>
+<div class="evidence-chunk" id="chunk-906"><p><a href="#chunk-906">청크 906</a> · **최종 선정 모델** <small>문자 위치 0–165</small></p><blockquote>| **구분** | **학습 모델** |
+
+| 공정 최적화를 위한 멀티모달 데이터 기반 SMT 공정 결함 예측 모델 | Swin Transformer, TimesNet 멀티모달 모델 |
+| 사전공정 결합 상태 검출 모델 | YOLOv11 |
+| 납땜공정 결합 상태 검출 모델 | YOLOv11 |</blockquote></div></article><article class="evidence-section" id="section-54"><h3><a href="#section-54">**학습 데이터 생성** · 섹션 54</a></h3><p class="record-snippet">| **구분** | **학습 데이터 생성** |
+
+| 공정 최적화를 위한 멀티모달 데이터 기반 SMT 공정 결함 예측 모델 | 총 데이터 수량: 51,353개(구축 목표량 대비 103%) / 데이터셋 분할: 학습:검증:평가 = 0.8:0.1:0.1 / 센서데이터와 촬영 이미지 데이터를 멀티 모달 데이터셋으로 구성 / 센서 데이터 형식: [Sequence_L</p>
+<div class="evidence-chunk" id="chunk-907"><p><a href="#chunk-907">청크 907</a> · **학습 데이터 생성** <small>문자 위치 0–692</small></p><blockquote>| **구분** | **학습 데이터 생성** |
+
+| 공정 최적화를 위한 멀티모달 데이터 기반 SMT 공정 결함 예측 모델 | 총 데이터 수량: 51,353개(구축 목표량 대비 103%) / 데이터셋 분할: 학습:검증:평가 = 0.8:0.1:0.1 / 센서데이터와 촬영 이미지 데이터를 멀티 모달 데이터셋으로 구성 / 센서 데이터 형식: [Sequence_L</blockquote></div></article><article class="evidence-section" id="section-55"><h3><a href="#section-55">**학습 모델 검증 조건** · 섹션 55</a></h3><p class="record-snippet">**공정 최적화를 위한 멀티모달 데이터 기반 SMT 공정 결함 예측 모델**
+
+| **구분** | **내용** |
+
+| 항목명 | SMT 공정 결함 예측 |
+| 검증 방법 | 도커 파일 제출, 코드 제출 |
+| 목적 | SMT 공정 상의 이미지-센서 데이터를 기반으로 결합 상태의 정상, 불량 분류 |
+| 지표 | F1-Score |
+| 실행 파일명 | ev</p>
+<div class="evidence-chunk" id="chunk-908"><p><a href="#chunk-908">청크 908</a> · **학습 모델 검증 조건** <small>문자 위치 0–952</small></p><blockquote>**공정 최적화를 위한 멀티모달 데이터 기반 SMT 공정 결함 예측 모델**
+
+| **구분** | **내용** |
+
+| 항목명 | SMT 공정 결함 예측 |
+| 검증 방법 | 도커 파일 제출, 코드 제출 |
+| 목적 | SMT 공정 상의 이미지-센서 데이터를 기반으로 결합 상태의 정상, 불량 분류 |
+| 지표 | F1-Score |
+| 실행 파일명 | ev</blockquote></div><div class="evidence-chunk" id="chunk-909"><p><a href="#chunk-909">청크 909</a> · **학습 모델 검증 조건** <small>문자 위치 792–1671</small></p><blockquote> 학습 과정별 데이터 분류 및 비율 정보 | 총 데이터 수량: 51,355개 / 데이터셋 분할: 학습:검증:평가 = 0.8:0.1:0.1 |
+
+| **데이터 종류** | **Training 비율(수량)** | **Validation 비율(수량)** | **Test 비율(수량)** |
+
+| SMT 공정 결함 분류 | 80% (41,069) | 10% (5,1</blockquote></div><div class="evidence-chunk" id="chunk-910"><p><a href="#chunk-910">청크 910</a> · **학습 모델 검증 조건** <small>문자 위치 1511–2343</small></p><blockquote> 배치 크기: 16 / 데이터 로더 워커 수: 8 / 입력 이미지 크기: 512x512 / 옵티마이저: AdamW (weight decay=0.01) |
+| 파일 형식 | 원천데이터: jpg / 라벨링데이터: json |
+| 전체 구축 데이터 대비 모델에 적용되는 비율 | 100% |
+| 모델 학습 과정별 데이터 분류 및 비율 정보 | 총 데이터 수량: 2</blockquote></div><div class="evidence-chunk" id="chunk-911"><p><a href="#chunk-911">청크 911</a> · **학습 모델 검증 조건** <small>문자 위치 2183–2777</small></p><blockquote> 2 |
+| Storage | SSD 423GB + HDD 3.6TB |
+| OS | Ubuntu 22.04.5 LTS |
+| 개발 언어 | Python |
+| 프레임워크 | CUDA 12.8, cuDNN 9, torch 2.9.0+cu128 |
+| 학습 알고리즘 | YOLOv11 |
+| 학습 조건 | 총 에포크 수: 100 / 학습률(Learning Ra</blockquote></div></article><article class="evidence-section" id="section-56"><h3><a href="#section-56">**2.2 모델 학습 준비 및 유효성 검증 결과** · 섹션 56</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-57"><h3><a href="#section-57">**모델 학습 준비** · 섹션 57</a></h3><p class="record-snippet">**시험 환경**
+
+1. **하드웨어 정보**
+   - CPU: Intel(R) Xeon(R) Silver 4210R CPU @ 2.40GHz
+   - Memory: 180GB
+   - GPU: NVIDIA RTX A6000
+
+2. **OS 정보**
+   - Ubuntu 22.04.5 LTS
+
+3. **AI 모델 환경 정보**
+   - 단일 도커 컨테이너에</p>
+<div class="evidence-chunk" id="chunk-912"><p><a href="#chunk-912">청크 912</a> · **모델 학습 준비** <small>문자 위치 0–522</small></p><blockquote>**시험 환경**
+
+1. **하드웨어 정보**
+   - CPU: Intel(R) Xeon(R) Silver 4210R CPU @ 2.40GHz
+   - Memory: 180GB
+   - GPU: NVIDIA RTX A6000
+
+2. **OS 정보**
+   - Ubuntu 22.04.5 LTS
+
+3. **AI 모델 환경 정보**
+   - 단일 도커 컨테이너에</blockquote></div></article><article class="evidence-section" id="section-58"><h3><a href="#section-58">신규 디렉토리 생성 · 섹션 58</a></h3><p class="record-snippet">sudo mkdir {디렉토리명}</p>
+<div class="evidence-chunk" id="chunk-913"><p><a href="#chunk-913">청크 913</a> · 신규 디렉토리 생성 <small>문자 위치 0–18</small></p><blockquote>sudo mkdir {디렉토리명}</blockquote></div></article><article class="evidence-section" id="section-59"><h3><a href="#section-59">도커 이미지 신규 디렉토리로 복사 · 섹션 59</a></h3><p class="record-snippet">sudo cp nia18.tar {디렉토리 경로}</p>
+<div class="evidence-chunk" id="chunk-914"><p><a href="#chunk-914">청크 914</a> · 도커 이미지 신규 디렉토리로 복사 <small>문자 위치 0–27</small></p><blockquote>sudo cp nia18.tar {디렉토리 경로}</blockquote></div></article><article class="evidence-section" id="section-60"><h3><a href="#section-60">도커 이미지 불러오기 · 섹션 60</a></h3><p class="record-snippet">sudo docker load -i nia18.tar</p>
+<div class="evidence-chunk" id="chunk-915"><p><a href="#chunk-915">청크 915</a> · 도커 이미지 불러오기 <small>문자 위치 0–29</small></p><blockquote>sudo docker load -i nia18.tar</blockquote></div></article><article class="evidence-section" id="section-61"><h3><a href="#section-61">불러온 이미지 확인 · 섹션 61</a></h3><p class="record-snippet">sudo docker images</p>
+<div class="evidence-chunk" id="chunk-916"><p><a href="#chunk-916">청크 916</a> · 불러온 이미지 확인 <small>문자 위치 0–18</small></p><blockquote>sudo docker images</blockquote></div></article><article class="evidence-section" id="section-62"><h3><a href="#section-62">도커 이미지명 변경 · 섹션 62</a></h3><p class="record-snippet">sudo docker tag 기존_이미지명:태그 nia18:latest</p>
+<div class="evidence-chunk" id="chunk-917"><p><a href="#chunk-917">청크 917</a> · 도커 이미지명 변경 <small>문자 위치 0–39</small></p><blockquote>sudo docker tag 기존_이미지명:태그 nia18:latest</blockquote></div></article><article class="evidence-section" id="section-63"><h3><a href="#section-63">도커 컨테이너 실행 · 섹션 63</a></h3><p class="record-snippet">docker run -dit --privileged --ipc=host -p 21:21 -p 22:22 --shm-size=80G --gpus all --name nia18 --hostname nia18 nia18 bash
+```
+
+**Docker run 옵션 설명**
+
+| **옵션** | **설명** |
+
+| -d | Detached Mode: 컨테이너를</p>
+<div class="evidence-chunk" id="chunk-918"><p><a href="#chunk-918">청크 918</a> · 도커 컨테이너 실행 <small>문자 위치 0–810</small></p><blockquote>docker run -dit --privileged --ipc=host -p 21:21 -p 22:22 --shm-size=80G --gpus all --name nia18 --hostname nia18 nia18 bash
+```
+
+**Docker run 옵션 설명**
+
+| **옵션** | **설명** |
+
+| -d | Detached Mode: 컨테이너를</blockquote></div></article><article class="evidence-section" id="section-64"><h3><a href="#section-64">또는 (보다 안정된 접속 방법) · 섹션 64</a></h3><p class="record-snippet">docker exec -it {컨테이너 ID} bash
+```
+
+**가상환경 활성화**
+
+**a. classification 모델**
+
+```bash
+cd /workspace/models/1.classification
+python -m venv .venv_classification
+source .venv_classification/bin/activate
+p</p>
+<div class="evidence-chunk" id="chunk-919"><p><a href="#chunk-919">청크 919</a> · 또는 (보다 안정된 접속 방법) <small>문자 위치 0–603</small></p><blockquote>docker exec -it {컨테이너 ID} bash
+```
+
+**가상환경 활성화**
+
+**a. classification 모델**
+
+```bash
+cd /workspace/models/1.classification
+python -m venv .venv_classification
+source .venv_classification/bin/activate
+p</blockquote></div></article><article class="evidence-section" id="section-65"><h3><a href="#section-65">**유효성 검증 결과** · 섹션 65</a></h3><p class="record-snippet">각 모델별 가상환경 활성화 후 해당 모델의 디렉토리 내부의 검증 코드 실행
+
+```bash
+python3 evaluate.py
+```
+
+| **품질특성** | **TASK 명** | **모델명** | **지표** | **목표치** | **결과값** |
+
+| 유효성 | SMT 공정 불량 예측 | Swin Transformer + TimesNet 퓨전 | F1</p>
+<div class="evidence-chunk" id="chunk-920"><p><a href="#chunk-920">청크 920</a> · **유효성 검증 결과** <small>문자 위치 0–342</small></p><blockquote>각 모델별 가상환경 활성화 후 해당 모델의 디렉토리 내부의 검증 코드 실행
+
+```bash
+python3 evaluate.py
+```
+
+| **품질특성** | **TASK 명** | **모델명** | **지표** | **목표치** | **결과값** |
+
+| 유효성 | SMT 공정 불량 예측 | Swin Transformer + TimesNet 퓨전 | F1</blockquote></div></article><article class="evidence-section" id="section-66"><h3><a href="#section-66">**3. 서비스 활용** · 섹션 66</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-67"><h3><a href="#section-67">**3.1 서비스 활용 예시 및 시나리오** · 섹션 67</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-68"><h3><a href="#section-68">**SMT 공정 품질관리 지원** · 섹션 68</a></h3><p class="record-snippet">- 본 데이터셋은 SMT 공정 내 결함 인식 및 이상 상황 감지를 위한 멀티모달 AI 학습 데이터로, 제조 공정 품질관리 및 공정 모니터링 서비스에 활용될 수 있음
+- 특히 AOI/SPI 검사 이미지와 공정 환경 센서 데이터를 결합함으로써, 기존 이미지 중심 검사 서비스 대비 정확도와 신뢰도를 향상시킨 분석 결과 제공 가능</p>
+<div class="evidence-chunk" id="chunk-921"><p><a href="#chunk-921">청크 921</a> · **SMT 공정 품질관리 지원** <small>문자 위치 0–181</small></p><blockquote>- 본 데이터셋은 SMT 공정 내 결함 인식 및 이상 상황 감지를 위한 멀티모달 AI 학습 데이터로, 제조 공정 품질관리 및 공정 모니터링 서비스에 활용될 수 있음
+- 특히 AOI/SPI 검사 이미지와 공정 환경 센서 데이터를 결합함으로써, 기존 이미지 중심 검사 서비스 대비 정확도와 신뢰도를 향상시킨 분석 결과 제공 가능</blockquote></div></article><article class="evidence-section" id="section-69"><h3><a href="#section-69">**공정 이상 상황 모니터링** · 섹션 69</a></h3><p class="record-snippet">- 공정 환경 센서 데이터(온도, 습도, 진동, 소리 등)를 기반으로 공정 상태 변화를 분석하여 이상 징후 발생 가능성을 사전에 인지하는 데 활용
+- 이상 상황 발생 시점 및 구간에 대한 예측 정보를 제공함으로써, 공정 중단 및 불량 확산을 예방하는 공정 관리 지원이 가능</p>
+<div class="evidence-chunk" id="chunk-922"><p><a href="#chunk-922">청크 922</a> · **공정 이상 상황 모니터링** <small>문자 위치 0–152</small></p><blockquote>- 공정 환경 센서 데이터(온도, 습도, 진동, 소리 등)를 기반으로 공정 상태 변화를 분석하여 이상 징후 발생 가능성을 사전에 인지하는 데 활용
+- 이상 상황 발생 시점 및 구간에 대한 예측 정보를 제공함으로써, 공정 중단 및 불량 확산을 예방하는 공정 관리 지원이 가능</blockquote></div></article><article class="evidence-section" id="section-70"><h3><a href="#section-70">**서비스 활용 시나리오** · 섹션 70</a></h3><p class="record-snippet">1. SMT 공정에서 AOI/SPI 검사 이미지와 공정 환경 센서 데이터 수집
+2. 수집된 데이터가 AI 분석 모델에 입력되어 결함 인식 및 이상 감지 수행
+3. 분석 결과(결함 위치·유형, 이상 여부)가 공정 관리 시스템 또는 대시보드로 전달
+4. 품질관리 담당자가 분석 결과를 참고하여 공정 조정 및 대응 수행
+
+본 시나리오는 본 과제를 통해 구축된 데이</p>
+<div class="evidence-chunk" id="chunk-923"><p><a href="#chunk-923">청크 923</a> · **서비스 활용 시나리오** <small>문자 위치 0–362</small></p><blockquote>1. SMT 공정에서 AOI/SPI 검사 이미지와 공정 환경 센서 데이터 수집
+2. 수집된 데이터가 AI 분석 모델에 입력되어 결함 인식 및 이상 감지 수행
+3. 분석 결과(결함 위치·유형, 이상 여부)가 공정 관리 시스템 또는 대시보드로 전달
+4. 품질관리 담당자가 분석 결과를 참고하여 공정 조정 및 대응 수행
+
+본 시나리오는 본 과제를 통해 구축된 데이</blockquote></div></article>
+</section>
+
+  </main>
+  <footer>
+    <span>DOUZONE · MFG TECH COPILOT</span>
+    <span>데이터 출처: AI 허브(aihub.or.kr) 데이터셋 설명서·활용가이드 — 원본 재배포 금지, 출처 표기</span>
+  </footer>
+  <script src="../static/evidence.js" defer></script>
+</body>
+</html>

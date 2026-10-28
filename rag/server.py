@@ -4,14 +4,21 @@
 mfg-rag MCP 서버 — AI Hub 기술문서 RAG 질의 도구 (제조 중심 전분야)
 - SQLite FTS5(trigram) 인덱스: ~/.oneai/workspace/mfg-tech-copilot/rag/mfg_corpus.db
 - 코퍼스: 데이터셋 83종 · 설명서/활용가이드 153건 · 섹션 5,101개
-- 도구: search_docs, search_sections, get_document, list_datasets, get_stats
+- 도구: search_docs, search_sections, get_document, list_datasets, get_stats,
+       recommend_datasets, compare_datasets, semantic_search(벡터), hybrid_search(하이브리드)
 - 동의어 확장 검색(예: 화재→열폭주·발화·탄화), 3글자 미만 단어는 LIKE 스캔
 """
-import os, re, json, sqlite3
+import os, re, json, sqlite3, sys
 from pathlib import Path
+from types import SimpleNamespace
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import vector_runtime
+import retrieval_v2
 from mcp.server.fastmcp import FastMCP
 
-DB_PATH = str(Path(__file__).resolve().parent / "mfg_corpus_20261026_expanded_2.db")
+DB_PATH = os.path.expanduser(os.getenv('MFG_CORPUS_PATH', str(Path(__file__).resolve().parent / 'mfg_corpus_20261026_expanded_2.db')))
+VEC_DB_PATH = os.path.expanduser(os.getenv('MFG_VECTOR_PATH', str(Path(__file__).resolve().parent / 'mfg_chunks_20261028_v2.db')))
+VEC_MODEL = "BAAI/bge-m3"
 mcp = FastMCP("mfg-rag")
 
 # 범용 단어 — 검색 그룹에서 제외 (모든 문서에 걸려 노이즈)
@@ -131,6 +138,18 @@ def _search_docs(query: str, dtype: str = "", sn: str = "", limit: int = 10) -> 
     sql += " ORDER BY score LIMIT ?"; args.append(limit)
     rows = [dict(r) for r in con.execute(sql, args)]
     con.close()
+    if not rows:
+        fallback = json.loads(retrieval_v2.lexical_search(_engine_context(), query, dtype, sn, int(limit)))
+        seen = set()
+        for candidate in fallback.get('results', []):
+            if candidate['doc_id'] in seen:
+                continue
+            seen.add(candidate['doc_id'])
+            with db() as src:
+                doc = src.execute('SELECT id,sn,title,dtype,ds_name,nsec FROM docs WHERE id=?',
+                                  (candidate['doc_id'],)).fetchone()
+            rows.append({**dict(doc), 'snip': candidate['snip'], 'score': candidate['score'],
+                         'source_url': candidate['source_url']})
     return json.dumps({"query": query, "shown": len(rows), "results": rows}, ensure_ascii=False)
 
 def _search_sections(query: str, dtype: str = "", sn: str = "", limit: int = 10) -> str:
@@ -159,6 +178,8 @@ def _search_sections(query: str, dtype: str = "", sn: str = "", limit: int = 10)
     sql += " ORDER BY score LIMIT ?"; args.append(limit)
     rows = [dict(r) for r in con.execute(sql, args)]
     con.close()
+    if not rows:
+        return retrieval_v2.lexical_search(_engine_context(), query, dtype, sn, int(limit))
     return json.dumps({"query": query, "shown": len(rows), "results": rows}, ensure_ascii=False)
 
 def _get_document(doc_id: str, full: bool = False) -> str:
@@ -199,7 +220,7 @@ def _recommend_datasets(requirement: str, limit: int = 5) -> str:
     점수 = Σ (그룹별 히트 섹션 수 × 가중치): FTS 그룹 2.0, LIKE 그룹 1.0.
     모든 그룹(토큰)에 히트가 있는 데이터셋이 상위 — AND 요구사항을 소프트하게 반영."""
     con = db()
-    fts_groups, like_groups = expand_query(requirement)
+    fts_groups, like_groups = expand_query(retrieval_v2.normalize_query(requirement))
     limit = max(1, min(int(limit), 10))
     if not fts_groups and not like_groups:
         con.close()
@@ -288,7 +309,22 @@ def _get_stats() -> str:
         "db_bytes": os.path.getsize(DB_PATH),
     }
     con.close()
+    stats["vector_index"] = vector_runtime.stats(_engine_context())
     return json.dumps(stats, ensure_ascii=False)
+
+# ---- 청크 벡터 검색: 원문/모델 검증 및 메모리 캐시는 vector_runtime 담당 ----
+def _engine_context():
+    return SimpleNamespace(DB_PATH=DB_PATH, VEC_DB_PATH=VEC_DB_PATH, VEC_MODEL=VEC_MODEL,
+                           db=db, _semantic_search=_semantic_search)
+
+
+def _semantic_search(query: str, dtype: str = "", sn: str = "", limit: int = 10) -> str:
+    """청크 벡터 검색: 원문 전체 범위와 모델/원문 버전 검증."""
+    return vector_runtime.semantic_search(_engine_context(), query, dtype, sn, limit)
+
+def _hybrid_search(query: str, dtype: str = "", sn: str = "", limit: int = 10) -> str:
+    """자연어 어휘 후보 + 청크 벡터, 오류 시 경고를 포함한 어휘 폴백."""
+    return retrieval_v2.hybrid_search(_engine_context(), query, dtype, sn, limit)
 
 # ---- MCP 도구 등록 ----
 @mcp.tool()
@@ -328,6 +364,22 @@ def compare_datasets(sn_a: str, sn_b: str) -> str:
     """두 데이터셋 비교 — 구성(설명서/가이드 수)·규모(섹션·바이트)·주요 섹션 라벨을 나란히 반환.
     sn_a·sn_b: 데이터셋 번호(예: '71802', '71918')"""
     return _compare_datasets(sn_a, sn_b)
+
+@mcp.tool()
+def semantic_search(query: str, dtype: str = "", sn: str = "", limit: int = 10) -> str:
+    """의미(벡터) 검색 — 임베딩 유사도로 어휘가 달라도 의미가 같은 섹션을 찾는다.
+    최초 호출 시 임베딩 모델을 로드해 수 초가 걸릴 수 있다.
+    query: 검색 문장(예: '설비가 뜨거워지는 문제'), dtype: '설명서'|'가이드',
+    sn: 데이터셋 번호 필터, limit: 최대 건수(기본 10, 최대 30)"""
+    return _semantic_search(query, dtype, sn, limit)
+
+@mcp.tool()
+def hybrid_search(query: str, dtype: str = "", sn: str = "", limit: int = 10) -> str:
+    """하이브리드 검색 — 어휘(FTS+동의어) 검색과 의미(벡터) 검색을 RRF로 결합해 반환.
+    정확한 용어 매치와 의미 유사 결과를 모두 잡을 때 사용.
+    query: 검색어·문장, dtype: '설명서'|'가이드', sn: 데이터셋 번호 필터,
+    limit: 최대 건수(기본 10, 최대 30)"""
+    return _hybrid_search(query, dtype, sn, limit)
 
 @mcp.tool()
 def get_stats() -> str:

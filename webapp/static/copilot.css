@@ -108,6 +108,16 @@ tbody tr:hover{background:#f8faff}
 .section-item .tx{font-size:13px;line-height:1.9;white-space:pre-wrap;overflow-wrap:anywhere;color:#333a46;margin:0}
 .section-item .tx.clamp{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 
+/* 공개 근거 페이지 */
+.evidence-section{border-top:1px solid var(--line);padding:20px 0;scroll-margin-top:20px;overflow-wrap:anywhere}
+.evidence-chunk{border-left:3px solid var(--line);padding:8px 18px;margin:14px 0;scroll-margin-top:20px;font-size:12px;line-height:1.8;overflow-wrap:anywhere}
+.evidence-chunk:target,.evidence-section:target{background:#eaf1fd}
+.evidence-chunk blockquote{margin:8px 0;white-space:pre-wrap;color:var(--muted)}
+.evidence-filter{display:block;width:100%;max-width:650px;padding:12px;margin-top:10px;border:1px solid var(--line);border-radius:6px}
+.secondary-source{display:block;font-size:11px;margin-top:12px;color:var(--muted)}
+.filter-row{flex-wrap:wrap}.source-band p{overflow-wrap:anywhere}
+@media(max-width:700px){#searchForm .search-row{flex-wrap:wrap}#searchForm .search-input{flex-basis:100%}.filter-row label{max-width:100%}}
+
 /* 기타 */
 .source-band{background:var(--soft);border-top:1px solid var(--line);padding:17px 18px;margin:12px 0 36px;font-size:12px;color:var(--muted);line-height:1.8}
 .source-band strong{color:var(--ink)}

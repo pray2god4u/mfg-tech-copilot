@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="제조현장 기술지원 Copilot — AI Hub 기술문서 153건 검색·추천·비교">
+  <title>데이터 설명서 - 11-14. 제조 공정 자동화 구현 로봇 티칭 데이터 — RAG 근거 발췌 | 제조 Copilot</title>
+  <link rel="stylesheet" href="../static/copilot.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 이동</a>
+  <header class="topbar">
+    <a class="brand" href="../index.html"><span class="brand-mark">MFG</span><span>제조 Copilot</span><span>기술문서 인텔리전스</span></a>
+    <nav class="header-actions" aria-label="주요 메뉴">
+      <span class="public-badge"><span class="dot"></span>공개 조회</span>
+      <a href="../search.html">기술문서 검색</a>
+      <a href="../datasets.html">데이터셋 목록</a>
+      <a href="../demo.html">시연 질문</a>
+    </nav>
+  </header>
+  <main id="main">
+    
+<section class="heading-band"><div><p class="eyebrow">PUBLIC RAG EVIDENCE · 71937-설명서</p><h1>데이터 설명서 - 11-14. 제조 공정 자동화 구현 로봇 티칭 데이터</h1><p class="subtitle">11-14. 제조 공정 자동화 구현 로봇 티칭 데이터 · 설명서 · 섹션 45개 · 청크 59개</p></div></section>
+<aside class="source-band"><strong>문서 사실 · 제한된 근거 발췌</strong><p>전체 원본이 아닌 섹션명과 청크별 최대 200자 발췌입니다. 검색 화면은 검색 서버가 반환한 관련 스니펫을 표시합니다. 발췌만으로 설비 상태·화재 위험을 진단하지 않습니다. 근거 사실과 적용에 관한 추론을 구분하세요. AI Hub 이용약관을 따르며 원본 재배포를 허용하지 않습니다.</p><p><a href="../dataset/71937.html">데이터셋 구성 →</a> · <a href="https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71937" target="_blank" rel="noopener noreferrer">AI Hub 원본 메타데이터 (보조 출처) ↗</a></p></aside>
+<section class="search-band"><label for="evidenceFilter">이 페이지의 섹션명·발췌 찾기</label><input id="evidenceFilter" type="search" class="evidence-filter" placeholder="라벨 또는 발췌 내 단어"><p class="demo-note">현재 페이지 내 텍스트 필터입니다. 의미·벡터 검색이 아닙니다.</p></section>
+<section class="result-band"><h2>섹션 구성과 청크 근거</h2>
+<article class="evidence-section" id="section-0"><h3><a href="#section-0">**메타테이블 정보 (다중기입가능)** · 섹션 0</a></h3><p class="record-snippet">**분야**
+
+NIA 기입
+
+**데이터 유형**
+
+3D, 텍스트
+
+**구축 데이터량**
+
+o 원천데이터 - 3D CAD 데이터 실제 환경 574건 가상 환경 1,899건 - 로봇 상태 데이터 실제 환경 90건 가상 환경 270건 / o 라벨링 데이터 - 3D CAD 데이터 라벨링데이터 120건 (URDF) 120건 (JSON) - 로봇 상태 데이터 라벨링데</p>
+<div class="evidence-chunk" id="chunk-3153"><p><a href="#chunk-3153">청크 3153</a> · **메타테이블 정보 (다중기입가능)** <small>문자 위치 0–381</small></p><blockquote>**분야**
+
+NIA 기입
+
+**데이터 유형**
+
+3D, 텍스트
+
+**구축 데이터량**
+
+o 원천데이터 - 3D CAD 데이터 실제 환경 574건 가상 환경 1,899건 - 로봇 상태 데이터 실제 환경 90건 가상 환경 270건 / o 라벨링 데이터 - 3D CAD 데이터 라벨링데이터 120건 (URDF) 120건 (JSON) - 로봇 상태 데이터 라벨링데</blockquote></div></article><article class="evidence-section" id="section-1"><h3><a href="#section-1">**데이터 문의처** · 섹션 1</a></h3><p class="record-snippet">| **기관명** | **문의담당자명** | **전화번호 (유선전화번호기입)** | **메일주소** |
+
+| ㈜유니바 | 정용운 | 053-615-1264 | [gandalf@univa.co.kr](mailto:gandalf@univa.co.kr) |</p>
+<div class="evidence-chunk" id="chunk-3154"><p><a href="#chunk-3154">청크 3154</a> · **데이터 문의처** <small>문자 위치 0–140</small></p><blockquote>| **기관명** | **문의담당자명** | **전화번호 (유선전화번호기입)** | **메일주소** |
+
+| ㈜유니바 | 정용운 | 053-615-1264 | [gandalf@univa.co.kr](mailto:gandalf@univa.co.kr) |</blockquote></div></article><article class="evidence-section" id="section-2"><h3><a href="#section-2">**데이터 소개** · 섹션 2</a></h3><p class="record-snippet">본 데이터는 로봇 기반의 머신텐딩 자동화를 위한 학습용 데이터로서, 3D CAD 기반의 가공 현장 모델, 로봇 URDF 모델, 그리고 센서 및 제어기를 통해 수집한 로봇 구동 로그를 포함하여 자율적인 제조로봇의 판단 및 의사결정 AI 학습에 활용됨</p>
+<div class="evidence-chunk" id="chunk-3155"><p><a href="#chunk-3155">청크 3155</a> · **데이터 소개** <small>문자 위치 0–138</small></p><blockquote>본 데이터는 로봇 기반의 머신텐딩 자동화를 위한 학습용 데이터로서, 3D CAD 기반의 가공 현장 모델, 로봇 URDF 모델, 그리고 센서 및 제어기를 통해 수집한 로봇 구동 로그를 포함하여 자율적인 제조로봇의 판단 및 의사결정 AI 학습에 활용됨</blockquote></div></article><article class="evidence-section" id="section-3"><h3><a href="#section-3">**주요키워드** · 섹션 3</a></h3><p class="record-snippet">제조환경, 물류환경, 로보틱스, 가상 환경, 3D CAD, VLM, CoT</p>
+<div class="evidence-chunk" id="chunk-3156"><p><a href="#chunk-3156">청크 3156</a> · **주요키워드** <small>문자 위치 0–41</small></p><blockquote>제조환경, 물류환경, 로보틱스, 가상 환경, 3D CAD, VLM, CoT</blockquote></div></article><article class="evidence-section" id="section-4"><h3><a href="#section-4">**카테고리 정의서** · 섹션 4</a></h3><p class="record-snippet">첨부의 카테고리 정의서 엑셀파일에 데이터카테고리 작성하여 제출</p>
+<div class="evidence-chunk" id="chunk-3157"><p><a href="#chunk-3157">청크 3157</a> · **카테고리 정의서** <small>문자 위치 0–34</small></p><blockquote>첨부의 카테고리 정의서 엑셀파일에 데이터카테고리 작성하여 제출</blockquote></div></article><article class="evidence-section" id="section-5"><h3><a href="#section-5">**데이터셋명** · 섹션 5</a></h3><p class="record-snippet">| **국문** | **영문** |
+
+| 11-14. 제조 공정 자동화 구현 로봇 티칭 데이터 | 11-14. Manufacturing Process Automation robot Teaching Data |</p>
+<div class="evidence-chunk" id="chunk-3158"><p><a href="#chunk-3158">청크 3158</a> · **데이터셋명** <small>문자 위치 0–116</small></p><blockquote>| **국문** | **영문** |
+
+| 11-14. 제조 공정 자동화 구현 로봇 티칭 데이터 | 11-14. Manufacturing Process Automation robot Teaching Data |</blockquote></div></article><article class="evidence-section" id="section-6"><h3><a href="#section-6">**구축목적** · 섹션 6</a></h3><p class="record-snippet">숙련 인력의 감소와 생산성 정체로 인한 자동화 수요 증가
+
+CoT 기반 데이터에 대한 관심 및 필요성 증대
+
+실제 환경을 반영한 실효성 높은 데이터 구축</p>
+<div class="evidence-chunk" id="chunk-3159"><p><a href="#chunk-3159">청크 3159</a> · **구축목적** <small>문자 위치 0–85</small></p><blockquote>숙련 인력의 감소와 생산성 정체로 인한 자동화 수요 증가
+
+CoT 기반 데이터에 대한 관심 및 필요성 증대
+
+실제 환경을 반영한 실효성 높은 데이터 구축</blockquote></div></article><article class="evidence-section" id="section-7"><h3><a href="#section-7">**활용서비스** · 섹션 7</a></h3><p class="record-snippet">❍ 제조 산업의 변화와 협동로봇 기반 자율화 데이터의 필요성
+
+- 최근 제조 산업은 고령화에 따른 숙련 인력의 감소, 생산성 정체 등의 문제에 직면하고 있으며 자동화는 지속 가능한 경쟁력을 확보하기 위한 필수 전략으로 자리 잡고 있음.
+- 그러나 현재의 로봇 티칭 방식은 대부분 수작업과 작업자의 경험에 의존하고 있어 비효율적이며, 다양한 제조 환경에서 재활</p>
+<div class="evidence-chunk" id="chunk-3160"><p><a href="#chunk-3160">청크 3160</a> · **활용서비스** <small>문자 위치 0–468</small></p><blockquote>❍ 제조 산업의 변화와 협동로봇 기반 자율화 데이터의 필요성
+
+- 최근 제조 산업은 고령화에 따른 숙련 인력의 감소, 생산성 정체 등의 문제에 직면하고 있으며 자동화는 지속 가능한 경쟁력을 확보하기 위한 필수 전략으로 자리 잡고 있음.
+- 그러나 현재의 로봇 티칭 방식은 대부분 수작업과 작업자의 경험에 의존하고 있어 비효율적이며, 다양한 제조 환경에서 재활</blockquote></div></article><article class="evidence-section" id="section-8"><h3><a href="#section-8">**소개** · 섹션 8</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-9"><h3><a href="#section-9">**데이터구축 공정도** · 섹션 9</a></h3><p class="record-snippet">![이미지: BIN0001.png]</p>
+</article><article class="evidence-section" id="section-10"><h3><a href="#section-10">**2. 데이터 구축 절차** · 섹션 10</a></h3><p class="record-snippet">| **구분** | **상세** |
+
+| 수집 | 실제/가상 환경 데이터 획득/수집 |
+|  | 3D CAD 데이터의 구성 분포 확인하여 수집 진행 |
+|  | 수집 가이드라인 준수 여부 확인 |
+| 정제 | 중복 데이터 제거, 정합성 검증, 동기화 보정 등 |
+|  | 깊이 보정, 유사도 측정, 뷰포인트 검증을 통한 데이터 재구성 등 |
+| 가공 | 라벨</p>
+<div class="evidence-chunk" id="chunk-3161"><p><a href="#chunk-3161">청크 3161</a> · **2. 데이터 구축 절차** <small>문자 위치 0–263</small></p><blockquote>| **구분** | **상세** |
+
+| 수집 | 실제/가상 환경 데이터 획득/수집 |
+|  | 3D CAD 데이터의 구성 분포 확인하여 수집 진행 |
+|  | 수집 가이드라인 준수 여부 확인 |
+| 정제 | 중복 데이터 제거, 정합성 검증, 동기화 보정 등 |
+|  | 깊이 보정, 유사도 측정, 뷰포인트 검증을 통한 데이터 재구성 등 |
+| 가공 | 라벨</blockquote></div></article><article class="evidence-section" id="section-11"><h3><a href="#section-11">**데이터셋 통계 (구축 규모 및 분포)** · 섹션 11</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-12"><h3><a href="#section-12">**1. 데이터 구축 규모** · 섹션 12</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-13"><h3><a href="#section-13">**원천데이터** · 섹션 13</a></h3><p class="record-snippet">| **파일포맷** | **데이터 규모** | **데이터 정의** |
+
+| STL, CSV |  | 공정 셀, 로봇 및 장비 등의 병합된 3D 환경 정보 |
+|  |  | 각 공정, 환경 및 동작 시나리오별 로봇 관절 위치, 말단 위치, 토크 값 등 |
+
+| **구분** | **포멧** | **수량** |
+
+| 3D CAD 데이터 | 가상환경 *.stl |</p>
+<div class="evidence-chunk" id="chunk-3162"><p><a href="#chunk-3162">청크 3162</a> · **원천데이터** <small>문자 위치 0–310</small></p><blockquote>| **파일포맷** | **데이터 규모** | **데이터 정의** |
+
+| STL, CSV |  | 공정 셀, 로봇 및 장비 등의 병합된 3D 환경 정보 |
+|  |  | 각 공정, 환경 및 동작 시나리오별 로봇 관절 위치, 말단 위치, 토크 값 등 |
+
+| **구분** | **포멧** | **수량** |
+
+| 3D CAD 데이터 | 가상환경 *.stl |</blockquote></div></article><article class="evidence-section" id="section-14"><h3><a href="#section-14">**라벨링데이터** · 섹션 14</a></h3><p class="record-snippet">| **대분류** | **중분류** | **파일 포맷** | **규모** | **라벨링 유형** |
+
+| 3D CAD 데이터 | 가상환경 | *.json | 90개 | 90 set / 링크(물리 부위)와 조인트(관절)로 로봇 구조 정보 / 관성, 충돌 모델, 시각 정보 |
+|  |  | *.urdf | 90개 | XML 기반 |
+|  | 실제환경 | *.j</p>
+<div class="evidence-chunk" id="chunk-3163"><p><a href="#chunk-3163">청크 3163</a> · **라벨링데이터** <small>문자 위치 0–359</small></p><blockquote>| **대분류** | **중분류** | **파일 포맷** | **규모** | **라벨링 유형** |
+
+| 3D CAD 데이터 | 가상환경 | *.json | 90개 | 90 set / 링크(물리 부위)와 조인트(관절)로 로봇 구조 정보 / 관성, 충돌 모델, 시각 정보 |
+|  |  | *.urdf | 90개 | XML 기반 |
+|  | 실제환경 | *.j</blockquote></div></article><article class="evidence-section" id="section-15"><h3><a href="#section-15">**2. 디렉토리 구성 및 수량** · 섹션 15</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-16"><h3><a href="#section-16">**01. training 디렉토리 구성 및 수량** · 섹션 16</a></h3><p class="record-snippet">| **구분** | **데이터** | **분류** | **라벨링 유형** | **파일형식** | **수량** | **파일비율** | **단위** |
+
+| 01. 원천데이터 | 3D CAD 데이터 | 가상환경(3D) | - | *.stl | 1,545 | N:1 | EA |
+|  |  | 실제환경(3D) | - | *.stl | 383 | N:1 | EA |</p>
+<div class="evidence-chunk" id="chunk-3164"><p><a href="#chunk-3164">청크 3164</a> · **01. training 디렉토리 구성 및 수량** <small>문자 위치 0–718</small></p><blockquote>| **구분** | **데이터** | **분류** | **라벨링 유형** | **파일형식** | **수량** | **파일비율** | **단위** |
+
+| 01. 원천데이터 | 3D CAD 데이터 | 가상환경(3D) | - | *.stl | 1,545 | N:1 | EA |
+|  |  | 실제환경(3D) | - | *.stl | 383 | N:1 | EA |</blockquote></div></article><article class="evidence-section" id="section-17"><h3><a href="#section-17">**02. validation 디렉토리 구성 및 수량** · 섹션 17</a></h3><p class="record-snippet">| **구분** | **데이터** | **분류** | **라벨링 유형** | **파일형식** | **수량** | **파일비율** | **단위** |
+
+| 01. 원천데이터 | 3D CAD 데이터 | 가상환경(3D) | - | *.stl | 191 | N:1 | EA |
+|  |  | 실제환경(3D) | - | *.stl | 95 | N:1 | EA |
+| </p>
+<div class="evidence-chunk" id="chunk-3165"><p><a href="#chunk-3165">청크 3165</a> · **02. validation 디렉토리 구성 및 수량** <small>문자 위치 0–704</small></p><blockquote>| **구분** | **데이터** | **분류** | **라벨링 유형** | **파일형식** | **수량** | **파일비율** | **단위** |
+
+| 01. 원천데이터 | 3D CAD 데이터 | 가상환경(3D) | - | *.stl | 191 | N:1 | EA |
+|  |  | 실제환경(3D) | - | *.stl | 95 | N:1 | EA |
+| </blockquote></div></article><article class="evidence-section" id="section-18"><h3><a href="#section-18">**03. test 디렉토리 구성 및 수량** · 섹션 18</a></h3><p class="record-snippet">| **구분** | **데이터** | **분류** | **라벨링 유형** | **파일형식** | **수량** | **파일비율** | **단위** |
+
+| 01. 원천데이터 | 3D CAD 데이터 | 가상환경(3D) | - | *.stl | 163 | N:1 | EA |
+|  |  | 실제환경(3D) | - | *.stl | 96 | N:1 | EA |
+| </p>
+<div class="evidence-chunk" id="chunk-3166"><p><a href="#chunk-3166">청크 3166</a> · **03. test 디렉토리 구성 및 수량** <small>문자 위치 0–704</small></p><blockquote>| **구분** | **데이터** | **분류** | **라벨링 유형** | **파일형식** | **수량** | **파일비율** | **단위** |
+
+| 01. 원천데이터 | 3D CAD 데이터 | 가상환경(3D) | - | *.stl | 163 | N:1 | EA |
+|  |  | 실제환경(3D) | - | *.stl | 96 | N:1 | EA |
+| </blockquote></div></article><article class="evidence-section" id="section-19"><h3><a href="#section-19">**2. 데이터 분포** · 섹션 19</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-20"><h3><a href="#section-20">**다양성** · 섹션 20</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-21"><h3><a href="#section-21">**실제/가상 환경별 분포** · 섹션 21</a></h3><p class="record-snippet">구성비 중첩률: 100%
+
+| **구분** | **비율** | **수량** |
+
+| 실제 | 25.0% | 30 |
+| 가상 | 75.0% | 90 |
+| 합계 | 100% | 120 |</p>
+<div class="evidence-chunk" id="chunk-3167"><p><a href="#chunk-3167">청크 3167</a> · **실제/가상 환경별 분포** <small>문자 위치 0–104</small></p><blockquote>구성비 중첩률: 100%
+
+| **구분** | **비율** | **수량** |
+
+| 실제 | 25.0% | 30 |
+| 가상 | 75.0% | 90 |
+| 합계 | 100% | 120 |</blockquote></div></article><article class="evidence-section" id="section-22"><h3><a href="#section-22">**공정 종류별 분포** · 섹션 22</a></h3><p class="record-snippet">구성비 중첩률: 90.23%
+
+| **구분** | **비율** | **수량** |
+
+| 정형 반복 핸들링 | 48.3% | 59 |
+| 비전 연계 투입 | 21.8% | 20 |
+| 이동로봇 협업 기반 이송 | 8.3% | 10 |
+| 검사 연계 제품 반출 | 5.8% | 12 |
+| 다중 로봇 협업 기반 공정 인터페이스 | 15.8% | 19 |
+| 합계</p>
+<div class="evidence-chunk" id="chunk-3168"><p><a href="#chunk-3168">청크 3168</a> · **공정 종류별 분포** <small>문자 위치 0–215</small></p><blockquote>구성비 중첩률: 90.23%
+
+| **구분** | **비율** | **수량** |
+
+| 정형 반복 핸들링 | 48.3% | 59 |
+| 비전 연계 투입 | 21.8% | 20 |
+| 이동로봇 협업 기반 이송 | 8.3% | 10 |
+| 검사 연계 제품 반출 | 5.8% | 12 |
+| 다중 로봇 협업 기반 공정 인터페이스 | 15.8% | 19 |
+| 합계</blockquote></div></article><article class="evidence-section" id="section-23"><h3><a href="#section-23">**작업 환경별 분포** · 섹션 23</a></h3><p class="record-snippet">구성비 중첩률: 74.52%
+
+| **구분** | **비율** | **수량** |
+
+| 반도체 제조용 기계 제조 및 플라스틱 금속 혼합 소재 가공 환경 | 12% | 3 |
+| 반도체 제조용 기계 제조 및 금속 소재 가공 환경 | 8% | 2 |
+| 기어드 모터 제조 환경 | 16% | 4 |
+| 블로우 금형 제조 환경 | 20% | 5 |
+| 반도체 장비</p>
+<div class="evidence-chunk" id="chunk-3169"><p><a href="#chunk-3169">청크 3169</a> · **작업 환경별 분포** <small>문자 위치 0–326</small></p><blockquote>구성비 중첩률: 74.52%
+
+| **구분** | **비율** | **수량** |
+
+| 반도체 제조용 기계 제조 및 플라스틱 금속 혼합 소재 가공 환경 | 12% | 3 |
+| 반도체 제조용 기계 제조 및 금속 소재 가공 환경 | 8% | 2 |
+| 기어드 모터 제조 환경 | 16% | 4 |
+| 블로우 금형 제조 환경 | 20% | 5 |
+| 반도체 장비</blockquote></div></article><article class="evidence-section" id="section-24"><h3><a href="#section-24">**3D CAD 물체 대분류 분포** · 섹션 24</a></h3><p class="record-snippet">구성비 중첩률: 68.12%
+
+| **구분** | **비율** | **수량** |
+
+| 공작기계 | 9.65% | 108 |
+| 작업 소재 | 12.05% | 135 |
+| 다관절 로봇 | 11.96% | 134 |
+| 소재 적재대 | 12.50% | 140 |
+| 기타 주변 장비 | 53.84% | 603 |
+| 합계 | 100% | 1,120 |</p>
+<div class="evidence-chunk" id="chunk-3170"><p><a href="#chunk-3170">청크 3170</a> · **3D CAD 물체 대분류 분포** <small>문자 위치 0–196</small></p><blockquote>구성비 중첩률: 68.12%
+
+| **구분** | **비율** | **수량** |
+
+| 공작기계 | 9.65% | 108 |
+| 작업 소재 | 12.05% | 135 |
+| 다관절 로봇 | 11.96% | 134 |
+| 소재 적재대 | 12.50% | 140 |
+| 기타 주변 장비 | 53.84% | 603 |
+| 합계 | 100% | 1,120 |</blockquote></div></article><article class="evidence-section" id="section-25"><h3><a href="#section-25">**로봇 제어기 종류별 분포** · 섹션 25</a></h3><p class="record-snippet">구성비 중첩률: 96.34%
+
+| **구분** | **비율** | **수량** |
+
+| 협동 로봇 제어기 | 20.9% | 28 |
+| 산업용 로봇 제어기 | 2.24% | 3 |
+| 시뮬레이터 | 76.86% | 103 |
+| 합계 | 100% | 134 |</p>
+<div class="evidence-chunk" id="chunk-3171"><p><a href="#chunk-3171">청크 3171</a> · **로봇 제어기 종류별 분포** <small>문자 위치 0–145</small></p><blockquote>구성비 중첩률: 96.34%
+
+| **구분** | **비율** | **수량** |
+
+| 협동 로봇 제어기 | 20.9% | 28 |
+| 산업용 로봇 제어기 | 2.24% | 3 |
+| 시뮬레이터 | 76.86% | 103 |
+| 합계 | 100% | 134 |</blockquote></div></article><article class="evidence-section" id="section-26"><h3><a href="#section-26">**로봇 모델별 분포** · 섹션 26</a></h3><p class="record-snippet">구성비 중첩률: 89.48%
+
+| **구분** | **비율** | **수량** |
+
+| 6축 협동로봇 | 76.87% | 103 |
+| 7축 협동 로봇 | 1.49% | 2 |
+| 산업용 다관절로봇 | 12.69% | 17 |
+| 모바일 로봇 연계 | 8.95% | 12 |
+| 합계 | 100 | 134 |</p>
+<div class="evidence-chunk" id="chunk-3172"><p><a href="#chunk-3172">청크 3172</a> · **로봇 모델별 분포** <small>문자 위치 0–172</small></p><blockquote>구성비 중첩률: 89.48%
+
+| **구분** | **비율** | **수량** |
+
+| 6축 협동로봇 | 76.87% | 103 |
+| 7축 협동 로봇 | 1.49% | 2 |
+| 산업용 다관절로봇 | 12.69% | 17 |
+| 모바일 로봇 연계 | 8.95% | 12 |
+| 합계 | 100 | 134 |</blockquote></div></article><article class="evidence-section" id="section-27"><h3><a href="#section-27">**CoT 토큰 수** · 섹션 27</a></h3><p class="record-snippet">수량: 51 토큰</p>
+<div class="evidence-chunk" id="chunk-3173"><p><a href="#chunk-3173">청크 3173</a> · **CoT 토큰 수** <small>문자 위치 0–9</small></p><blockquote>수량: 51 토큰</blockquote></div></article><article class="evidence-section" id="section-28"><h3><a href="#section-28">**CoT 단계 수** · 섹션 28</a></h3><p class="record-snippet">수량: 4 단계</p>
+<div class="evidence-chunk" id="chunk-3174"><p><a href="#chunk-3174">청크 3174</a> · **CoT 단계 수** <small>문자 위치 0–8</small></p><blockquote>수량: 4 단계</blockquote></div></article><article class="evidence-section" id="section-29"><h3><a href="#section-29">**데이터셋 구성** · 섹션 29</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-30"><h3><a href="#section-30">**데이터 구성** · 섹션 30</a></h3><p class="record-snippet">| **데이터 유형** | **데이터 구성** | **파일 포맷** |
+
+| 3D CAD 데이터 | 공정 셀, 로봇 및 장비 등의 병합된 3D 환경 정보 | URDF, JSON |
+| 로봇 상태 데이터 | 각 공정, 환경 및 동작 시나리오별 로봇 관절 위치, 말단 위치, 토크 값 등 | JSON |</p>
+<div class="evidence-chunk" id="chunk-3175"><p><a href="#chunk-3175">청크 3175</a> · **데이터 구성** <small>문자 위치 0–167</small></p><blockquote>| **데이터 유형** | **데이터 구성** | **파일 포맷** |
+
+| 3D CAD 데이터 | 공정 셀, 로봇 및 장비 등의 병합된 3D 환경 정보 | URDF, JSON |
+| 로봇 상태 데이터 | 각 공정, 환경 및 동작 시나리오별 로봇 관절 위치, 말단 위치, 토크 값 등 | JSON |</blockquote></div></article><article class="evidence-section" id="section-31"><h3><a href="#section-31">**어노테이션 포맷** · 섹션 31</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-32"><h3><a href="#section-32">**3D 환경 요소 라벨링 (CAD 기반)** · 섹션 32</a></h3><p class="record-snippet">| **번호** | **항목명** | **타입** | **필수** | **항목 설명** | **예시** |
+
+| 1 | Envrionment | String | Y | 동작 환경 구분 | &#34;실제 환경&#34; |
+| 2 | Data_source | String | Y | 데이터 획득/가공 환경 | &#34;반도체 제조용 기계 제조 및 플라스틱 금속 혼합 소재 가공 환경&#34;</p>
+<div class="evidence-chunk" id="chunk-3176"><p><a href="#chunk-3176">청크 3176</a> · **3D 환경 요소 라벨링 (CAD 기반)** <small>문자 위치 0–700</small></p><blockquote>| **번호** | **항목명** | **타입** | **필수** | **항목 설명** | **예시** |
+
+| 1 | Envrionment | String | Y | 동작 환경 구분 | &#34;실제 환경&#34; |
+| 2 | Data_source | String | Y | 데이터 획득/가공 환경 | &#34;반도체 제조용 기계 제조 및 플라스틱 금속 혼합 소재 가공 환경&#34;</blockquote></div><div class="evidence-chunk" id="chunk-3177"><p><a href="#chunk-3177">청크 3177</a> · **3D 환경 요소 라벨링 (CAD 기반)** <small>문자 위치 540–1177</small></p><blockquote>&#34;모바일 로봇 연계&#34; |
+| 5.4 | Robot_Controller | String | Y | 로봇 제어기 종류 | &#34;Doosan Robotics H Series&#34; |
+| 6 | Source_data_info | Dictionary | Y | 원천 3D CAD 데이터 정보 | - |
+| 6.1 | Stl_filename | array | Y | 원천데이터</blockquote></div></article><article class="evidence-section" id="section-33"><h3><a href="#section-33">**원천데이터(STL) 예시** · 섹션 33</a></h3><p class="record-snippet">![이미지: BIN0002.png]</p>
+</article><article class="evidence-section" id="section-34"><h3><a href="#section-34">**원천데이터(CSV) 예시** · 섹션 34</a></h3><p class="record-snippet">![이미지: BIN0003.png]</p>
+</article><article class="evidence-section" id="section-35"><h3><a href="#section-35">**URDF 라벨링 데이터 예시** · 섹션 35</a></h3><p class="record-snippet">![이미지: BIN0004.png]</p>
+</article><article class="evidence-section" id="section-36"><h3><a href="#section-36">**URDF 라벨링 데이터 (JSON) 예시** · 섹션 36</a></h3><p class="record-snippet">![이미지: BIN0005.png]</p>
+</article><article class="evidence-section" id="section-37"><h3><a href="#section-37">**CoT 기반 로봇 상태 데이터** · 섹션 37</a></h3><p class="record-snippet">| **번호** | **항목명** | **타입** | **필수** | **항목 설명** | **범위** |
+
+| 1 | Task_info | Object |  | Task 정보에 대한 하위 속성 내포 | - |
+| 1.1 | 3D_CAD_Filename | String | Y | 3D 환경 요소 | &#34;M_3D_S_AA_0033&#34; |
+| 1.2 | Task </p>
+<div class="evidence-chunk" id="chunk-3178"><p><a href="#chunk-3178">청크 3178</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 0–824</small></p><blockquote>| **번호** | **항목명** | **타입** | **필수** | **항목 설명** | **범위** |
+
+| 1 | Task_info | Object |  | Task 정보에 대한 하위 속성 내포 | - |
+| 1.1 | 3D_CAD_Filename | String | Y | 3D 환경 요소 | &#34;M_3D_S_AA_0033&#34; |
+| 1.2 | Task </blockquote></div><div class="evidence-chunk" id="chunk-3179"><p><a href="#chunk-3179">청크 3179</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 664–1192</small></p><blockquote> 한다. 주어진 3D 공정 환경 정보를 바탕으로 로봇의 움직임에 대해 설명하시오.&#34; |
+| 2.3 | CoT_reasoning | object | Y | 추론 과정 요약 | - |
+| 2.3.1 | Step | String | Y | 추론 단계 정도 | 4 (최소 1, 최대 20) |
+| 2.3.2 | Description | String | Y | 해당 </blockquote></div></article><article class="evidence-section" id="section-38"><h3><a href="#section-38">**CoT 데이터 구조 설명** · 섹션 38</a></h3><p class="record-snippet">![이미지: BIN0006.bmp]
+
+| **항목명** | **내용** |
+
+| sub_task | 공정 내 하부 공정명 |
+| instruction | 지시문 |
+| CoT_reasoning | step 1: 임무확인 및 작업 환경 파악 |
+|  | step 2: 로봇 작업 유의 사항 및 요구사항 파악 |
+|  | step 3 ~ step n: 로봇 동작</p>
+<div class="evidence-chunk" id="chunk-3180"><p><a href="#chunk-3180">청크 3180</a> · **CoT 데이터 구조 설명** <small>문자 위치 0–252</small></p><blockquote>![이미지: BIN0006.bmp]
+
+| **항목명** | **내용** |
+
+| sub_task | 공정 내 하부 공정명 |
+| instruction | 지시문 |
+| CoT_reasoning | step 1: 임무확인 및 작업 환경 파악 |
+|  | step 2: 로봇 작업 유의 사항 및 요구사항 파악 |
+|  | step 3 ~ step n: 로봇 동작</blockquote></div></article><article class="evidence-section" id="section-39"><h3><a href="#section-39">**어노테이션 예시** · 섹션 39</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-40"><h3><a href="#section-40">**3D 환경 요소 라벨링 (CAD 기반)** · 섹션 40</a></h3><p class="record-snippet">```json
+{
+  &#34;Environment&#34;: &#34;가상 환경&#34;,
+  &#34;Data_source&#34;: &#34;금속 소재 가공 머신텐딩 (CNC선반) 5&#34;,
+  &#34;Process&#34;: &#34;정형 반복 핸들링&#34;,
+  &#34;Task&#34;: [
+    &#34;모재 취득&#34;,
+    &#34;모재 투입&#34;,
+    &#34;완제품 취출&#34;,
+    &#34;완제품 적재&#34;
+  ],
+  &#34;Robot_info&#34;: [
+    {&#34;</p>
+<div class="evidence-chunk" id="chunk-3181"><p><a href="#chunk-3181">청크 3181</a> · **3D 환경 요소 라벨링 (CAD 기반)** <small>문자 위치 0–1077</small></p><blockquote>```json
+{
+  &#34;Environment&#34;: &#34;가상 환경&#34;,
+  &#34;Data_source&#34;: &#34;금속 소재 가공 머신텐딩 (CNC선반) 5&#34;,
+  &#34;Process&#34;: &#34;정형 반복 핸들링&#34;,
+  &#34;Task&#34;: [
+    &#34;모재 취득&#34;,
+    &#34;모재 투입&#34;,
+    &#34;완제품 취출&#34;,
+    &#34;완제품 적재&#34;
+  ],
+  &#34;Robot_info&#34;: [
+    {&#34;</blockquote></div><div class="evidence-chunk" id="chunk-3182"><p><a href="#chunk-3182">청크 3182</a> · **3D 환경 요소 라벨링 (CAD 기반)** <small>문자 위치 917–1776</small></p><blockquote>  &#34;범용 적재대2.stl&#34;,
+        &#34;범용 컨베이어2.stl&#34;,
+        &#34;블로우 금형 제조_툴 캐비닛.stl&#34;
+      ],
+      &#34;3D_Class&#34;: [
+        &#34;DN Solutions 220LM&#34;,
+        &#34;JRT_AF30SNA-50_부품1&#34;,
+        &#34;JRT_AF30SNA-50_부품2&#34;,
+        &#34;J</blockquote></div></article><article class="evidence-section" id="section-41"><h3><a href="#section-41">**CoT 기반 로봇 상태 데이터** · 섹션 41</a></h3><p class="record-snippet">```json
+{
+  &#34;Task_info&#34;: {
+    &#34;3D_CAD_filename&#34;: &#34;M_3D_S_AA_0033&#34;,
+    &#34;Task&#34;: &#34;정형 반복 핸들링 공정&#34;,
+    &#34;Context&#34;: {
+      &#34;Collision_risk&#34;: true,
+      &#34;Obstacle_locations&#34;: [
+        &#34;공급 적재대 주변&#34;,
+      </p>
+<div class="evidence-chunk" id="chunk-3183"><p><a href="#chunk-3183">청크 3183</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 0–952</small></p><blockquote>```json
+{
+  &#34;Task_info&#34;: {
+    &#34;3D_CAD_filename&#34;: &#34;M_3D_S_AA_0033&#34;,
+    &#34;Task&#34;: &#34;정형 반복 핸들링 공정&#34;,
+    &#34;Context&#34;: {
+      &#34;Collision_risk&#34;: true,
+      &#34;Obstacle_locations&#34;: [
+        &#34;공급 적재대 주변&#34;,
+      </blockquote></div><div class="evidence-chunk" id="chunk-3184"><p><a href="#chunk-3184">청크 3184</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 792–1874</small></p><blockquote> 의 위치와 자세는 [-0.802, -0.232, 1.348], [0.0, 0.0, -1.571] 으로 파악된다. 환경 인식과 초기 위험 구역 식별이 완료되었으므로, 다음 단계에서 작업 조건을 분석해야 한다.&#34;
+        },
+        {
+          &#34;Step&#34;: 2,
+          &#34;Description&#34;: &#34;환경 인식이 완료되었으므로</blockquote></div><div class="evidence-chunk" id="chunk-3185"><p><a href="#chunk-3185">청크 3185</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 1714–2719</small></p><blockquote>2.571, 1379.501] 이고, 현재 로봇의 엔드 이펙터의 좌표와 관절 위치는 [-480.787, -9.992, 1446.794], [180.000, -33.747, 120.207, 0.000, 91.444, -90.000] 이다. 현재 엔드 이펙터 위치 기준으로 모재와의 거리는 396.683 mm 만큼 떨어져 있는 것으로 파악된다. 따라서 모재 취득</blockquote></div><div class="evidence-chunk" id="chunk-3186"><p><a href="#chunk-3186">청크 3186</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 2559–3540</small></p><blockquote>01], 로봇 관절 위치 [202.902, -2.174, 105.836, 0.022, 76.324, -67.165] 로 이동한다. 모재 적재 좌표에 도달하였으므로, 다음 단계에서 그리퍼 작동을 기다려야 한다.&#34;
+        },
+        {
+          &#34;Step&#34;: 6,
+          &#34;Description&#34;: &#34;로봇이 모재 위치에 정밀 </blockquote></div><div class="evidence-chunk" id="chunk-3187"><p><a href="#chunk-3187">청크 3187</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 3380–4364</small></p><blockquote> 이펙터 좌표 [-480.704, 22.667, 1447.256], 로봇 관절 위치 [175.987, -33.721, 120.163, 0.001, 91.443, -90.211] 로 후퇴한다. 주변 장애물 회피를 위해 경유점을 거쳐 이동하였다. 성공적으로 이동을 완료하였으므로 모재 투입 임무를 수행하기 위하여 가공 머신 주변으로 이동해야 한다.&#34;
+      </blockquote></div><div class="evidence-chunk" id="chunk-3188"><p><a href="#chunk-3188">청크 3188</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 4204–5143</small></p><blockquote> 0.023, 76.324, -67.166]로 이동하였고, 이동 시간은 약 1.861초이다. 초기 위치에서 속도는 [-2.590, 6.171, -4.625, 0.120, -1.197, -2.637]이고, 최종 위치 도달 시 속도는 [-0.414, 0.588, -0.487, 0.000, -0.083, 0.131]이다. 모재를 안정적으로 고정하기 위해, pic</blockquote></div><div class="evidence-chunk" id="chunk-3189"><p><a href="#chunk-3189">청크 3189</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 4983–6014</small></p><blockquote>속도는 [-5.139, -2.776, 4.647, -0.195, -1.495, -2.946], 최종 위치 도달 시 속도는 [-12.539, -0.703, 1.518, -0.075, -0.675, 0.825]이다.&#34;
+    },
+    {
+      &#34;Sub_task&#34;: &#34;모재 투입&#34;,
+      &#34;Instruction&#34;: &#34;정형 반복 핸들링 공정에서 모재 </blockquote></div><div class="evidence-chunk" id="chunk-3190"><p><a href="#chunk-3190">청크 3190</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 5854–6673</small></p><blockquote>한 최소 시간 이동, 필요 시 완만한 곡선 형태 이동, 장애물 충돌 방지 등의 요구사항을 만족해야 한다. 작업 유의 사항 및 요구 사항 파악이 완료되었으므로, 다음 단계에서 현재 상태에 따라 작업을 수행한다.&#34;
+        },
+        {
+          &#34;Step&#34;: 3,
+          &#34;Description&#34;: &#34;작업 조건을 파악 완료하였</blockquote></div><div class="evidence-chunk" id="chunk-3191"><p><a href="#chunk-3191">청크 3191</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 6513–7479</small></p><blockquote>863, 0.031, 48.422, -85.708] 로 이동한다. 장애물 회피를 위해 경유점을 거쳐 이동해야 한다. 가공 머신 주변으로의 접근이 완료되었으므로, 다음 단계에서 가공 위치로 정밀 접근해야 한다.&#34;
+        },
+        {
+          &#34;Step&#34;: 4,
+          &#34;Description&#34;: &#34;로봇이 가공 머신 주변으로</blockquote></div><div class="evidence-chunk" id="chunk-3192"><p><a href="#chunk-3192">청크 3192</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 7319–8234</small></p><blockquote>79.850, 1197.378, 806.009]와 약간 차이가 있어 로봇이 약간의 위치 및 자세 조정을 하고, 모재를 내려놓기 위해 잠시 정지하고 엔드 이펙터를 작동해야 하므로 place_on_machine 동작을 수행한다. 따라서 엔드 이펙터 좌표 [-79.850, 1197.378, 806.009], 로봇 관절 위치 [94.336, 45.765, 96.5</blockquote></div><div class="evidence-chunk" id="chunk-3193"><p><a href="#chunk-3193">청크 3193</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 8074–9052</small></p><blockquote> 로 이동한다. 장애물 회피를 위해 경유점을 거쳐 이동해야 한다. 로봇이 후퇴 위치로 이동하였으므로 다음 단계에서 후퇴 위치 주변에서 가공이 진행될 동안 대기하거나 그 다음 작업을 위해 위치를 조정해야 한다.&#34;
+        },
+        {
+          &#34;Step&#34;: 7,
+          &#34;Description&#34;: &#34;로봇이 가공 후퇴 지점에 </blockquote></div><div class="evidence-chunk" id="chunk-3194"><p><a href="#chunk-3194">청크 3194</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 8892–9836</small></p><blockquote>14, 93.863, 0.031, 48.422, -85.708]로 이동하였고, 이동 시간은 각각 약 1.857초, 1.846초로, 총 3.703초이다. 초기 위치에서 속도는 [-50.150, -0.509, 1.152, -0.105, -0.439, 1.194]이고, 경유점1에서의 속도는 [-4.254, 10.124, -3.691, 0.091, -4.412, </blockquote></div><div class="evidence-chunk" id="chunk-3195"><p><a href="#chunk-3195">청크 3195</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 9676–10614</small></p><blockquote>은 약 1.753초이다. 초기 위치에서 속도는 [0.001, 0.309, 0.063, -0.021, -0.263, 0.036]이고, 최종 위치 도달 시 속도는 [0.118, -0.574, 1.545, -0.103, -0.582, 0.072]이다. 모재 투입 후 안전하게 물러나기 위해, place_to_retreat_machine 동작을 수행하였다. 이때, </blockquote></div><div class="evidence-chunk" id="chunk-3196"><p><a href="#chunk-3196">청크 3196</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 10454–11518</small></p><blockquote>8.317, -89.863]로 이동하였고, 이동 시간은 약 40.482초이다. 초기 위치에서 속도는 [-0.259, -2.550, -0.405, 0.032, 2.195, 0.152]이고, 최종 위치 도달 시 속도는 [0.857, 12.586, -1.426, -0.031, -7.818, 0.342]이다.&#34;
+    },
+    {
+      &#34;Sub_task&#34;</blockquote></div><div class="evidence-chunk" id="chunk-3197"><p><a href="#chunk-3197">청크 3197</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 11358–12346</small></p><blockquote>로 충돌에 유의해야 하고, 동작은 가능한 최소 시간 이동, 필요 시 완만한 곡선 형태 이동, 장애물 충돌 방지 등의 요구사항을 만족해야 한다. 작업 유의 사항 및 요구 사항 파악이 완료되었으므로, 다음 단계에서 현재 상태에 따라 작업을 수행한다.&#34;
+        },
+        {
+          &#34;Step&#34;: 3,
+          &#34;Descript</blockquote></div><div class="evidence-chunk" id="chunk-3198"><p><a href="#chunk-3198">청크 3198</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 12186–12991</small></p><blockquote>, 0.253, 30.696, -85.189] 이다. 따라서 로봇은 머신 내부로 다시 진입하여, 가공이 완료된 완제품을 파지하기 위해 정밀하게 움직여야 하므로 approach_machine_to_pick 동작을 수행한다. 이에 따라 엔드 이펙터 좌표 [-79.400, 1203.003, 806.747], 로봇 관절 위치 [94.999, 40.320, 110.</blockquote></div><div class="evidence-chunk" id="chunk-3199"><p><a href="#chunk-3199">청크 3199</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 12831–13782</small></p><blockquote> 로봇 관절 위치 [94.290, 45.719, 95.852, 0.049, 38.313, -85.760] 로 이동해야 한다. 그리퍼가 완제품을 파지하는데 성공하면 다음 단계에서 머신에서 완제품을 꺼내야 한다.&#34;
+        },
+        {
+          &#34;Step&#34;: 6,
+          &#34;Description&#34;: &#34;그리퍼가 완제품을 파지하였</blockquote></div><div class="evidence-chunk" id="chunk-3200"><p><a href="#chunk-3200">청크 3200</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 13622–14569</small></p><blockquote>종 위치 [94.999, 40.320, 110.070, 0.165, 29.121, -85.014]로 이동하였고, 이동 시간은 약 1.984초이다. 초기 위치에서 속도는 [3.036, 44.147, -5.010, -0.115, -30.953, 1.575]이고, 최종 위치 도달 시 속도는 [-0.034, 5.087, -5.175, 0.165, 0.012, -0</blockquote></div><div class="evidence-chunk" id="chunk-3201"><p><a href="#chunk-3201">청크 3201</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 14409–15287</small></p><blockquote>.045]이고, 최종 위치 도달 시 속도는 [-0.001, -0.697, -0.209, 0.040, 0.599, -0.012]이다. 파지한 완제품을 머신 밖으로 안전하게 꺼내기 위해, pick_to_retreat_machine 동작을 수행하였다. 이때, 로봇은 초기위치 [94.289, 43.898, 95.299, 0.127, 40.147, -85.792]에</blockquote></div><div class="evidence-chunk" id="chunk-3202"><p><a href="#chunk-3202">청크 3202</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 15127–16003</small></p><blockquote>&#34;,
+      &#34;Instruction&#34;: &#34;정형 반복 핸들링 공정에서 완제품 적재 임무를 수행하고자 한다. 주어진 3D 공정 환경 정보를 바탕으로 로봇의 움직임에 대해 설명하시오.&#34;,
+      &#34;CoT_reasoning&#34;: [
+        {
+          &#34;Step&#34;: 1,
+          &#34;Description&#34;: &#34;정형 반복 핸들링 공정에서</blockquote></div><div class="evidence-chunk" id="chunk-3203"><p><a href="#chunk-3203">청크 3203</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 15843–16811</small></p><blockquote>한 최소 시간 이동, 필요 시 완만한 곡선 형태 이동, 장애물 충돌 방지 등의 요구사항을 만족해야 한다. 작업 유의 사항 및 요구 사항 파악이 완료되었으므로, 다음 단계에서 현재 상태에 따라 작업을 수행한다.&#34;
+        },
+        {
+          &#34;Step&#34;: 3,
+          &#34;Description&#34;: &#34;작업 조건을 파악 완료하였</blockquote></div><div class="evidence-chunk" id="chunk-3204"><p><a href="#chunk-3204">청크 3204</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 16651–17581</small></p><blockquote>드 이펙터 좌표와 관절 위치는 [-803.875, -232.727, 1483.245], [202.904, -3.100, 96.697, -0.095, 87.142, -67.114] 이다. 적재대 근처에 도달한 로봇은 완제품을 정해진 위치에 정확하게 내려놓기 위해 정밀하게 움직여야 하므로 approach_unloader_to_place 동작을 수행한다. 이에 </blockquote></div><div class="evidence-chunk" id="chunk-3205"><p><a href="#chunk-3205">청크 3205</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 17421–18418</small></p><blockquote>170, -4.041, 107.123, 0.009, 76.743, -66.188] 로 이동해야 한다. 이동 완료 후 잠시 대기하며, 완제품을 안전하게 적재 완료하면 다음 단계에서 적재대로부터 후퇴하여야 한다.&#34;
+        },
+        {
+          &#34;Step&#34;: 6,
+          &#34;Description&#34;: &#34;로봇이 완제품을 완제품 적</blockquote></div><div class="evidence-chunk" id="chunk-3206"><p><a href="#chunk-3206">청크 3206</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 18258–19263</small></p><blockquote>업을 마친 로봇이 새로운 작업 사이클을 시작하거나 완전히 작업을 종료하기 위해 종료 위치로 이동해야 하므로 retreat_unloader_to_end 동작을 수행한다. 이에 따라 엔드 이펙터 좌표 [-480.787, -10.044, 1446.794], 로봇 관절 위치 [180.000, -33.747, 120.207, -0.000, 91.444, -90.01</blockquote></div><div class="evidence-chunk" id="chunk-3207"><p><a href="#chunk-3207">청크 3207</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 19103–20062</small></p><blockquote>210.195, -13.280, 101.090, 0.030, 92.200, -59.428] 을 지나 최종 위치 [202.902, -3.347, 94.423, -0.040, 89.312, -67.141]로 이동하였고, 이동 시간은 각각 약 2.116초, 2.178초, 2.191초로, 총 6.485초이다. 초기 위치에서 속도는 [38.871, -1.383, -</blockquote></div><div class="evidence-chunk" id="chunk-3208"><p><a href="#chunk-3208">청크 3208</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 19902–20848</small></p><blockquote>. 이때, 로봇은 초기위치 [202.890, -2.160, 105.807, 0.028, 76.316, -67.128]에서 최종 위치 [205.170, -4.041, 107.123, 0.009, 76.743, -66.188]로 이동하였고, 이동 시간은 약 2.110초이다. 초기 위치에서 속도는 [0.000, 0.038, 0.337, -0.023, -0.250</blockquote></div><div class="evidence-chunk" id="chunk-3209"><p><a href="#chunk-3209">청크 3209</a> · **CoT 기반 로봇 상태 데이터** <small>문자 위치 20688–21138</small></p><blockquote>reat_unloader_to_end 동작을 수행하였다. 이때, 로봇은 초기위치 [180.050, -33.739, 120.208, -0.000, 91.445, -90.016]에서 최종 위치 [180.000, -33.747, 120.207, -0.000, 91.444, -90.011]로 이동하였고, 이동 시간은 약 2.108초이다. 초기 위치에서 속도는 [-</blockquote></div></article><article class="evidence-section" id="section-42"><h3><a href="#section-42">**데이터셋 구축 수행기관 담당자** · 섹션 42</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-43"><h3><a href="#section-43">**주관기관** · 섹션 43</a></h3><p class="record-snippet">| **기관명** | **책임자명** | **전화번호 (유선전화번호기입)** | **메일주소** | **담당업무** |
+
+| ㈜유니바 | 정용운 | 053-615-1264 | [gandalf@univa.co.kr](mailto:gandalf@univa.co.kr) | 품질관리 실무책임자 |</p>
+<div class="evidence-chunk" id="chunk-3210"><p><a href="#chunk-3210">청크 3210</a> · **주관기관** <small>문자 위치 0–162</small></p><blockquote>| **기관명** | **책임자명** | **전화번호 (유선전화번호기입)** | **메일주소** | **담당업무** |
+
+| ㈜유니바 | 정용운 | 053-615-1264 | [gandalf@univa.co.kr](mailto:gandalf@univa.co.kr) | 품질관리 실무책임자 |</blockquote></div></article><article class="evidence-section" id="section-44"><h3><a href="#section-44">**참여기관** · 섹션 44</a></h3><p class="record-snippet">| **기관명** | **담당업무** | **기관명** | **담당업무** |
+
+| 건솔루션 | 수집·정제 | 서울과학기술대학교 | 가공·AI 학습모델 |</p>
+<div class="evidence-chunk" id="chunk-3211"><p><a href="#chunk-3211">청크 3211</a> · **참여기관** <small>문자 위치 0–86</small></p><blockquote>| **기관명** | **담당업무** | **기관명** | **담당업무** |
+
+| 건솔루션 | 수집·정제 | 서울과학기술대학교 | 가공·AI 학습모델 |</blockquote></div></article>
+</section>
+
+  </main>
+  <footer>
+    <span>DOUZONE · MFG TECH COPILOT</span>
+    <span>데이터 출처: AI 허브(aihub.or.kr) 데이터셋 설명서·활용가이드 — 원본 재배포 금지, 출처 표기</span>
+  </footer>
+  <script src="../static/evidence.js" defer></script>
+</body>
+</html>

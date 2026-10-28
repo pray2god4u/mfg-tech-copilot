@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="제조현장 기술지원 Copilot — AI Hub 기술문서 153건 검색·추천·비교">
+  <title>활용 가이드라인 - 모빌리티 데이터: 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 — RAG 근거 발췌 | 제조 Copilot</title>
+  <link rel="stylesheet" href="../static/copilot.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 이동</a>
+  <header class="topbar">
+    <a class="brand" href="../index.html"><span class="brand-mark">MFG</span><span>제조 Copilot</span><span>기술문서 인텔리전스</span></a>
+    <nav class="header-actions" aria-label="주요 메뉴">
+      <span class="public-badge"><span class="dot"></span>공개 조회</span>
+      <a href="../search.html">기술문서 검색</a>
+      <a href="../datasets.html">데이터셋 목록</a>
+      <a href="../demo.html">시연 질문</a>
+    </nav>
+  </header>
+  <main id="main">
+    
+<section class="heading-band"><div><p class="eyebrow">PUBLIC RAG EVIDENCE · 71928-가이드</p><h1>활용 가이드라인 - 모빌리티 데이터: 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터</h1><p class="subtitle">모빌리티 데이터: 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 · 가이드 · 섹션 30개 · 청크 50개</p></div></section>
+<aside class="source-band"><strong>문서 사실 · 제한된 근거 발췌</strong><p>전체 원본이 아닌 섹션명과 청크별 최대 200자 발췌입니다. 검색 화면은 검색 서버가 반환한 관련 스니펫을 표시합니다. 발췌만으로 설비 상태·화재 위험을 진단하지 않습니다. 근거 사실과 적용에 관한 추론을 구분하세요. AI Hub 이용약관을 따르며 원본 재배포를 허용하지 않습니다.</p><p><a href="../dataset/71928.html">데이터셋 구성 →</a> · <a href="https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71928" target="_blank" rel="noopener noreferrer">AI Hub 원본 메타데이터 (보조 출처) ↗</a></p></aside>
+<section class="search-band"><label for="evidenceFilter">이 페이지의 섹션명·발췌 찾기</label><input id="evidenceFilter" type="search" class="evidence-filter" placeholder="라벨 또는 발췌 내 단어"><p class="demo-note">현재 페이지 내 텍스트 필터입니다. 의미·벡터 검색이 아닙니다.</p></section>
+<section class="result-band"><h2>섹션 구성과 청크 근거</h2>
+<article class="evidence-section" id="section-0"><h3><a href="#section-0">**활용 가이드라인** · 섹션 0</a></h3><p class="record-snippet">**&lt; 모빌리티 데이터: 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 &gt;**
+
+※ 해당 가이드라인은 반드시 &#34;세부 데이터&#34; 종별로 작성하여 주시기 바랍니다.
+단, 세부 데이터셋이 공통적이고 복수인 경우 &#34;세부 데이터명&#34;에 부제의 &#39;제목&#39;을 명기할 수 있습니다.
+
+**작성 담당기관**
+
+| **사업 총괄** | **데이터 수집/정제/가공** | **데</p>
+<div class="evidence-chunk" id="chunk-2380"><p><a href="#chunk-2380">청크 2380</a> · **활용 가이드라인** <small>문자 위치 0–454</small></p><blockquote>**&lt; 모빌리티 데이터: 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 &gt;**
+
+※ 해당 가이드라인은 반드시 &#34;세부 데이터&#34; 종별로 작성하여 주시기 바랍니다.
+단, 세부 데이터셋이 공통적이고 복수인 경우 &#34;세부 데이터명&#34;에 부제의 &#39;제목&#39;을 명기할 수 있습니다.
+
+**작성 담당기관**
+
+| **사업 총괄** | **데이터 수집/정제/가공** | **데</blockquote></div></article><article class="evidence-section" id="section-1"><h3><a href="#section-1">**목   차** · 섹션 1</a></h3><p class="record-snippet">데이터 개요 및 활용 요약 · 1
+
+제1장 데이터 개요 · 9
+
+1. 데이터 설명서 · 9
+2. 메타데이터 구조표 · 10
+3. 데이터 통계 · 10
+4. 데이터 포맷 · 12
+5. 데이터 구축 절차 · 18
+6. 데이터 저장 구조 및 파일 명명 규칙 · 23
+
+제2장 데이터 구축 및 활용 · 24
+
+1. 데이터 구축 · 24
+2. 학습모델 · 26
+3. </p>
+<div class="evidence-chunk" id="chunk-2381"><p><a href="#chunk-2381">청크 2381</a> · **목   차** <small>문자 위치 0–274</small></p><blockquote>데이터 개요 및 활용 요약 · 1
+
+제1장 데이터 개요 · 9
+
+1. 데이터 설명서 · 9
+2. 메타데이터 구조표 · 10
+3. 데이터 통계 · 10
+4. 데이터 포맷 · 12
+5. 데이터 구축 절차 · 18
+6. 데이터 저장 구조 및 파일 명명 규칙 · 23
+
+제2장 데이터 구축 및 활용 · 24
+
+1. 데이터 구축 · 24
+2. 학습모델 · 26
+3. </blockquote></div></article><article class="evidence-section" id="section-2"><h3><a href="#section-2">**데이터 개요 및 활용 요약** · 섹션 2</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-3"><h3><a href="#section-3">**1. 공통항목** · 섹션 3</a></h3><p class="record-snippet">**데이터명 (국문)**
+
+자율주행차 정적객체정보 인지 및 갱신 자동화 데이터
+
+**데이터명 (영문)**
+
+Self-driving vehicle static object information recognition and update automation data construction
+
+**데이터 구분**
+
+- [ ] LLM
+- [x] LMM
+- [ ] 합성</p>
+<div class="evidence-chunk" id="chunk-2382"><p><a href="#chunk-2382">청크 2382</a> · **1. 공통항목** <small>문자 위치 0–922</small></p><blockquote>**데이터명 (국문)**
+
+자율주행차 정적객체정보 인지 및 갱신 자동화 데이터
+
+**데이터명 (영문)**
+
+Self-driving vehicle static object information recognition and update automation data construction
+
+**데이터 구분**
+
+- [ ] LLM
+- [x] LMM
+- [ ] 합성</blockquote></div><div class="evidence-chunk" id="chunk-2383"><p><a href="#chunk-2383">청크 2383</a> · **1. 공통항목** <small>문자 위치 762–1074</small></p><blockquote>시설물 관리 자동화 관련 연구
+
+**주요 키워드** 2)
+
+- [ ] 컴퓨터비전
+- [ ] 컴퓨터그래픽스
+- [ ] 농업
+- [ ] 축산업
+- [ ] 수산업
+- [ ] 자율주행
+- [x] 교통,모빌리티
+- [ ] 안전
+- [ ] 환경
+- [ ] 제조
+- [ ] 로보틱스
+- [ ] 문화
+- [ ] 관광
+- [ ] 음성
+- [ ] 자연어
+- [ ] 헬스케어 의</blockquote></div></article><article class="evidence-section" id="section-4"><h3><a href="#section-4">**2. 메타데이터** · 섹션 4</a></h3><p class="record-snippet">**데이터 형식**
+
+jpg, json
+
+**데이터 출처**
+
+AI-HUB
+
+**라벨링 유형**
+
+이미지-텍스트 관계(텍스트), 질의응답(자연어)
+
+**라벨링 형식**
+
+json
+
+**데이터 활용서비스**
+
+자율주행차 주변 환경 인지 능력 강화
+
+도로공사, 노면손상 등 실시간 도로 상황/상태정보 제공으로 Edge-case에서도 안전한 자율주행 기술을 구현
+</p>
+<div class="evidence-chunk" id="chunk-2384"><p><a href="#chunk-2384">청크 2384</a> · **2. 메타데이터** <small>문자 위치 0–359</small></p><blockquote>**데이터 형식**
+
+jpg, json
+
+**데이터 출처**
+
+AI-HUB
+
+**라벨링 유형**
+
+이미지-텍스트 관계(텍스트), 질의응답(자연어)
+
+**라벨링 형식**
+
+json
+
+**데이터 활용서비스**
+
+자율주행차 주변 환경 인지 능력 강화
+
+도로공사, 노면손상 등 실시간 도로 상황/상태정보 제공으로 Edge-case에서도 안전한 자율주행 기술을 구현
+</blockquote></div></article><article class="evidence-section" id="section-5"><h3><a href="#section-5">**3. 세부데이터** · 섹션 5</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-6"><h3><a href="#section-6">**데이터 설명 및 어노테이션 포맷 설명** · 섹션 6</a></h3><p class="record-snippet">**데이터 구성**
+
+**① 원천데이터**
+
+| **1차 경로** | **2차 경로** | **3차 경로** | **파일 포맷** | **최종검증 제출 수량** |
+
+| 01. 공사중 | 이미지 |   | .jpg | 1,530 |
+| 01. 공사중 | 라벨링 |   | .json | 1,530 |
+| 02. 조도급변구간 | 이미지 |   | .jpg | </p>
+<div class="evidence-chunk" id="chunk-2385"><p><a href="#chunk-2385">청크 2385</a> · **데이터 설명 및 어노테이션 포맷 설명** <small>문자 위치 0–698</small></p><blockquote>**데이터 구성**
+
+**① 원천데이터**
+
+| **1차 경로** | **2차 경로** | **3차 경로** | **파일 포맷** | **최종검증 제출 수량** |
+
+| 01. 공사중 | 이미지 |   | .jpg | 1,530 |
+| 01. 공사중 | 라벨링 |   | .json | 1,530 |
+| 02. 조도급변구간 | 이미지 |   | .jpg | </blockquote></div><div class="evidence-chunk" id="chunk-2386"><p><a href="#chunk-2386">청크 2386</a> · **데이터 설명 및 어노테이션 포맷 설명** <small>문자 위치 538–1232</small></p><blockquote>데이터 |   | .json | 1,530 |
+| 01. 공사중 | 02. QA데이터 |   | .json | 1,530 |
+| 02. 조도급변구간 | 01. 관계데이터 |   | .json | 411 |
+| 02. 조도급변구간 | 02. QA데이터 |   | .json | 411 |
+| 03. 터널구간 | 01. 관계데이터 |   | .json | 381</blockquote></div><div class="evidence-chunk" id="chunk-2387"><p><a href="#chunk-2387">청크 2387</a> · **데이터 설명 및 어노테이션 포맷 설명** <small>문자 위치 1072–1768</small></p><blockquote>정보**
+
+| **예시** | **세부 구성 설명** |
+
+| 511_ND_075_BL_059_u1.json / 511_ND_075_BL_059_u2.json | 원천데이터명_업사이클링 유형(u1).json / 원천데이터명_업사이클링 유형(u2).json |
+
+**⑤ 클래스 분류**
+
+| **1차 분류** | **2차 분류** | **3차 분류** | **</blockquote></div><div class="evidence-chunk" id="chunk-2388"><p><a href="#chunk-2388">청크 2388</a> · **데이터 설명 및 어노테이션 포맷 설명** <small>문자 위치 1608–2374</small></p><blockquote> | string | Y | 데이터 파일명 |
+| 2 | image_path | string | Y | 대상 데이터 경로 |
+| 3 | meta | object |   |   |
+| 3-1 | place | string | N | 촬영장소(고속국도, 고속도로, 도심도로, 실증센터) |
+| 3-2 | road_condition | string | Y | 도로</blockquote></div><div class="evidence-chunk" id="chunk-2389"><p><a href="#chunk-2389">청크 2389</a> · **데이터 설명 및 어노테이션 포맷 설명** <small>문자 위치 2214–2960</small></p><blockquote> 4-4 | shape_type | string | Y | 라벨링 모양(line, rectangle) |
+| 4-5 | attributes | object |   | 객체 속성 정보 |
+| 4-5-1 | 유형 | string | N | 객체 유형(중앙성, 차선, 가장자리구역선 등) |
+| 4-5-2 | 선종류 | string | N | 선의 종류(실선, 점</blockquote></div><div class="evidence-chunk" id="chunk-2390"><p><a href="#chunk-2390">청크 2390</a> · **데이터 설명 및 어노테이션 포맷 설명** <small>문자 위치 2800–3649</small></p><blockquote>ing | Y | 관계 상태를 설명하는 텍스트 |
+| 5-3 | object | string | Y | 관계 객체 id(obj1, obj2..) |
+
+**어노테이션 포맷 - ② QA데이터**
+
+| **구분** | **속성명** | **타입** | **필수 여부** | **설명** |
+
+| 1 | scene_id | string | Y | 대상 이미지 파일명</blockquote></div><div class="evidence-chunk" id="chunk-2391"><p><a href="#chunk-2391">청크 2391</a> · **데이터 설명 및 어노테이션 포맷 설명** <small>문자 위치 3489–4624</small></p><blockquote>ge_path&#34;: &#34;\\..\\01.원천데이터\\Clip_702\\511_ND_075_BL_059.jpg&#34;,
+  &#34;meta&#34;: {
+    &#34;place&#34;: &#34;실증센터&#34;,
+    &#34;road_condition&#34;: &#34;&#34;,
+    &#34;time&#34;: 15,
+    &#34;time_type&#34;: &#34;15시&#34;,
+    &#34;weather&#34;: &#34;&#34;,
+    &#34;camera_type&#34;: &#34;B</blockquote></div><div class="evidence-chunk" id="chunk-2392"><p><a href="#chunk-2392">청크 2392</a> · **데이터 설명 및 어노테이션 포맷 설명** <small>문자 위치 4464–5382</small></p><blockquote> &#34;최고제한속도 50&#34;
+      }
+    }
+  ],
+  &#34;relationships&#34;: [
+    {
+      &#34;subject&#34;: &#34;obj1&#34;,
+      &#34;predicate&#34;: &#34;횡단보도가 나온 후 다시 횡단보도가 나타남&#34;,
+      &#34;object&#34;: &#34;obj2&#34;
+    },
+    {
+      &#34;subject&#34;: &#34;obj2&#34;,
+      &#34;pr</blockquote></div><div class="evidence-chunk" id="chunk-2393"><p><a href="#chunk-2393">청크 2393</a> · **데이터 설명 및 어노테이션 포맷 설명** <small>문자 위치 5222–5412</small></p><blockquote> 노면표시 중 최고제한속도 50 표시는 무엇을 의미하는가?&#34;,
+      &#34;answer&#34;: &#34;해당 구간의 최고 제한 속도가 시속 50km임을 나타냄.&#34;,
+      &#34;rationale&#34;: &#34;&#39;50&#39;이라는 노면표시를 통해 최고 제한 속도가 50km임을 알 수 있음.&#34;
+    }
+  ],
+  &#34;question_type&#34;: &#34;인지형&#34;
+}
+```</blockquote></div></article><article class="evidence-section" id="section-7"><h3><a href="#section-7">**4. 데이터 통계** · 섹션 7</a></h3><p class="record-snippet">**데이터 구축 규모 및 데이터 분포**
+
+| **구분** | **항목** | **비율** | **수량** |
+
+| 도로 상황 | 공사중 | 30% | 3,060 |
+| 도로 상황 | 조도 급변구간 | 8% | 822 |
+| 도로 상황 | 터널구간 | 8% | 762 |
+| 도로 상황 | 일반구간 | 54% | 5,420 |
+| 합계 |   | 100% |</p>
+<div class="evidence-chunk" id="chunk-2394"><p><a href="#chunk-2394">청크 2394</a> · **4. 데이터 통계** <small>문자 위치 0–209</small></p><blockquote>**데이터 구축 규모 및 데이터 분포**
+
+| **구분** | **항목** | **비율** | **수량** |
+
+| 도로 상황 | 공사중 | 30% | 3,060 |
+| 도로 상황 | 조도 급변구간 | 8% | 822 |
+| 도로 상황 | 터널구간 | 8% | 762 |
+| 도로 상황 | 일반구간 | 54% | 5,420 |
+| 합계 |   | 100% |</blockquote></div></article><article class="evidence-section" id="section-8"><h3><a href="#section-8">**5. 활용 AI모델 설명** · 섹션 8</a></h3><p class="record-snippet">**활용 AI모델**
+
+해당 사항 없음</p>
+<div class="evidence-chunk" id="chunk-2395"><p><a href="#chunk-2395">청크 2395</a> · **5. 활용 AI모델 설명** <small>문자 위치 0–21</small></p><blockquote>**활용 AI모델**
+
+해당 사항 없음</blockquote></div></article><article class="evidence-section" id="section-9"><h3><a href="#section-9">**6. 구축 업체정보** · 섹션 9</a></h3><p class="record-snippet">**▶ 주관기관**
+
+| **기관명** | **담당자명** | **전화번호 (유선번호)** 1) | **이메일** 1) | **담당업무** |
+
+| ㈜나라지식정보 | 박영훈 | 02-3141-7644 | [a1@narainformation.com](mailto:a1@narainformation.com) | 총괄책임자 |
+
+**▶ 참여기관** 2)
+
+| **</p>
+<div class="evidence-chunk" id="chunk-2396"><p><a href="#chunk-2396">청크 2396</a> · **6. 구축 업체정보** <small>문자 위치 0–753</small></p><blockquote>**▶ 주관기관**
+
+| **기관명** | **담당자명** | **전화번호 (유선번호)** 1) | **이메일** 1) | **담당업무** |
+
+| ㈜나라지식정보 | 박영훈 | 02-3141-7644 | [a1@narainformation.com](mailto:a1@narainformation.com) | 총괄책임자 |
+
+**▶ 참여기관** 2)
+
+| **</blockquote></div><div class="evidence-chunk" id="chunk-2397"><p><a href="#chunk-2397">청크 2397</a> · **6. 구축 업체정보** <small>문자 위치 593–1063</small></p><blockquote> 문의처 | 책임자 |   |   |   |
+| AI모델 관련 문의처 | 담당자 |   |   |   |
+| 저작도구 관련 문의처 | 책임자 | 박영훈 | 02-3141-7644 | [a1@narainformation.com](mailto:a1@narainformation.com) |
+| 저작도구 관련 문의처 | 담당자 | 박분선 | 02-3141-7644</blockquote></div></article><article class="evidence-section" id="section-10"><h3><a href="#section-10">**제1장 데이터 개요** · 섹션 10</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-11"><h3><a href="#section-11">**1. 데이터 설명서** · 섹션 11</a></h3><p class="record-snippet">**데이터셋명 (국문)**
+
+자율주행차 정적객체정보 인지 및 갱신 자동화 데이터
+
+**데이터셋명 (영문)**
+
+Self-driving vehicle static object information recognition and update automation data construction
+
+**구축 목적**
+
+자율주행용 정밀지도 자동 갱신 기술 연구
+
+도로시</p>
+<div class="evidence-chunk" id="chunk-2398"><p><a href="#chunk-2398">청크 2398</a> · **1. 데이터 설명서** <small>문자 위치 0–657</small></p><blockquote>**데이터셋명 (국문)**
+
+자율주행차 정적객체정보 인지 및 갱신 자동화 데이터
+
+**데이터셋명 (영문)**
+
+Self-driving vehicle static object information recognition and update automation data construction
+
+**구축 목적**
+
+자율주행용 정밀지도 자동 갱신 기술 연구
+
+도로시</blockquote></div></article><article class="evidence-section" id="section-12"><h3><a href="#section-12">**2. 메타데이터 구조표** · 섹션 12</a></h3><p class="record-snippet">**데이터 분야**
+
+교통, 모빌리티
+
+**데이터 유형**
+
+이미지, 텍스트
+
+**데이터 형식**
+
+jpg, json
+
+**데이터 출처**
+
+AI-HUB
+
+**라벨링 유형**
+
+이미지-텍스트 관계, 질의응답
+
+**라벨링 형식**
+
+json
+
+**데이터 활용 서비스**
+
+자율주행차 주변 환경 인지 능력 강화
+
+**데이터 구축년도 / 데이터 구축량**
+
+202</p>
+<div class="evidence-chunk" id="chunk-2399"><p><a href="#chunk-2399">청크 2399</a> · **2. 메타데이터 구조표** <small>문자 위치 0–212</small></p><blockquote>**데이터 분야**
+
+교통, 모빌리티
+
+**데이터 유형**
+
+이미지, 텍스트
+
+**데이터 형식**
+
+jpg, json
+
+**데이터 출처**
+
+AI-HUB
+
+**라벨링 유형**
+
+이미지-텍스트 관계, 질의응답
+
+**라벨링 형식**
+
+json
+
+**데이터 활용 서비스**
+
+자율주행차 주변 환경 인지 능력 강화
+
+**데이터 구축년도 / 데이터 구축량**
+
+202</blockquote></div></article><article class="evidence-section" id="section-13"><h3><a href="#section-13">**3. 데이터 통계** · 섹션 13</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-14"><h3><a href="#section-14">**3.1 데이터 구축 규모** · 섹션 14</a></h3><p class="record-snippet">**원천 데이터**
+
+| **파일포맷** | **데이터 규모** | **json 데이터** |
+
+| jpg, json | 5,032건 | 5,032건 |
+
+**라벨링 데이터**
+
+| **파일포맷** | **데이터 규모** | **json 데이터** |
+
+| json | 10,064건 | 10,064건 |</p>
+<div class="evidence-chunk" id="chunk-2400"><p><a href="#chunk-2400">청크 2400</a> · **3.1 데이터 구축 규모** <small>문자 위치 0–170</small></p><blockquote>**원천 데이터**
+
+| **파일포맷** | **데이터 규모** | **json 데이터** |
+
+| jpg, json | 5,032건 | 5,032건 |
+
+**라벨링 데이터**
+
+| **파일포맷** | **데이터 규모** | **json 데이터** |
+
+| json | 10,064건 | 10,064건 |</blockquote></div></article><article class="evidence-section" id="section-15"><h3><a href="#section-15">**3.2 데이터 분포** · 섹션 15</a></h3><p class="record-snippet">**원천데이터 대비 가공(라벨링) 데이터 분포**
+
+| **원천 대분류** | **원천 소분류** | **원천 포맷** | **원천 수량** | **원천 단위** | **가공 대분류** | **가공 소분류** | **가공 포맷** | **가공 수량** | **가공 단위** |
+
+| 공사중 | - | jpg / json | 1,530 / 1,530 | 장 /</p>
+<div class="evidence-chunk" id="chunk-2401"><p><a href="#chunk-2401">청크 2401</a> · **3.2 데이터 분포** <small>문자 위치 0–622</small></p><blockquote>**원천데이터 대비 가공(라벨링) 데이터 분포**
+
+| **원천 대분류** | **원천 소분류** | **원천 포맷** | **원천 수량** | **원천 단위** | **가공 대분류** | **가공 소분류** | **가공 포맷** | **가공 수량** | **가공 단위** |
+
+| 공사중 | - | jpg / json | 1,530 / 1,530 | 장 /</blockquote></div><div class="evidence-chunk" id="chunk-2402"><p><a href="#chunk-2402">청크 2402</a> · **3.2 데이터 분포** <small>문자 위치 467–1112</small></p><blockquote> 건 |
+| 터널구간 | - | jpg / json | 381 / 381 | 장 / 건 | 터널구간 | 관계데이터 |   | 381 | 건 |
+| 터널구간 | - | jpg / json | 381 / 381 | 장 / 건 | 터널구간 | QA데이터 |   | 381 | 건 |
+| 일반구간 | - | jpg / json | 2,710 / 2,710 | 장 /</blockquote></div><div class="evidence-chunk" id="chunk-2403"><p><a href="#chunk-2403">청크 2403</a> · **3.2 데이터 분포** <small>문자 위치 952–1643</small></p><blockquote> **객체수** | **포맷 (형식)** | **수량** | **파일비율** | **단위** |
+
+| 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 | 1.Training | 2.라벨링데이터 | 공사중 | 관계데이터 | 관계 |   | json | 1,224 | 1:1 | 건 |
+| 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 | 1.Train</blockquote></div><div class="evidence-chunk" id="chunk-2404"><p><a href="#chunk-2404">청크 2404</a> · **3.2 데이터 분포** <small>문자 위치 1483–2176</small></p><blockquote>링데이터 | 터널구간 | 관계데이터 | 관계 |   | json | 305 | 1:1 | 건 |
+| 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 | 1.Training | 2.라벨링데이터 | 터널구간 | QA데이터 | 질의응답 |   | json | 305 | 1:1 | 건 |
+| 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 | 1.Train</blockquote></div><div class="evidence-chunk" id="chunk-2405"><p><a href="#chunk-2405">청크 2405</a> · **3.2 데이터 분포** <small>문자 위치 2016–2711</small></p><blockquote>이터 | 공사중 | QA데이터 | 질의응답 |   | json | 153 | 1:1 | 건 |
+| 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 | 2.Validation | 2.라벨링데이터 | 조도급변구간 | 관계데이터 | 관계 |   | json | 41 | 1:1 | 건 |
+| 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 | 2.Valid</blockquote></div><div class="evidence-chunk" id="chunk-2406"><p><a href="#chunk-2406">청크 2406</a> · **3.2 데이터 분포** <small>문자 위치 2551–3214</small></p><blockquote>이터 | 일반구간 | 관계데이터 | 관계 |   | json | 271 | 1:1 | 건 |
+| 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 | 2.Validation | 2.라벨링데이터 | 일반구간 | QA데이터 | 질의응답 |   | json | 271 | 1:1 | 건 |
+| 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 | 3.Test </blockquote></div><div class="evidence-chunk" id="chunk-2407"><p><a href="#chunk-2407">청크 2407</a> · **3.2 데이터 분포** <small>문자 위치 3054–3569</small></p><blockquote>2.라벨링데이터 | 조도급변구간 | QA데이터 | 질의응답 |   | json | 41 | 1:1 | 건 |
+| 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 | 3.Test | 2.라벨링데이터 | 터널구간 | 관계데이터 | 관계 |   | json | 38 | 1:1 | 건 |
+| 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 | 3.Test </blockquote></div></article><article class="evidence-section" id="section-16"><h3><a href="#section-16">**4. 데이터 포맷** · 섹션 16</a></h3><p class="record-snippet">**공정별 데이터 구성**
+
+| **구분** | **획득/수집 단계** | **정제 단계** | **가공 단계** |
+
+| 데이터 구분 | 원천데이터 | 원천데이터 | 가공데이터 |
+| 데이터 형태 | 디지털 파일 | 디지털 파일 | 디지털 파일 |
+| 데이터 포멧 | *.jpg, *.json | *.jpg, *.json | *.json |
+
+**원천 데이</p>
+<div class="evidence-chunk" id="chunk-2408"><p><a href="#chunk-2408">청크 2408</a> · **4. 데이터 포맷** <small>문자 위치 0–750</small></p><blockquote>**공정별 데이터 구성**
+
+| **구분** | **획득/수집 단계** | **정제 단계** | **가공 단계** |
+
+| 데이터 구분 | 원천데이터 | 원천데이터 | 가공데이터 |
+| 데이터 형태 | 디지털 파일 | 디지털 파일 | 디지털 파일 |
+| 데이터 포멧 | *.jpg, *.json | *.jpg, *.json | *.json |
+
+**원천 데이</blockquote></div><div class="evidence-chunk" id="chunk-2409"><p><a href="#chunk-2409">청크 2409</a> · **4. 데이터 포맷** <small>문자 위치 590–1388</small></p><blockquote>|
+| 2 | image_path | string | Y | 대상 데이터 경로 |   |   |
+| 3 | meta | object |   |   |   |   |
+| 3-1 | place | string | N | 촬영장소(고속국도, 고속도로, 도심도로, 실증센터) |   |   |
+| 3-2 | road_condition | string | Y | 도로</blockquote></div><div class="evidence-chunk" id="chunk-2410"><p><a href="#chunk-2410">청크 2410</a> · **4. 데이터 포맷** <small>문자 위치 1228–1970</small></p><blockquote>s | array | Y | 객체 라벨링 위치 정보 |   |   |
+| 4-4 | shape_type | string | Y | 라벨링 모양(line, rectangle) |   |   |
+| 4-5 | attributes | object |   | 객체 속성 정보 |   |   |
+| 4-5-1 | 유형 | string | N | 객체 유형(중앙성, 차</blockquote></div><div class="evidence-chunk" id="chunk-2411"><p><a href="#chunk-2411">청크 2411</a> · **4. 데이터 포맷** <small>문자 위치 1810–2606</small></p><blockquote>nships | array | Y | 관계 정보 |   |   |
+| 5-1 | subject | string | Y | 관계 객체 id(obj1, obj2..) |   |   |
+| 5-2 | predicate | string | Y | 관계 상태를 설명하는 텍스트 |   |   |
+| 5-3 | object | string | Y | 관계 객체 id(o</blockquote></div><div class="evidence-chunk" id="chunk-2412"><p><a href="#chunk-2412">청크 2412</a> · **4. 데이터 포맷** <small>문자 위치 2446–3492</small></p><blockquote>답변 |   |   |
+| 4-4 | rationale | string | Y | 답변 근거 추론 내용 |   |   |
+| 5 | question_type | string | Y | 질문 유형(인지형, 판단형, 제어형, 설명형, 인과추론형, 협업 주행형, 절차형) |   |   |
+
+**어노테이션 예시 - 원천데이터(.jpg)**
+
+![이미지: BIN00</blockquote></div><div class="evidence-chunk" id="chunk-2413"><p><a href="#chunk-2413">청크 2413</a> · **4. 데이터 포맷** <small>문자 위치 3332–4305</small></p><blockquote>e&#34;: &#34;rectangle&#34;,
+      &#34;points&#34;: [
+        0, 782, 1639, 1199
+      ],
+      &#34;attributes&#34;: {
+        &#34;유형&#34;: &#34;횡단보도&#34;,
+        &#34;색깔&#34;: &#34;흰색&#34;,
+        &#34;설명&#34;: &#34;&#34;
+      }
+    },
+    {
+      &#34;id&#34;: &#34;obj3&#34;,
+      &#34;</blockquote></div><div class="evidence-chunk" id="chunk-2414"><p><a href="#chunk-2414">청크 2414</a> · **4. 데이터 포맷** <small>문자 위치 4145–4674</small></p><blockquote>caption&#34;: &#34;실증센터에서 15시, 횡단보도 예고 표시와 횡단보도, 최고제한속도 50 노면표시가 나타나는 도로 상황임.&#34;,
+  &#34;qa_dataset&#34;: [
+    {
+      &#34;qa_id&#34;: &#34;1&#34;,
+      &#34;question&#34;: &#34;전방 도로에 어떤 노면표시가 존재하는가?&#34;,
+      &#34;answer&#34;: &#34;횡단보도 예고, 횡단보도, 최고제한속도 5</blockquote></div></article><article class="evidence-section" id="section-17"><h3><a href="#section-17">**5. 데이터 구축 절차** · 섹션 17</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-18"><h3><a href="#section-18">**5.1 데이터 구축 절차** · 섹션 18</a></h3><p class="record-snippet">**데이터 구축 절차**
+
+![이미지: BIN0004.PNG]
+
+**공정별 데이터 구축 절차**
+
+**원천 데이터 수집 절차**
+
+가) 데이터 확보 절차
+
+- AI-Hub 공개 데이터 조사
+- 협의에 의한 비공개 데이터 포함 여부를 확인하여 데이터 신청
+
+나) 데이터 확보 장소 및 도구
+
+- 주관사 데이터 서버와 AI-Hub를 연결하여 다운로드
+
+**원천데</p>
+<div class="evidence-chunk" id="chunk-2415"><p><a href="#chunk-2415">청크 2415</a> · **5.1 데이터 구축 절차** <small>문자 위치 0–765</small></p><blockquote>**데이터 구축 절차**
+
+![이미지: BIN0004.PNG]
+
+**공정별 데이터 구축 절차**
+
+**원천 데이터 수집 절차**
+
+가) 데이터 확보 절차
+
+- AI-Hub 공개 데이터 조사
+- 협의에 의한 비공개 데이터 포함 여부를 확인하여 데이터 신청
+
+나) 데이터 확보 장소 및 도구
+
+- 주관사 데이터 서버와 AI-Hub를 연결하여 다운로드
+
+**원천데</blockquote></div></article><article class="evidence-section" id="section-19"><h3><a href="#section-19">**5.2 데이터 구축 기준** · 섹션 19</a></h3><p class="record-snippet">**획득/수집 기준**
+
+- 2022년 &#39;자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 구축&#39; 사업으로 구축된 데이터 전체를 AI-HUB에서 다운로드함
+
+**정제(대상 데이터 선정) 기준**
+
+- 원천데이터 중 이미지-텍스트 관계 구축이 가능한 이미지 데이터만을 대상으로 선정 작업 진행
+- 동영상 데이터의 연속 프레임으로 된 이미지 데이터의 특성 상 </p>
+<div class="evidence-chunk" id="chunk-2416"><p><a href="#chunk-2416">청크 2416</a> · **5.2 데이터 구축 기준** <small>문자 위치 0–786</small></p><blockquote>**획득/수집 기준**
+
+- 2022년 &#39;자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 구축&#39; 사업으로 구축된 데이터 전체를 AI-HUB에서 다운로드함
+
+**정제(대상 데이터 선정) 기준**
+
+- 원천데이터 중 이미지-텍스트 관계 구축이 가능한 이미지 데이터만을 대상으로 선정 작업 진행
+- 동영상 데이터의 연속 프레임으로 된 이미지 데이터의 특성 상 </blockquote></div><div class="evidence-chunk" id="chunk-2417"><p><a href="#chunk-2417">청크 2417</a> · **5.2 데이터 구축 기준** <small>문자 위치 626–1354</small></p><blockquote>n_line | 지시선 | 유형: 회전 화살표(좌회전, 우회전, 유턴), 직진 화살표, 복합 화살표(직진 및 우회전), 문자 표시(글자/숫자 포함), 특정 용도(버스 정류장 정차 위치, 긴급 차량 진입로) / 색깔: 흰색, 노란색, 파란색, 빨간색, 분홍색, 연한녹색, 녹색 / 설명: 기타 설명 기재 |
+| 1 | assistance_line | 보조선 |</blockquote></div><div class="evidence-chunk" id="chunk-2418"><p><a href="#chunk-2418">청크 2418</a> · **5.2 데이터 구축 기준** <small>문자 위치 1194–1879</small></p><blockquote>| 2 | damaged_assistance_line | 손상된 보조선 | 유형, 색깔: / 상태: 경미, 보통, 심각 / 설명: 기타 설명 기재 |
+| 2 | damaged_other_line | 손상된 기타 선 | 색깔: / 상태: 경미, 보통, 심각 / 설명: 기타 설명 기재 |
+| 3 | warning_sign | 주의표지 | 유형: 미끄러운 도로,</blockquote></div><div class="evidence-chunk" id="chunk-2419"><p><a href="#chunk-2419">청크 2419</a> · **5.2 데이터 구축 기준** <small>문자 위치 1719–2432</small></p><blockquote>측 후방, 후면 중앙, 우측 후방 / 설명: 기타 설명 기재 |
+| 4 | construction | 공사 구역 | 유형: 도로 유지보수, 시설물 공사, 새로운 도로 건설, 기타 / 좌측 전방, 정면 중앙, 우측 전방, 좌측 후방, 후면 중앙, 우측 후방 / 설명: 기타 설명 기재 |
+| 5 | crack | 균열 | 유형: 도로방향 평행 균열, 도로방향 </blockquote></div><div class="evidence-chunk" id="chunk-2420"><p><a href="#chunk-2420">청크 2420</a> · **5.2 데이터 구축 기준** <small>문자 위치 2272–2712</small></p><blockquote>규칙에 위반되나요?&#34;, &#34;이 장면은 교통법을 위반하고 있나요?&#34; |
+| 3 | 제어형 (Control) | &#34;이 차량은 속도를 줄여야 하나요?&#34;, &#34;차선을 변경해야 하나요?&#34;, &#34;이 상황에서 어떤 제어 행동을 해야 하나요?&#34;, &#34;보행자가 갑자기 뛰어든다면 어떻게 대응해야 하나요?&#34; |
+| 4 | 설명형 (Explainable) | &#34;왜 멈췄나요?&#34;, &#34;정지</blockquote></div></article><article class="evidence-section" id="section-20"><h3><a href="#section-20">**6. 데이터 저장 구조 및 파일 명명 규칙** · 섹션 20</a></h3><p class="record-snippet">**디렉토리 구조**
+
+| **데이터** | **분류 (1단계)** | **분류 (2단계)** | **수량** |
+
+| 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 | 공사중 | 관계데이터 | 1,530 |
+| 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 | 공사중 | QA데이터 | 1,530 |
+| 자율주행차 정적객체정보 인지 및 갱신 자동</p>
+<div class="evidence-chunk" id="chunk-2421"><p><a href="#chunk-2421">청크 2421</a> · **6. 데이터 저장 구조 및 파일 명명 규칙** <small>문자 위치 0–618</small></p><blockquote>**디렉토리 구조**
+
+| **데이터** | **분류 (1단계)** | **분류 (2단계)** | **수량** |
+
+| 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 | 공사중 | 관계데이터 | 1,530 |
+| 자율주행차 정적객체정보 인지 및 갱신 자동화 데이터 | 공사중 | QA데이터 | 1,530 |
+| 자율주행차 정적객체정보 인지 및 갱신 자동</blockquote></div><div class="evidence-chunk" id="chunk-2422"><p><a href="#chunk-2422">청크 2422</a> · **6. 데이터 저장 구조 및 파일 명명 규칙** <small>문자 위치 464–706</small></p><blockquote>보 인지 및 갱신 자동화 데이터 | 일반구간 | QA데이터 | 2,710 |
+| 합계 |   |   | 10,064 |
+
+**파일 명명 규칙**
+
+- 원천데이터: 데이터번호_시나리오_클립번호_센서종류_파일인덱스.json
+  - 예시) 511_ND_075_BL_059.json
+- 라벨링데이터: 원천데이터명_업사이클링 유형(u1: 관계데이터, u2: 질의응답데</blockquote></div></article><article class="evidence-section" id="section-21"><h3><a href="#section-21">**제2장 데이터 구축 및 활용** · 섹션 21</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-22"><h3><a href="#section-22">**1. 데이터 구축** · 섹션 22</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-23"><h3><a href="#section-23">**1.1 데이터 구축공정 및 결과** · 섹션 23</a></h3><p class="record-snippet">| **구축공정** | **세부 프로세스** | **내용** | **결과** |
+
+| 데이터 수집/획득 | 1) 원천데이터 획득 계획 / 2) 데이터 권리 확보 / 3) 데이터 획득/서버 적재 / 4) 데이터 분석 및 점검 | AI-HUB에서 다운로드 및 작업 서버 적재 | 원천데이터 jpg 250,000건, json 250,000건 적재 |
+| 데이터 정</p>
+<div class="evidence-chunk" id="chunk-2423"><p><a href="#chunk-2423">청크 2423</a> · **1.1 데이터 구축공정 및 결과** <small>문자 위치 0–830</small></p><blockquote>| **구축공정** | **세부 프로세스** | **내용** | **결과** |
+
+| 데이터 수집/획득 | 1) 원천데이터 획득 계획 / 2) 데이터 권리 확보 / 3) 데이터 획득/서버 적재 / 4) 데이터 분석 및 점검 | AI-HUB에서 다운로드 및 작업 서버 적재 | 원천데이터 jpg 250,000건, json 250,000건 적재 |
+| 데이터 정</blockquote></div></article><article class="evidence-section" id="section-24"><h3><a href="#section-24">**1.2 데이터 구축 유의사항** · 섹션 24</a></h3><p class="record-snippet">| **구분** | **항목** | **구축 유의사항** |
+
+| 정제 | 이미지 선정 시 유의 사항 | 라벨링 객체 수가 최소 3개 이상, 객체 유형이 2개 이상인 이미지(※터널구간의 경우 이미지 유사성을 최우선으로 하여 객체 유형이 1개인 경우도 포함) / 도로 표지판, 공사 구역 표지 등 도로선 외의 객체가 있는 이미지 / 클립 내에서 이미지 간 유사</p>
+<div class="evidence-chunk" id="chunk-2424"><p><a href="#chunk-2424">청크 2424</a> · **1.2 데이터 구축 유의사항** <small>문자 위치 0–788</small></p><blockquote>| **구분** | **항목** | **구축 유의사항** |
+
+| 정제 | 이미지 선정 시 유의 사항 | 라벨링 객체 수가 최소 3개 이상, 객체 유형이 2개 이상인 이미지(※터널구간의 경우 이미지 유사성을 최우선으로 하여 객체 유형이 1개인 경우도 포함) / 도로 표지판, 공사 구역 표지 등 도로선 외의 객체가 있는 이미지 / 클립 내에서 이미지 간 유사</blockquote></div><div class="evidence-chunk" id="chunk-2425"><p><a href="#chunk-2425">청크 2425</a> · **1.2 데이터 구축 유의사항** <small>문자 위치 628–1415</small></p><blockquote>를 클릭한 후 Predicate에 설명을 넣어 줌 / 관계의 Predicate는 반드시 넣어주어야 하며 내용은 2 객체와 관계된 내용이면 어떤 것을 선택해도 됨 - 최소 객체 3개와 관계 2개를 완성해야 함 - 속성을 부여할 객체를 선택할 때는 객체1, 객체2, 객체3...사이의 관계 속성을 부여해야 하는 것을 염두에 두어야 함. 객체와 객체의 관계 속성을</blockquote></div><div class="evidence-chunk" id="chunk-2426"><p><a href="#chunk-2426">청크 2426</a> · **1.2 데이터 구축 유의사항** <small>문자 위치 1255–1445</small></p><blockquote>&gt; 검은색 차가 주행 중인 차로에서 직진 및 좌회전이 모두 가능한가? / 주어가 없는 질문 - &#34;주행 중인 차선에서 차선 변경이 가능한가?&#34; - 차가 한 대라면 가능, 여러 대라면 특정해야 함 / 원천데이터의 라벨링 오류일 경우 - 횡단보도 예고 유도선 -&gt; 횡단보도 예고 노면표시 / 정차주차금지선(노란색 점선인 경우) -&gt; 주차금지선 |</blockquote></div></article><article class="evidence-section" id="section-25"><h3><a href="#section-25">**2. 학습모델** · 섹션 25</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-26"><h3><a href="#section-26">**2.1 학습모델 및 알고리즘** · 섹션 26</a></h3><p class="record-snippet">해당 사항 없음</p>
+<div class="evidence-chunk" id="chunk-2427"><p><a href="#chunk-2427">청크 2427</a> · **2.1 학습모델 및 알고리즘** <small>문자 위치 0–8</small></p><blockquote>해당 사항 없음</blockquote></div></article><article class="evidence-section" id="section-27"><h3><a href="#section-27">**2.2 모델 학습 준비 및 유효성 검증 결과** · 섹션 27</a></h3><p class="record-snippet">해당 사항 없음</p>
+<div class="evidence-chunk" id="chunk-2428"><p><a href="#chunk-2428">청크 2428</a> · **2.2 모델 학습 준비 및 유효성 검증 결과** <small>문자 위치 0–8</small></p><blockquote>해당 사항 없음</blockquote></div></article><article class="evidence-section" id="section-28"><h3><a href="#section-28">**3. 서비스 활용** · 섹션 28</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-29"><h3><a href="#section-29">**3.1 서비스 활용 예시 및 시나리오** · 섹션 29</a></h3><p class="record-snippet">**1) 향후 데이터 활용 분야 및 활용 서비스**
+
+- 차세대 자율주행 모델 학습: 시각 정보와 판단 논리가 결합된 데이터셋은 테슬라와 웨이모가 선도하는 엔드투엔드(End-to-End) 자율주행 모델 학습에 활용되어 카메라 영상만으로 조향 및 가속 제어 명령을 직접 출력하는 기술 개발을 지원.
+- 모빌리티 특화 LLM 개발: 교통 법규, 도로 상황, 운전</p>
+<div class="evidence-chunk" id="chunk-2429"><p><a href="#chunk-2429">청크 2429</a> · **3.1 서비스 활용 예시 및 시나리오** <small>문자 위치 0–652</small></p><blockquote>**1) 향후 데이터 활용 분야 및 활용 서비스**
+
+- 차세대 자율주행 모델 학습: 시각 정보와 판단 논리가 결합된 데이터셋은 테슬라와 웨이모가 선도하는 엔드투엔드(End-to-End) 자율주행 모델 학습에 활용되어 카메라 영상만으로 조향 및 가속 제어 명령을 직접 출력하는 기술 개발을 지원.
+- 모빌리티 특화 LLM 개발: 교통 법규, 도로 상황, 운전</blockquote></div></article>
+</section>
+
+  </main>
+  <footer>
+    <span>DOUZONE · MFG TECH COPILOT</span>
+    <span>데이터 출처: AI 허브(aihub.or.kr) 데이터셋 설명서·활용가이드 — 원본 재배포 금지, 출처 표기</span>
+  </footer>
+  <script src="../static/evidence.js" defer></script>
+</body>
+</html>

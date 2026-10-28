@@ -18,7 +18,7 @@
   <div><span>데이터셋</span><strong>{{ stats.datasets }}</strong><small>제조 중심 전 분야</small></div>
   <div><span>기술문서</span><strong>{{ stats.total_docs }}</strong><small>설명서·활용가이드</small></div>
   <div><span>검색 섹션</span><strong>{{ stats.total_sections }}</strong><small>헤딩 단위 청킹</small></div>
-  <div><span>인덱스 크기</span><strong>{{ stats.db_bytes|sizefmt }}</strong><small>SQLite FTS5 trigram</small></div>
+  <div><span>구축된 벡터 청크</span><strong>{{ stats.vector_index.chunks if stats.vector_index and stats.vector_index.chunks else '준비 중' }}</strong><small>{{ stats.vector_index.model if stats.vector_index else '벡터 인덱스 미준비' }} · 서버 연결 상태는 검색 화면에서 확인</small></div>
 </section>
 
 <section class="search-band" aria-label="기술문서 검색">
@@ -38,7 +38,7 @@
           <option value="가이드">구축·활용 가이드</option>
         </select>
       </label>
-      <span class="demo-note">동의어 확장 지원 — 예: 화재 → 열폭주·발화·탄화, 이송장치 → OHT·AGV</span>
+      <span class="demo-note">API 연결 시 하이브리드·의미·어휘 검색 · 미연결 시 명시적 카탈로그 대체 조회</span>
     </div>
   </form>
 </section>
@@ -47,22 +47,22 @@
   <a class="quick-card" href="/search">
     <span class="qc-eyebrow">SEARCH</span>
     <h3>기술문서 검색</h3>
-    <p>문서·섹션 단위 검색과 원문 스니펫, 문서 유형 필터를 제공합니다.</p>
+    <p>별도 검색 API와 연결해 본문·벡터 검색을 실행하고 사이트 내 근거 발췌를 확인합니다.</p>
   </a>
   <a class="quick-card" href="/datasets">
     <span class="qc-eyebrow">CATALOG</span>
     <h3>데이터셋 목록</h3>
-    <p>83종 데이터셋의 문서 수·섹션 수·구성을 한 화면에서 확인합니다.</p>
+    <p>{{ stats.datasets }}종 데이터셋의 문서 수·섹션 수·구성을 한 화면에서 확인합니다.</p>
   </a>
   <a class="quick-card" href="/demo">
     <span class="qc-eyebrow">DEMO</span>
     <h3>시연 질문</h3>
-    <p>도입 검토 시연용 질문 6개와 추천·비교 시나리오를 제공합니다.</p>
+    <p>도입 검토용 질문 6개로 문서 근거 검색과 적용 가능성 검토를 시작합니다.</p>
   </a>
 </section>
 
 <aside class="source-band">
   <strong>수집 범위와 공개 기준</strong>
-  <p>본 사이트는 AI Hub 공개 기술문서(데이터 설명서·구축·활용 가이드)의 검색 결과를 제공합니다. 실시간 설비 데이터나 예측 모델 실행 기능은 포함하지 않습니다. 데이터 사용은 AI Hub 이용약관을 따르며 원본 재배포는 금지됩니다.</p>
+  <p>본 사이트는 AI Hub 기술문서의 메타데이터와 제한된 RAG 근거 발췌를 제공합니다. 본문·벡터 검색은 별도 API 연결이 필요하며 검색 화면에 배포·인덱스 상태를 표시합니다. 실시간 설비 데이터나 예측 모델 실행 기능은 포함하지 않습니다. 데이터 사용은 AI Hub 이용약관을 따르며 원본 재배포는 금지됩니다.</p>
 </aside>
 {% endblock %}

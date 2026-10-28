@@ -1,0 +1,6 @@
+flask>=3.1,<4
+gunicorn>=23,<24
+sentence-transformers==6.2.0
+mcp>=1.20,<2
+markdown>=3.7,<4
+bleach>=6.2,<7

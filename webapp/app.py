@@ -156,6 +156,26 @@ def api_compare():
         request.args.get("a", ""), request.args.get("b", "")))
 
 
+@app.route("/api/hybrid")
+def api_hybrid():
+    try:
+        limit = int(request.args.get('limit', 10))
+        return raw_json(engine._hybrid_search(request.args.get('q', ''),
+                        request.args.get('dtype', ''), request.args.get('sn', ''), limit))
+    except ValueError:
+        return raw_json(json.dumps({'error': 'limit는 정수여야 합니다', 'results': []}, ensure_ascii=False)), 400
+
+
+@app.route("/api/semantic")
+def api_semantic():
+    try:
+        limit = int(request.args.get('limit', 10))
+        return raw_json(engine._semantic_search(request.args.get('q', ''),
+                        request.args.get('dtype', ''), request.args.get('sn', ''), limit))
+    except ValueError:
+        return raw_json(json.dumps({'error': 'limit는 정수여야 합니다', 'results': []}, ensure_ascii=False)), 400
+
+
 @app.route("/api/document/<doc_id>")
 def api_document(doc_id):
     full = request.args.get("full", "0") in ("1", "true", "yes")
@@ -171,6 +191,13 @@ def api_datasets():
 def not_found(e):
     return render_template("error.html", code=404, msg="문서를 찾을 수 없습니다."), 404
 
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from public_api import register_public_api
+register_public_api(app, engine)
+if os.environ.get('MFG_TRUST_PROXY') == '1':
+    from werkzeug.middleware.proxy_fix import ProxyFix
+    app.wsgi_app = ProxyFix(app.wsgi_app, x_for=1, x_proto=1, x_host=1)
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("HOST", "127.0.0.1"),

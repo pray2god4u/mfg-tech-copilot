@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: mfg-tech-copilot-search
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    plan: pro
+    healthCheckPath: /api/health
+    envVars:
+      - key: MFG_VECTOR_DEVICE
+        value: cpu
+      - key: MFG_ALLOWED_ORIGINS
+        value: https://pray2god4u.github.io
+      - key: MFG_TRUST_PROXY
+        value: "1"
+      - key: PORT
+        value: "10000"
+# 유료 서버 생성은 사용자 대시보드에서 요금과 메모리를 확인한 뒤 진행.
+# 최소 메모리 충족 여부는 실제 부하 검증 필요. 무료 소형 인스턴스는 권장하지 않음.

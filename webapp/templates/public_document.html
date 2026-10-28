@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}{{ doc.title }} — RAG 근거 발췌 | 제조 Copilot{% endblock %}
+{% block content %}
+<section class="heading-band"><div><p class="eyebrow">PUBLIC RAG EVIDENCE · {{ doc.id }}</p><h1>{{ doc.title }}</h1><p class="subtitle">{{ doc.ds_name }} · {{ doc.dtype }} · 섹션 {{ sections|length }}개 · 청크 {{ chunks|length }}개</p></div></section>
+<aside class="source-band"><strong>문서 사실 · 제한된 근거 발췌</strong><p>전체 원본이 아닌 섹션명과 청크별 최대 200자 발췌입니다. 검색 화면은 검색 서버가 반환한 관련 스니펫을 표시합니다. 발췌만으로 설비 상태·화재 위험을 진단하지 않습니다. 근거 사실과 적용에 관한 추론을 구분하세요. AI Hub 이용약관을 따르며 원본 재배포를 허용하지 않습니다.</p><p><a href="/dataset/{{ doc.sn }}">데이터셋 구성 →</a> · <a href="https://aihub.or.kr/aihubdata/data/view.do?dataSetSn={{ doc.sn }}" target="_blank" rel="noopener noreferrer">AI Hub 원본 메타데이터 (보조 출처) ↗</a></p></aside>
+<section class="search-band"><label for="evidenceFilter">이 페이지의 섹션명·발췌 찾기</label><input id="evidenceFilter" type="search" class="evidence-filter" placeholder="라벨 또는 발췌 내 단어"><p class="demo-note">현재 페이지 내 텍스트 필터입니다. 의미·벡터 검색이 아닙니다.</p></section>
+<section class="result-band"><h2>섹션 구성과 청크 근거</h2>
+{% for s in sections %}<article class="evidence-section" id="section-{{ s.sec_idx }}"><h3><a href="#section-{{ s.sec_idx }}">{{ s.label }} · 섹션 {{ s.sec_idx }}</a></h3><p class="record-snippet">{{ s.overview }}</p>
+{% for c in chunks_by_section.get(s.sec_idx, []) %}<div class="evidence-chunk" id="chunk-{{ c.chunk_id }}"><p><a href="#chunk-{{ c.chunk_id }}">청크 {{ c.chunk_id }}</a> · {{ c.label }} <small>문자 위치 {{ c.start_char }}–{{ c.end_char }}</small></p><blockquote>{{ c.excerpt }}</blockquote></div>{% endfor %}</article>{% endfor %}
+</section>
+{% endblock %}
+{% block scripts %}<script src="/static/evidence.js" defer></script>{% endblock %}

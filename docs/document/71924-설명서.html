@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="제조현장 기술지원 Copilot — AI Hub 기술문서 153건 검색·추천·비교">
+  <title>11-15. 단계적 사고 기반 물류 로봇 파지 교시 데이터 — RAG 근거 발췌 | 제조 Copilot</title>
+  <link rel="stylesheet" href="../static/copilot.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 이동</a>
+  <header class="topbar">
+    <a class="brand" href="../index.html"><span class="brand-mark">MFG</span><span>제조 Copilot</span><span>기술문서 인텔리전스</span></a>
+    <nav class="header-actions" aria-label="주요 메뉴">
+      <span class="public-badge"><span class="dot"></span>공개 조회</span>
+      <a href="../search.html">기술문서 검색</a>
+      <a href="../datasets.html">데이터셋 목록</a>
+      <a href="../demo.html">시연 질문</a>
+    </nav>
+  </header>
+  <main id="main">
+    
+<section class="heading-band"><div><p class="eyebrow">PUBLIC RAG EVIDENCE · 71924-설명서</p><h1>11-15. 단계적 사고 기반 물류 로봇 파지 교시 데이터</h1><p class="subtitle">11-15. 단계적 사고 기반 물류 로봇 파지 교시 데이터 · 설명서 · 섹션 41개 · 청크 54개</p></div></section>
+<aside class="source-band"><strong>문서 사실 · 제한된 근거 발췌</strong><p>전체 원본이 아닌 섹션명과 청크별 최대 200자 발췌입니다. 검색 화면은 검색 서버가 반환한 관련 스니펫을 표시합니다. 발췌만으로 설비 상태·화재 위험을 진단하지 않습니다. 근거 사실과 적용에 관한 추론을 구분하세요. AI Hub 이용약관을 따르며 원본 재배포를 허용하지 않습니다.</p><p><a href="../dataset/71924.html">데이터셋 구성 →</a> · <a href="https://aihub.or.kr/aihubdata/data/view.do?dataSetSn=71924" target="_blank" rel="noopener noreferrer">AI Hub 원본 메타데이터 (보조 출처) ↗</a></p></aside>
+<section class="search-band"><label for="evidenceFilter">이 페이지의 섹션명·발췌 찾기</label><input id="evidenceFilter" type="search" class="evidence-filter" placeholder="라벨 또는 발췌 내 단어"><p class="demo-note">현재 페이지 내 텍스트 필터입니다. 의미·벡터 검색이 아닙니다.</p></section>
+<section class="result-band"><h2>섹션 구성과 청크 근거</h2>
+<article class="evidence-section" id="section-0"><h3><a href="#section-0">**메타테이블 정보 (다중기입가능)** · 섹션 0</a></h3><p class="record-snippet">**분야**
+
+NIA 기입
+
+**데이터 유형**
+
+3D
+
+**구축 데이터량**
+
+o 원천데이터
+- 3D CAD 1890건
+- 실제환경 71994건
+- 가상환경 71598건
+
+o 라벨링데이터
+- 3D CAD 630건
+- 실제환경 71994건
+- 가상환경 71598건
+
+**원천데이터 형식**
+
+- 3D CAD 데이터 (OBJ, MTL, PNG)
+- 실제/가상 </p>
+<div class="evidence-chunk" id="chunk-1982"><p><a href="#chunk-1982">청크 1982</a> · **메타테이블 정보 (다중기입가능)** <small>문자 위치 0–386</small></p><blockquote>**분야**
+
+NIA 기입
+
+**데이터 유형**
+
+3D
+
+**구축 데이터량**
+
+o 원천데이터
+- 3D CAD 1890건
+- 실제환경 71994건
+- 가상환경 71598건
+
+o 라벨링데이터
+- 3D CAD 630건
+- 실제환경 71994건
+- 가상환경 71598건
+
+**원천데이터 형식**
+
+- 3D CAD 데이터 (OBJ, MTL, PNG)
+- 실제/가상 </blockquote></div></article><article class="evidence-section" id="section-1"><h3><a href="#section-1">**데이터 문의처** · 섹션 1</a></h3><p class="record-snippet">| **기관명** | **문의담당자명** | **전화번호 (유선전화번호기입)** | **메일주소** |
+
+| ㈜유니바 | 정용운 | 053-615-1263 | [gandalf@univa.co.kr](mailto:gandalf@univa.co.kr) |</p>
+<div class="evidence-chunk" id="chunk-1983"><p><a href="#chunk-1983">청크 1983</a> · **데이터 문의처** <small>문자 위치 0–140</small></p><blockquote>| **기관명** | **문의담당자명** | **전화번호 (유선전화번호기입)** | **메일주소** |
+
+| ㈜유니바 | 정용운 | 053-615-1263 | [gandalf@univa.co.kr](mailto:gandalf@univa.co.kr) |</blockquote></div></article><article class="evidence-section" id="section-2"><h3><a href="#section-2">**데이터 소개** · 섹션 2</a></h3><p class="record-snippet">다수의 물체가 서로 가려져 있는 물류 환경에서 물체를 인식하고 충돌을 고려하여 파지하기 위한 단계적 사고 과정의 CoT 데이터</p>
+<div class="evidence-chunk" id="chunk-1984"><p><a href="#chunk-1984">청크 1984</a> · **데이터 소개** <small>문자 위치 0–70</small></p><blockquote>다수의 물체가 서로 가려져 있는 물류 환경에서 물체를 인식하고 충돌을 고려하여 파지하기 위한 단계적 사고 과정의 CoT 데이터</blockquote></div></article><article class="evidence-section" id="section-3"><h3><a href="#section-3">**주요키워드** · 섹션 3</a></h3><p class="record-snippet">제조환경, 물류환경, 로보틱스, 가상 환경, 3D CAD, VLM, CoT</p>
+<div class="evidence-chunk" id="chunk-1985"><p><a href="#chunk-1985">청크 1985</a> · **주요키워드** <small>문자 위치 0–41</small></p><blockquote>제조환경, 물류환경, 로보틱스, 가상 환경, 3D CAD, VLM, CoT</blockquote></div></article><article class="evidence-section" id="section-4"><h3><a href="#section-4">**카테고리 정의서** · 섹션 4</a></h3><p class="record-snippet">첨부의 카테고리 정의서 엑셀파일에 데이터카테고리 작성하여 제출</p>
+<div class="evidence-chunk" id="chunk-1986"><p><a href="#chunk-1986">청크 1986</a> · **카테고리 정의서** <small>문자 위치 0–34</small></p><blockquote>첨부의 카테고리 정의서 엑셀파일에 데이터카테고리 작성하여 제출</blockquote></div></article><article class="evidence-section" id="section-5"><h3><a href="#section-5">**데이터셋명** · 섹션 5</a></h3><p class="record-snippet">**국문**
+
+11-15. 단계적 사고 기반 물류 로봇 파지 교시 데이터
+
+**영문**
+
+11-15. CoT-based Instruction Data for Logistics Robot Grasping</p>
+<div class="evidence-chunk" id="chunk-1987"><p><a href="#chunk-1987">청크 1987</a> · **데이터셋명** <small>문자 위치 0–112</small></p><blockquote>**국문**
+
+11-15. 단계적 사고 기반 물류 로봇 파지 교시 데이터
+
+**영문**
+
+11-15. CoT-based Instruction Data for Logistics Robot Grasping</blockquote></div></article><article class="evidence-section" id="section-6"><h3><a href="#section-6">**구축목적** · 섹션 6</a></h3><p class="record-snippet">숙련 인력의 감소와 생산성 정체로 인한 자동화 수요 증가
+
+CoT 기반 데이터에 대한 관심 및 필요성 증대
+
+실제 환경을 반영한 실효성 높은 데이터 구축</p>
+<div class="evidence-chunk" id="chunk-1988"><p><a href="#chunk-1988">청크 1988</a> · **구축목적** <small>문자 위치 0–85</small></p><blockquote>숙련 인력의 감소와 생산성 정체로 인한 자동화 수요 증가
+
+CoT 기반 데이터에 대한 관심 및 필요성 증대
+
+실제 환경을 반영한 실효성 높은 데이터 구축</blockquote></div></article><article class="evidence-section" id="section-7"><h3><a href="#section-7">**활용서비스** · 섹션 7</a></h3><p class="record-snippet">❍ 실제 산업 현장에 적용 가능한 로봇 자동화 기술 수요 확대
+
+- 로봇 파지(grasping)는 제조, 물류, 가정 등 다양한 산업 현장에서 핵심적인 자동화 수단으로 주목받고 있으며, 최근 딥러닝 기반 6자유도 파지 예측 기술의 발전으로 복잡한 사물 조작 능력이 크게 향상되고 있음
+- 현재 공개된 주요 데이터셋(예: GraspNet-1Billion)은 정</p>
+<div class="evidence-chunk" id="chunk-1989"><p><a href="#chunk-1989">청크 1989</a> · **활용서비스** <small>문자 위치 0–784</small></p><blockquote>❍ 실제 산업 현장에 적용 가능한 로봇 자동화 기술 수요 확대
+
+- 로봇 파지(grasping)는 제조, 물류, 가정 등 다양한 산업 현장에서 핵심적인 자동화 수단으로 주목받고 있으며, 최근 딥러닝 기반 6자유도 파지 예측 기술의 발전으로 복잡한 사물 조작 능력이 크게 향상되고 있음
+- 현재 공개된 주요 데이터셋(예: GraspNet-1Billion)은 정</blockquote></div></article><article class="evidence-section" id="section-8"><h3><a href="#section-8">**소개** · 섹션 8</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-9"><h3><a href="#section-9">**데이터구축 공정도** · 섹션 9</a></h3><p class="record-snippet">![이미지: BIN0001.png]</p>
+</article><article class="evidence-section" id="section-10"><h3><a href="#section-10">**2. 데이터 구축 절차** · 섹션 10</a></h3><p class="record-snippet">| **구분** | **상세** |
+
+| 수집 | 실제/가상 환경 데이터 획득/수집&lt;br&gt;3D CAD 데이터의 구성 분포 확인하여 수집 진행&lt;br&gt;수집 가이드라인 준수 여부 확인 |
+| 정제 | 중복 데이터 제거, 정합성 검증, 동기화 보정 등&lt;br&gt;깊이 보정, 유사도 측정, 뷰포인트 검증을 통한 데이터 재구성 등 |
+| 가공 | 라벨링 인력 교육, 데이터</p>
+<div class="evidence-chunk" id="chunk-1990"><p><a href="#chunk-1990">청크 1990</a> · **2. 데이터 구축 절차** <small>문자 위치 0–251</small></p><blockquote>| **구분** | **상세** |
+
+| 수집 | 실제/가상 환경 데이터 획득/수집&lt;br&gt;3D CAD 데이터의 구성 분포 확인하여 수집 진행&lt;br&gt;수집 가이드라인 준수 여부 확인 |
+| 정제 | 중복 데이터 제거, 정합성 검증, 동기화 보정 등&lt;br&gt;깊이 보정, 유사도 측정, 뷰포인트 검증을 통한 데이터 재구성 등 |
+| 가공 | 라벨링 인력 교육, 데이터</blockquote></div></article><article class="evidence-section" id="section-11"><h3><a href="#section-11">**데이터셋 통계 (구축 규모 및 분포)** · 섹션 11</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-12"><h3><a href="#section-12">**1. 데이터 구축 규모** · 섹션 12</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-13"><h3><a href="#section-13">**원천데이터** · 섹션 13</a></h3><p class="record-snippet">| **파일 포맷** | **데이터 규모** |
+
+| OBJ, MTL, PNG | 3D CAD 데이터 분포 |
+
+**3D CAD 데이터 분포**
+
+| **구분** | **파일포맷** | **수량** | **총계** |
+
+| 3D CAD 데이터 | mtl | 210 개 | 1890건 (630건 x 3회) |
+| | obj | 210 개 | |
+| | png </p>
+<div class="evidence-chunk" id="chunk-1991"><p><a href="#chunk-1991">청크 1991</a> · **원천데이터** <small>문자 위치 0–751</small></p><blockquote>| **파일 포맷** | **데이터 규모** |
+
+| OBJ, MTL, PNG | 3D CAD 데이터 분포 |
+
+**3D CAD 데이터 분포**
+
+| **구분** | **파일포맷** | **수량** | **총계** |
+
+| 3D CAD 데이터 | mtl | 210 개 | 1890건 (630건 x 3회) |
+| | obj | 210 개 | |
+| | png </blockquote></div><div class="evidence-chunk" id="chunk-1992"><p><a href="#chunk-1992">청크 1992</a> · **원천데이터** <small>문자 위치 591–1127</small></p><blockquote>| 23,866 개 | |
+| 실제 환경 | png | 23,998 개 | 23,998 set |
+| | npy | 23,998 개 | |
+| | pcd | 23,998 개 | |
+
+- ∙ 물류 센터에서 로봇 파지 작업을 수행할 수 있는 피킹, 분배, 포장 공간을 대상으로 데이터 수집
+- ∙ 피킹 구역(데이터 씬 번호 1~600번)은 물체 렉 씬을 기준으로</blockquote></div></article><article class="evidence-section" id="section-14"><h3><a href="#section-14">**라벨링데이터** · 섹션 14</a></h3><p class="record-snippet">| **파일 포맷** | **데이터 규모** |
+
+| JSON | 실제/가상 환경 촬영 데이터 |
+
+| **대분류** | **소분류** | **포맷** | **수량** | **단위** |
+
+| 3D CAD 데이터 | 클래스 번호 (1~210) | JSON | 630 | EA |
+| 가상환경 | 씬넘버 (1~2000) CoT | JSON | 23,866 | </p>
+<div class="evidence-chunk" id="chunk-1993"><p><a href="#chunk-1993">청크 1993</a> · **라벨링데이터** <small>문자 위치 0–407</small></p><blockquote>| **파일 포맷** | **데이터 규모** |
+
+| JSON | 실제/가상 환경 촬영 데이터 |
+
+| **대분류** | **소분류** | **포맷** | **수량** | **단위** |
+
+| 3D CAD 데이터 | 클래스 번호 (1~210) | JSON | 630 | EA |
+| 가상환경 | 씬넘버 (1~2000) CoT | JSON | 23,866 | </blockquote></div></article><article class="evidence-section" id="section-15"><h3><a href="#section-15">**디렉토리 구성 및 수량** · 섹션 15</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-16"><h3><a href="#section-16">**01. training 디렉토리 구성 및 수량** · 섹션 16</a></h3><p class="record-snippet">| **구분** | **데이터** | **라벨링 유형** | **파일형식** | **수량** | **파일비율** | **단위** |
+
+| 1. 원천데이터 | 3D CAD | OBJ | *.obj, *.mtl, *.png | 630 | 1:1 | EA |
+| | 가상환경 | Depth | *.npy | 19,089 | 1:N | EA |
+| | | PCD |</p>
+<div class="evidence-chunk" id="chunk-1994"><p><a href="#chunk-1994">청크 1994</a> · **01. training 디렉토리 구성 및 수량** <small>문자 위치 0–700</small></p><blockquote>| **구분** | **데이터** | **라벨링 유형** | **파일형식** | **수량** | **파일비율** | **단위** |
+
+| 1. 원천데이터 | 3D CAD | OBJ | *.obj, *.mtl, *.png | 630 | 1:1 | EA |
+| | 가상환경 | Depth | *.npy | 19,089 | 1:N | EA |
+| | | PCD |</blockquote></div><div class="evidence-chunk" id="chunk-1995"><p><a href="#chunk-1995">청크 1995</a> · **01. training 디렉토리 구성 및 수량** <small>문자 위치 540–798</small></p><blockquote> *.json | 19,089 | 1:N | EA |
+| | | 파지자세 | *.json | 19,089 | 1:N | EA |
+| | 실제환경 | CoT | *.json | 19,198 | 1:N | EA |
+| | | 물체자세 | *.json | 19,198 | 1:N | EA |
+| | | 파지자세 | *.json | 19,198 | 1:N | EA </blockquote></div></article><article class="evidence-section" id="section-17"><h3><a href="#section-17">**02. validation 디렉토리 구성 및 수량** · 섹션 17</a></h3><p class="record-snippet">| **구분** | **데이터** | **라벨링 유형** | **파일형식** | **수량** | **파일비율** | **단위** |
+
+| 1. 원천데이터 | 3D CAD | OBJ | *.obj, *.mtl, *.png | 630 | 1:1 | EA |
+| | 가상환경 | Depth | *.npy | 2,391 | 1:N | EA |
+| | | PCD | </p>
+<div class="evidence-chunk" id="chunk-1996"><p><a href="#chunk-1996">청크 1996</a> · **02. validation 디렉토리 구성 및 수량** <small>문자 위치 0–688</small></p><blockquote>| **구분** | **데이터** | **라벨링 유형** | **파일형식** | **수량** | **파일비율** | **단위** |
+
+| 1. 원천데이터 | 3D CAD | OBJ | *.obj, *.mtl, *.png | 630 | 1:1 | EA |
+| | 가상환경 | Depth | *.npy | 2,391 | 1:N | EA |
+| | | PCD | </blockquote></div><div class="evidence-chunk" id="chunk-1997"><p><a href="#chunk-1997">청크 1997</a> · **02. validation 디렉토리 구성 및 수량** <small>문자 위치 528–783</small></p><blockquote>자세 | *.json | 2,391 | 1:N | EA |
+| | | 파지자세 | *.json | 2,391 | 1:N | EA |
+| | 실제환경 | CoT | *.json | 2,400 | 1:N | EA |
+| | | 물체자세 | *.json | 2,400 | 1:N | EA |
+| | | 파지자세 | *.json | 2,400 | 1:N | EA |</blockquote></div></article><article class="evidence-section" id="section-18"><h3><a href="#section-18">**03. test 디렉토리 구성 및 수량** · 섹션 18</a></h3><p class="record-snippet">| **구분** | **데이터** | **라벨링 유형** | **파일형식** | **수량** | **파일비율** | **단위** |
+
+| 1. 원천데이터 | 3D CAD | OBJ | *.obj, *.mtl, *.png | 630 | 1:1 | EA |
+| | 가상환경 | Depth | *.npy | 2,386 | 1:N | EA |
+| | | PCD | </p>
+<div class="evidence-chunk" id="chunk-1998"><p><a href="#chunk-1998">청크 1998</a> · **03. test 디렉토리 구성 및 수량** <small>문자 위치 0–688</small></p><blockquote>| **구분** | **데이터** | **라벨링 유형** | **파일형식** | **수량** | **파일비율** | **단위** |
+
+| 1. 원천데이터 | 3D CAD | OBJ | *.obj, *.mtl, *.png | 630 | 1:1 | EA |
+| | 가상환경 | Depth | *.npy | 2,386 | 1:N | EA |
+| | | PCD | </blockquote></div><div class="evidence-chunk" id="chunk-1999"><p><a href="#chunk-1999">청크 1999</a> · **03. test 디렉토리 구성 및 수량** <small>문자 위치 528–783</small></p><blockquote>자세 | *.json | 2,386 | 1:N | EA |
+| | | 파지자세 | *.json | 2,386 | 1:N | EA |
+| | 실제환경 | CoT | *.json | 2,400 | 1:N | EA |
+| | | 물체자세 | *.json | 2,400 | 1:N | EA |
+| | | 파지자세 | *.json | 2,400 | 1:N | EA |</blockquote></div></article><article class="evidence-section" id="section-19"><h3><a href="#section-19">**2. 데이터 분포** · 섹션 19</a></h3><p class="record-snippet">| **품질특성** | **항목명** | **지표** | **결과** |
+
+| 다양성 | 실제/가상 환경별 분포 | 구성비 중첩률 | 99.72% |
+| | 물류 환경별 분포 | 구성비 중첩률 | 99.97% |
+| | 3D CAD 물체 대분류 분포 | 구성비 중첩률 | 99.86% |
+| | 3D CAD 물체 종류수 | 최솟값 | 총 210종 |
+| | </p>
+<div class="evidence-chunk" id="chunk-2000"><p><a href="#chunk-2000">청크 2000</a> · **2. 데이터 분포** <small>문자 위치 0–250</small></p><blockquote>| **품질특성** | **항목명** | **지표** | **결과** |
+
+| 다양성 | 실제/가상 환경별 분포 | 구성비 중첩률 | 99.72% |
+| | 물류 환경별 분포 | 구성비 중첩률 | 99.97% |
+| | 3D CAD 물체 대분류 분포 | 구성비 중첩률 | 99.86% |
+| | 3D CAD 물체 종류수 | 최솟값 | 총 210종 |
+| | </blockquote></div></article><article class="evidence-section" id="section-20"><h3><a href="#section-20">**실제/가상 환경별 분포** · 섹션 20</a></h3><p class="record-snippet">| **구분** | **비율** | **수량** |
+
+| 실제 | 50.14% | 23,998 |
+| 가상 | 49.86% | 23,866 |
+| 합계 | 100% | 47,864 |</p>
+<div class="evidence-chunk" id="chunk-2001"><p><a href="#chunk-2001">청크 2001</a> · **실제/가상 환경별 분포** <small>문자 위치 0–102</small></p><blockquote>| **구분** | **비율** | **수량** |
+
+| 실제 | 50.14% | 23,998 |
+| 가상 | 49.86% | 23,866 |
+| 합계 | 100% | 47,864 |</blockquote></div></article><article class="evidence-section" id="section-21"><h3><a href="#section-21">**물류 환경별 분포** · 섹션 21</a></h3><p class="record-snippet">| **구분** | **비율** | **수량** |
+
+| 피킹 작업 구역 | 29.98% | 14,351 |
+| 분배 작업 구역 | 30.0% | 14,361 |
+| 포장 작업 구역 | 40.02% | 19,152 |
+| 합계 | 100% | 47,864 |</p>
+<div class="evidence-chunk" id="chunk-2002"><p><a href="#chunk-2002">청크 2002</a> · **물류 환경별 분포** <small>문자 위치 0–144</small></p><blockquote>| **구분** | **비율** | **수량** |
+
+| 피킹 작업 구역 | 29.98% | 14,351 |
+| 분배 작업 구역 | 30.0% | 14,361 |
+| 포장 작업 구역 | 40.02% | 19,152 |
+| 합계 | 100% | 47,864 |</blockquote></div></article><article class="evidence-section" id="section-22"><h3><a href="#section-22">**3D CAD 물체 대분류 분포** · 섹션 22</a></h3><p class="record-snippet">| **구분** | **비율** | **수량** |
+
+| 생활용품류 | 28.57% | 60 |
+| 식품/과자류 | 28.57% | 60 |
+| 전자/기기류 | 19.05% | 40 |
+| 스포츠/완구류 | 9.53% | 20 |
+| 포장재/용기류 | 7.14% | 15 |
+| 기타류 | 7.14% | 15 |
+| 합계 | 100% | 210 |</p>
+<div class="evidence-chunk" id="chunk-2003"><p><a href="#chunk-2003">청크 2003</a> · **3D CAD 물체 대분류 분포** <small>문자 위치 0–194</small></p><blockquote>| **구분** | **비율** | **수량** |
+
+| 생활용품류 | 28.57% | 60 |
+| 식품/과자류 | 28.57% | 60 |
+| 전자/기기류 | 19.05% | 40 |
+| 스포츠/완구류 | 9.53% | 20 |
+| 포장재/용기류 | 7.14% | 15 |
+| 기타류 | 7.14% | 15 |
+| 합계 | 100% | 210 |</blockquote></div></article><article class="evidence-section" id="section-23"><h3><a href="#section-23">**데이터셋 구성** · 섹션 23</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-24"><h3><a href="#section-24">**데이터 구성** · 섹션 24</a></h3><p class="record-snippet">| **데이터 유형** | **데이터 구성** | **파일 포맷** |
+
+| 3D CAD 데이터 | 물류환경 물체 3D CAD 데이터 | OBJ, MTL, PNG, NPY, PCD |
+| 실제/가상 환경 촬영 데이터 | 물체 자세 데이터 | JSON |
+| | 파지 자세 데이터 | JSON |
+| | CoT 데이터 | JSON |</p>
+<div class="evidence-chunk" id="chunk-2004"><p><a href="#chunk-2004">청크 2004</a> · **데이터 구성** <small>문자 위치 0–185</small></p><blockquote>| **데이터 유형** | **데이터 구성** | **파일 포맷** |
+
+| 3D CAD 데이터 | 물류환경 물체 3D CAD 데이터 | OBJ, MTL, PNG, NPY, PCD |
+| 실제/가상 환경 촬영 데이터 | 물체 자세 데이터 | JSON |
+| | 파지 자세 데이터 | JSON |
+| | CoT 데이터 | JSON |</blockquote></div></article><article class="evidence-section" id="section-25"><h3><a href="#section-25">**어노테이션 포맷** · 섹션 25</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-26"><h3><a href="#section-26">**3D CAD 데이터** · 섹션 26</a></h3><p class="record-snippet">| **번호** | **항목명** | **타입** | **필수** | **항목 설명** | **예시** |
+
+| 1 | raw_data_info | object | | 원시데이터 정보 | - |
+| 1.1 | obj_filename | string | Y | obj 파일 | &#34;L_01_001_00.obj&#34; |
+| 1.2 | mtl_filename | str</p>
+<div class="evidence-chunk" id="chunk-2005"><p><a href="#chunk-2005">청크 2005</a> · **3D CAD 데이터** <small>문자 위치 0–570</small></p><blockquote>| **번호** | **항목명** | **타입** | **필수** | **항목 설명** | **예시** |
+
+| 1 | raw_data_info | object | | 원시데이터 정보 | - |
+| 1.1 | obj_filename | string | Y | obj 파일 | &#34;L_01_001_00.obj&#34; |
+| 1.2 | mtl_filename | str</blockquote></div></article><article class="evidence-section" id="section-27"><h3><a href="#section-27">**물체 자세 데이터** · 섹션 27</a></h3><p class="record-snippet">| **번호** | **항목명** | **타입** | **필수** | **항목 설명** | **예시** |
+
+| 1 | raw_data_info | object | | 원시데이터 정보 | - |
+| 1.1 | rgb_filename | string | Y | RGB 이미지 | &#34;L_R_01_000001_000001.png&#34; |
+| 1.2 | depth_fi</p>
+<div class="evidence-chunk" id="chunk-2006"><p><a href="#chunk-2006">청크 2006</a> · **물체 자세 데이터** <small>문자 위치 0–721</small></p><blockquote>| **번호** | **항목명** | **타입** | **필수** | **항목 설명** | **예시** |
+
+| 1 | raw_data_info | object | | 원시데이터 정보 | - |
+| 1.1 | rgb_filename | string | Y | RGB 이미지 | &#34;L_R_01_000001_000001.png&#34; |
+| 1.2 | depth_fi</blockquote></div><div class="evidence-chunk" id="chunk-2007"><p><a href="#chunk-2007">청크 2007</a> · **물체 자세 데이터** <small>문자 위치 561–1390</small></p><blockquote>조도 정보 | 125.177 |
+| 1.5 | equipment_info | array | | 물류 설비 정보 | - |
+| 1.5.1 | equipment_size | array | Y | 물류 설비의 크기 (width, height, depth) | [200, 150, 800] |
+| 1.5.2 | 6d_pose_info | object | Y | 형상</blockquote></div></article><article class="evidence-section" id="section-28"><h3><a href="#section-28">**파지 자세** · 섹션 28</a></h3><p class="record-snippet">| **번호** | **항목명** | **타입** | **필수** | **항목 설명** | **예시** |
+
+| 1 | raw_data_info | object | | 원시데이터 정보 | - |
+| 1.1 | rgb_filename | string | Y | RGB 이미지 | &#34;L_R_01_000001_000001.png&#34; |
+| 1.2 | depth_fi</p>
+<div class="evidence-chunk" id="chunk-2008"><p><a href="#chunk-2008">청크 2008</a> · **파지 자세** <small>문자 위치 0–721</small></p><blockquote>| **번호** | **항목명** | **타입** | **필수** | **항목 설명** | **예시** |
+
+| 1 | raw_data_info | object | | 원시데이터 정보 | - |
+| 1.1 | rgb_filename | string | Y | RGB 이미지 | &#34;L_R_01_000001_000001.png&#34; |
+| 1.2 | depth_fi</blockquote></div><div class="evidence-chunk" id="chunk-2009"><p><a href="#chunk-2009">청크 2009</a> · **파지 자세** <small>문자 위치 561–1459</small></p><blockquote>조도 정보 | 125.177 |
+| 1.5 | equipment_info | array | | 물류 설비 정보 | - |
+| 1.5.1 | equipment_size | array | Y | 물류 설비의 크기 (width, height, depth) | [200, 150, 800] |
+| 1.5.2 | 6d_pose_info | object | Y | 형상</blockquote></div><div class="evidence-chunk" id="chunk-2010"><p><a href="#chunk-2010">청크 2010</a> · **파지 자세** <small>문자 위치 1299–1759</small></p><blockquote>grasp_id | array | N | 파지자세 ID | 1 |
+| 3.5.2 | grasp_rotation | array | N | 파지 자세 3차원 회전 | [0.097, 0.648, -0.755, 0.976, 0.085, 0.199, 0.193, -0.756, -0.624] |
+| 3.5.3 | grasp_position | number | N | </blockquote></div></article><article class="evidence-section" id="section-29"><h3><a href="#section-29">**CoT 데이터** · 섹션 29</a></h3><p class="record-snippet">| **번호** | **항목명** | **타입** | **필수** | **항목 설명** | **예시** |
+
+| 1 | raw_data_info | object | | 원시데이터 정보 | - |
+| 1.1 | rgb_filename | string | Y | RGB 이미지 | &#34;L_R_01_000001_000001.png&#34; |
+| 1.2 | depth_fi</p>
+<div class="evidence-chunk" id="chunk-2011"><p><a href="#chunk-2011">청크 2011</a> · **CoT 데이터** <small>문자 위치 0–721</small></p><blockquote>| **번호** | **항목명** | **타입** | **필수** | **항목 설명** | **예시** |
+
+| 1 | raw_data_info | object | | 원시데이터 정보 | - |
+| 1.1 | rgb_filename | string | Y | RGB 이미지 | &#34;L_R_01_000001_000001.png&#34; |
+| 1.2 | depth_fi</blockquote></div><div class="evidence-chunk" id="chunk-2012"><p><a href="#chunk-2012">청크 2012</a> · **CoT 데이터** <small>문자 위치 561–1426</small></p><blockquote>조도 정보 | 125.177 |
+| 1.5 | equipment_info | array | | 물류 설비 정보 | - |
+| 1.5.1 | equipment_size | array | Y | 물류 설비의 크기 (width, height, depth) | [200, 150, 800] |
+| 1.5.2 | 6d_pose_info | object | Y | 형상</blockquote></div><div class="evidence-chunk" id="chunk-2013"><p><a href="#chunk-2013">청크 2013</a> · **CoT 데이터** <small>문자 위치 1266–2089</small></p><blockquote>_000001.png |
+| 3.1.3 | grasp_image | string | Y | 파지 자세 이미지 | L_G_R_01_000002_000001.png |
+| 3.1.4 | instruction | string | Y | 사용자 지시 문장 | &#34;초록 뚜껑 소스 통 꺼내줘&#34; |
+| 3.2 | cot_reasoning | object | | 단계적 사</blockquote></div><div class="evidence-chunk" id="chunk-2014"><p><a href="#chunk-2014">청크 2014</a> · **CoT 데이터** <small>문자 위치 1929–2663</small></p><blockquote>체 탐색 사고 과정 | instruction이 공간적인 관계를 설명하면, 주어진 이미지에서 물체들 간의 공간정보를 파악하여 타겟 물체를 추론해야 한다. 만약 &#34;머그 컵 왼쪽 그릇&#34; instruction의 경우 머그 컵을 찾고, 왼쪽에 있는 물체들 중 그릇에 해당하는 객체를 찾아라. |
+| 3.2.1.4 | CoT_answer | string | Y | 타겟</blockquote></div><div class="evidence-chunk" id="chunk-2015"><p><a href="#chunk-2015">청크 2015</a> · **CoT 데이터** <small>문자 위치 2503–3421</small></p><blockquote> mask 이미지에서 각 객체는 색상과 instance ID로 표시됩니다. grasp 이미지는 대상 객체 주변을 잘라내고, 고유한 색상과 ID를 가진 다양한 grasp point가 표시됩니다. 각 grasp 포인트는 4개의 직선(두 개의 평행선, 연결선, 접근선)으로 표현됩니다.&#34; |
+| 3.2.2.3 | CoT_reasoning | string | Y |</blockquote></div><div class="evidence-chunk" id="chunk-2016"><p><a href="#chunk-2016">청크 2016</a> · **CoT 데이터** <small>문자 위치 3261–4141</small></p><blockquote> string | Y | CoT_환경 인식 | &#34;RGB, 마스크, grasp 이미지가 제공됩니다. 마스크는 RGB와 동일한 크기이며, 객체는 고유한 색상과 숫자 ID로 시각화됩니다. grasp 이미지는 목표 객체를 중심으로 잘려 있으며, 각 grasp point는 고유한 색상과 ID로 구분됩니다. 각 grasp 포인트는 4개의 직선(두 개의 평행선, 연결선</blockquote></div><div class="evidence-chunk" id="chunk-2017"><p><a href="#chunk-2017">청크 2017</a> · **CoT 데이터** <small>문자 위치 3981–4217</small></p><blockquote> 충돌 가능서을 평가하여 충돌없는 후보만 남긴다. 남은 후보 자세에 대해 접촉 면적, 무게 중심 등을 고려해 파지 안정성이 높은 자세를 선택한다.&#34; |
+| 3.3.1 | target_object | array | Y | instruction에 해당하는 객체 ID의 리스트 | [5] |
+| 3.3.2 | target_grasp | array | Y | ins</blockquote></div></article><article class="evidence-section" id="section-30"><h3><a href="#section-30">**어노테이션 예시** · 섹션 30</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-31"><h3><a href="#section-31">**3D CAD 데이터** · 섹션 31</a></h3><p class="record-snippet">```json
+{
+    &#34;raw_data_info&#34;: {
+        &#34;obj_filename&#34;: &#34;L_06_210_00.obj&#34;,
+        &#34;mtl_filename&#34;: &#34;L_06_210_00.mtl&#34;,
+        &#34;png_filelist&#34;: [
+            &#34;L_06_210_00.png&#34;
+        ],
+        &#34;objec</p>
+<div class="evidence-chunk" id="chunk-2018"><p><a href="#chunk-2018">청크 2018</a> · **3D CAD 데이터** <small>문자 위치 0–441</small></p><blockquote>```json
+{
+    &#34;raw_data_info&#34;: {
+        &#34;obj_filename&#34;: &#34;L_06_210_00.obj&#34;,
+        &#34;mtl_filename&#34;: &#34;L_06_210_00.mtl&#34;,
+        &#34;png_filelist&#34;: [
+            &#34;L_06_210_00.png&#34;
+        ],
+        &#34;objec</blockquote></div></article><article class="evidence-section" id="section-32"><h3><a href="#section-32">**물체 자세** · 섹션 32</a></h3><p class="record-snippet">```json
+{
+    &#34;raw_data_info&#34;: {
+        &#34;rgb_filename&#34;: &#34;L_R_01_000002_000001.png&#34;,
+        &#34;depth_filename&#34;: &#34;L_R_01_000002_000001.npy&#34;,
+        &#34;camera_info&#34;: {
+            &#34;cam_R_w2c&#34;: [
+         </p>
+<div class="evidence-chunk" id="chunk-2019"><p><a href="#chunk-2019">청크 2019</a> · **물체 자세** <small>문자 위치 0–2063</small></p><blockquote>```json
+{
+    &#34;raw_data_info&#34;: {
+        &#34;rgb_filename&#34;: &#34;L_R_01_000002_000001.png&#34;,
+        &#34;depth_filename&#34;: &#34;L_R_01_000002_000001.npy&#34;,
+        &#34;camera_info&#34;: {
+            &#34;cam_R_w2c&#34;: [
+         </blockquote></div><div class="evidence-chunk" id="chunk-2020"><p><a href="#chunk-2020">청크 2020</a> · **물체 자세** <small>문자 위치 1903–3427</small></p><blockquote>                        -0.12033808449508908,
+                        0.6271113802792102
+                    ]
+                }
+            }
+        ]
+    },
+    &#34;source_data_info&#34;: {
+        &#34;pcd_f</blockquote></div></article><article class="evidence-section" id="section-33"><h3><a href="#section-33">**파지 자세** · 섹션 33</a></h3><p class="record-snippet">```json
+{
+    &#34;raw_data_info&#34;: {
+        &#34;rgb_filename&#34;: &#34;L_R_01_000002_000002.png&#34;,
+        &#34;depth_filename&#34;: &#34;L_R_01_000002_000002.npy&#34;,
+        &#34;camera_info&#34;: {
+            &#34;cam_R_w2c&#34;: [
+         </p>
+<div class="evidence-chunk" id="chunk-2021"><p><a href="#chunk-2021">청크 2021</a> · **파지 자세** <small>문자 위치 0–1948</small></p><blockquote>```json
+{
+    &#34;raw_data_info&#34;: {
+        &#34;rgb_filename&#34;: &#34;L_R_01_000002_000002.png&#34;,
+        &#34;depth_filename&#34;: &#34;L_R_01_000002_000002.npy&#34;,
+        &#34;camera_info&#34;: {
+            &#34;cam_R_w2c&#34;: [
+         </blockquote></div><div class="evidence-chunk" id="chunk-2022"><p><a href="#chunk-2022">청크 2022</a> · **파지 자세** <small>문자 위치 1788–3424</small></p><blockquote>19118597944,
+                        -0.9676293096529048
+                    ],
+                    &#34;position&#34;: [
+                        -0.09223047331966022,
+                        -0.0889718480138</blockquote></div></article><article class="evidence-section" id="section-34"><h3><a href="#section-34">**CoT 데이터** · 섹션 34</a></h3><p class="record-snippet">```json
+{
+    &#34;raw_data_info&#34;: {
+        &#34;rgb_filename&#34;: &#34;L_R_01_000002_000001.png&#34;,
+        &#34;depth_filename&#34;: &#34;L_R_01_000002_000001.npy&#34;,
+        &#34;camera_info&#34;: {
+            &#34;cam_R_w2c&#34;: [
+         </p>
+<div class="evidence-chunk" id="chunk-2023"><p><a href="#chunk-2023">청크 2023</a> · **CoT 데이터** <small>문자 위치 0–2063</small></p><blockquote>```json
+{
+    &#34;raw_data_info&#34;: {
+        &#34;rgb_filename&#34;: &#34;L_R_01_000002_000001.png&#34;,
+        &#34;depth_filename&#34;: &#34;L_R_01_000002_000001.npy&#34;,
+        &#34;camera_info&#34;: {
+            &#34;cam_R_w2c&#34;: [
+         </blockquote></div><div class="evidence-chunk" id="chunk-2024"><p><a href="#chunk-2024">청크 2024</a> · **CoT 데이터** <small>문자 위치 1903–3091</small></p><blockquote>                        -0.12033808449508908,
+                        0.6271113802792102
+                    ]
+                }
+            }
+        ]
+    },
+    &#34;source_data_info&#34;: {
+        &#34;pcd_f</blockquote></div><div class="evidence-chunk" id="chunk-2025"><p><a href="#chunk-2025">청크 2025</a> · **CoT 데이터** <small>문자 위치 2931–3801</small></p><blockquote>나는 바닥 오른쪽에 기울어 있습니다. 어느 쪽이 대상인지 확정하기 위해 [Mask 이미지]를 확인하면, 뒷벽 중앙의 스피커에 파란색 마스크와 함께 검은 상자 안 숫자 1이 표시되어 있고, 바닥 오른쪽의 스피커에는 초록색 마스크와 2가 표시되어 있습니다. 지시문에서 위치 기준이 \&#34;뒷벽 중앙\&#34;으로 명확하므로, 같은 종류의 물체가 두 개 있어도 해당 조건을 </blockquote></div><div class="evidence-chunk" id="chunk-2026"><p><a href="#chunk-2026">청크 2026</a> · **CoT 데이터** <small>문자 위치 3641–4526</small></p><blockquote>on&#34;: &#34;당신은 로봇 grasp planning 전문가이며, CoT1 단계에서 식별된 대상 객체를 기반으로 충돌이 예상되는 grasp point ID를 필터링해야 합니다. 답변은 &#39;My answer is: [충돌이 없는 grasp point ID의 목록].&#39; 형식으로 출력하세요.&#34;,
+                &#34;CoT_input&#34;: &#34;RGB 이미지와 동</blockquote></div><div class="evidence-chunk" id="chunk-2027"><p><a href="#chunk-2027">청크 2027</a> · **CoT 데이터** <small>문자 위치 4366–5296</small></p><blockquote>하단 근처를 잡되 접근선이 바닥면과 평행하지 않고 약간 띄워져 있어 진입 중 바닥과의 간섭이 적습니다. 요약하면 ID 2는 트레이 오른쪽 벽과의 간섭이 예상되어 제외하고, ID 1과 ID 3은 물체 중심을 향한 경로에서 벽이나 바닥과의 접촉 위험이 낮아 충돌 없이 시도 가능합니다.&#34;,
+                &#34;CoT_answer&#34;: &#34;충돌 관점에서 I</blockquote></div><div class="evidence-chunk" id="chunk-2028"><p><a href="#chunk-2028">청크 2028</a> · **CoT 데이터** <small>문자 위치 5136–6028</small></p><blockquote>는 RGB와 동일한 크기이며, 객체는 고유한 색상과 숫자 ID로 시각화됩니다. grasp 이미지는 목표 객체를 중심으로 잘려 있으며, 각 grasp point는 고유한 색상과 ID로 구분됩니다. 각 grasp 포인트는 4개의 직선(두 개의 평행선, 연결선, 접근선)으로 표현됩니다.&#34;,
+                &#34;CoT_reasoning&#34;: &#34;대상은 무광</blockquote></div><div class="evidence-chunk" id="chunk-2029"><p><a href="#chunk-2029">청크 2029</a> · **CoT 데이터** <small>문자 위치 5868–6561</small></p><blockquote>여줍니다. 반대로 ID 3은 하단 치우침으로 각도 변화가 커지고 곡면 접촉이 짧아 안정성이 떨어져 최종 선택에서 제외합니다. 따라서 가장 안정적인 파지는 ID 1입니다. My answer is: [1].&#34;
+            }
+        },
+        &#34;answer&#34;: {
+            &#34;target_reasoning&#34;: &#34;[RGB 이미</blockquote></div></article><article class="evidence-section" id="section-35"><h3><a href="#section-35">**∙ 물체 자세 데이터 예시** · 섹션 35</a></h3><p class="record-snippet">| **구분** | **원천데이터** | **시각화 데이터** |
+
+| 실제 환경 | ![이미지: BIN0002.png] | ![이미지: BIN0003.bmp] |
+| 가상 환경 | ![이미지: BIN0004.png] | ![이미지: BIN0005.bmp] |</p>
+<div class="evidence-chunk" id="chunk-2030"><p><a href="#chunk-2030">청크 2030</a> · **∙ 물체 자세 데이터 예시** <small>문자 위치 0–145</small></p><blockquote>| **구분** | **원천데이터** | **시각화 데이터** |
+
+| 실제 환경 | ![이미지: BIN0002.png] | ![이미지: BIN0003.bmp] |
+| 가상 환경 | ![이미지: BIN0004.png] | ![이미지: BIN0005.bmp] |</blockquote></div></article><article class="evidence-section" id="section-36"><h3><a href="#section-36">**∙ 파지 자세 데이터 예시** · 섹션 36</a></h3><p class="record-snippet">| **구분** | **파지점 생성 전** | **파지점 생성 후** |
+
+| 실제 환경 | ![이미지: BIN0006.png] | ![이미지: BIN0007.bmp] |
+| 가상 환경 | ![이미지: BIN0008.png] | ![이미지: BIN0009.bmp] |</p>
+<div class="evidence-chunk" id="chunk-2031"><p><a href="#chunk-2031">청크 2031</a> · **∙ 파지 자세 데이터 예시** <small>문자 위치 0–149</small></p><blockquote>| **구분** | **파지점 생성 전** | **파지점 생성 후** |
+
+| 실제 환경 | ![이미지: BIN0006.png] | ![이미지: BIN0007.bmp] |
+| 가상 환경 | ![이미지: BIN0008.png] | ![이미지: BIN0009.bmp] |</blockquote></div></article><article class="evidence-section" id="section-37"><h3><a href="#section-37">**∙ CoT 데이터 구조** · 섹션 37</a></h3><p class="record-snippet">| **구분** | **번호** | **항목명** | **항목설명** |
+
+| 질문 | 3.1.4 | instruction | 사용자 지시 문장 |
+| 사고 | 3.2.2 | CoT 1 – Finding Target Object | CoT 1 – 타겟 물체 찾기의 질문 및 답변 |
+| 질문 | 3.2.1.1 | CoT_instruction | CoT 지시문</p>
+<div class="evidence-chunk" id="chunk-2032"><p><a href="#chunk-2032">청크 2032</a> · **∙ CoT 데이터 구조** <small>문자 위치 0–883</small></p><blockquote>| **구분** | **번호** | **항목명** | **항목설명** |
+
+| 질문 | 3.1.4 | instruction | 사용자 지시 문장 |
+| 사고 | 3.2.2 | CoT 1 – Finding Target Object | CoT 1 – 타겟 물체 찾기의 질문 및 답변 |
+| 질문 | 3.2.1.1 | CoT_instruction | CoT 지시문</blockquote></div><div class="evidence-chunk" id="chunk-2033"><p><a href="#chunk-2033">청크 2033</a> · **∙ CoT 데이터 구조** <small>문자 위치 723–1486</small></p><blockquote>| CoT_input | CoT_환경 인식 |
+| 사고 | 3.2.3.3 | CoT_reasoning | 물성 및 안정성 사고 과정 |
+| 답변 | 3.2.3.4 | CoT_answer | 물성 및 안정성 추론 결과 |
+| 답변 | 3.3 | answer | 타겟 물체 및 파지점 |
+
+- CoT 각 단계인 instruction, input, reasonin</blockquote></div></article><article class="evidence-section" id="section-38"><h3><a href="#section-38">**데이터셋 구축 수행기관 담당자** · 섹션 38</a></h3><p class="record-snippet"></p>
+</article><article class="evidence-section" id="section-39"><h3><a href="#section-39">**주관기관** · 섹션 39</a></h3><p class="record-snippet">| **기관명** | **책임자명** | **전화번호 (유선전화번호기입)** | **메일주소** | **담당업무** |
+
+| ㈜유니바 | 정용운 | 053-615-1264 | [gandalf@univa.co.kr](mailto:gandalf@univa.co.kr) | 품질관리 실무책임자 |</p>
+<div class="evidence-chunk" id="chunk-2034"><p><a href="#chunk-2034">청크 2034</a> · **주관기관** <small>문자 위치 0–162</small></p><blockquote>| **기관명** | **책임자명** | **전화번호 (유선전화번호기입)** | **메일주소** | **담당업무** |
+
+| ㈜유니바 | 정용운 | 053-615-1264 | [gandalf@univa.co.kr](mailto:gandalf@univa.co.kr) | 품질관리 실무책임자 |</blockquote></div></article><article class="evidence-section" id="section-40"><h3><a href="#section-40">**참여기관** · 섹션 40</a></h3><p class="record-snippet">| **기관명** | **담당업무** | **기관명** | **담당업무** |
+
+| 씨앤비시스템(주) | 수집 | 광주과학기술원 | 수집·가공·AI 학습모델 |</p>
+<div class="evidence-chunk" id="chunk-2035"><p><a href="#chunk-2035">청크 2035</a> · **참여기관** <small>문자 위치 0–89</small></p><blockquote>| **기관명** | **담당업무** | **기관명** | **담당업무** |
+
+| 씨앤비시스템(주) | 수집 | 광주과학기술원 | 수집·가공·AI 학습모델 |</blockquote></div></article>
+</section>
+
+  </main>
+  <footer>
+    <span>DOUZONE · MFG TECH COPILOT</span>
+    <span>데이터 출처: AI 허브(aihub.or.kr) 데이터셋 설명서·활용가이드 — 원본 재배포 금지, 출처 표기</span>
+  </footer>
+  <script src="../static/evidence.js" defer></script>
+</body>
+</html>
